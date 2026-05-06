@@ -39,7 +39,7 @@ export const ViewApartment = () => {
   if (!apartment) {
     return (
       <main className="grid min-h-screen place-items-center bg-[#f4efe6] px-6 text-[#17130d]">
-        <div className="max-w-xl rounded-[2rem] bg-white p-10 text-center shadow-xl">
+        <div className="max-w-xl rounded-4xl bg-white p-10 text-center shadow-xl">
           <h1 className="text-3xl font-semibold">Apartamenti nuk u gjet.</h1>
           <button
             onClick={() => navigate("/apartments")}
@@ -101,7 +101,7 @@ export const ViewApartment = () => {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.08 }}
-              className="rounded-[2rem] border border-black/10 bg-[#17130d] p-6 text-white shadow-[0_30px_100px_rgba(23,19,13,0.22)]"
+              className="rounded-4xl border border-black/10 bg-[#17130d] p-6 text-white shadow-[0_30px_100px_rgba(23,19,13,0.22)]"
             >
               <div className="flex items-center justify-between gap-4">
                 <div>
@@ -141,7 +141,7 @@ export const ViewApartment = () => {
               animate={{ opacity: 1, y: 0 }}
               className="overflow-hidden rounded-[2.8rem] border border-black/10 bg-white/70 p-4 shadow-[0_30px_110px_rgba(55,38,15,0.12)] backdrop-blur-xl"
             >
-              <div className="relative h-[520px] overflow-hidden rounded-[2.2rem]">
+              <div className="relative h-130 overflow-hidden rounded-[2.2rem]">
                 <img
                   src={images[activeImage]}
                   alt={unit.name}
@@ -275,7 +275,7 @@ export const ViewApartment = () => {
                   <Maximize2 className="h-6 w-6 text-[#9a7330]" />
                 </div>
 
-                <div className="overflow-hidden rounded-[2rem] bg-[#f4efe6]">
+                <div className="overflow-hidden rounded-4xl bg-[#f4efe6]">
                   <img
                     src={unit.floorPlan}
                     alt={`Planimetria ${unit.name}`}

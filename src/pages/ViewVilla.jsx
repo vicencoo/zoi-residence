@@ -133,16 +133,16 @@ export const ViewVilla = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.98 }}
             animate={{ opacity: 1, scale: 1 }}
-            className="relative h-[420px] overflow-hidden rounded-[3rem] md:h-[640px]"
+            className="relative h-105 overflow-hidden rounded-[3rem] md:h-160"
           >
             <img
               src={activeImage}
               alt={villa.name}
               className="h-full w-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
 
-            <div className="absolute bottom-7 left-7 right-7 rounded-[2rem] border border-white/10 bg-black/35 p-5 backdrop-blur-xl">
+            <div className="absolute bottom-7 left-7 right-7 rounded-4xl border border-white/10 bg-black/35 p-5 backdrop-blur-xl">
               <p className="text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
                 Galeria
               </p>
@@ -157,7 +157,7 @@ export const ViewVilla = () => {
               <button
                 key={image}
                 onClick={() => setActiveImage(image)}
-                className={`group relative h-32 overflow-hidden rounded-[2rem] border text-left transition md:h-auto ${
+                className={`group relative h-32 overflow-hidden rounded-4xl border text-left transition md:h-auto ${
                   activeImage === image
                     ? "border-[#d8b56d]"
                     : "border-white/10 hover:border-[#d8b56d]/60"
@@ -218,7 +218,7 @@ export const ViewVilla = () => {
               {villa.features?.map((feature) => (
                 <div
                   key={feature}
-                  className="flex items-center gap-4 rounded-[1.5rem] bg-black/10 p-4"
+                  className="flex items-center gap-4 rounded-3xl bg-black/10 p-4"
                 >
                   <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-[#0f120d] text-[#d8b56d]">
                     <Check className="h-4 w-4" />
@@ -268,7 +268,7 @@ export const ViewVilla = () => {
                     alt={`Planimetria kati ${index + 1}`}
                     className="h-full w-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/55 to-transparent" />
                   <span className="absolute bottom-5 left-5 rounded-full bg-white/90 px-5 py-3 text-sm font-semibold text-[#0f120d]">
                     {index === 0 ? "Kati përdhe" : `Kati ${index}`}
                   </span>

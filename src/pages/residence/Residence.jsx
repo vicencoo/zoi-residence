@@ -28,7 +28,7 @@ export const Residence = () => {
   return (
     <main className="min-h-screen bg-[#f3eee4] text-[#15120d]">
       <section className="relative overflow-hidden px-6 pb-24 pt-36">
-        <div className="absolute right-0 top-0 h-[420px] w-[420px] rounded-full bg-[#d8b56d]/25 blur-[110px]" />
+        <div className="absolute right-0 top-0 h-105 w-105 rounded-full bg-[#d8b56d]/25 blur-[110px]" />
 
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
           <motion.div
@@ -55,7 +55,7 @@ export const Residence = () => {
             initial={{ opacity: 0, clipPath: "inset(12% 0 12% 0 round 36px)" }}
             animate={{ opacity: 1, clipPath: "inset(0% 0 0% 0 round 36px)" }}
             transition={{ duration: 0.9 }}
-            className="relative min-h-[620px] overflow-hidden rounded-[2.5rem]"
+            className="relative min-h-155 overflow-hidden rounded-[2.5rem]"
           >
             <img
               src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=80"
@@ -63,9 +63,9 @@ export const Residence = () => {
               className="absolute inset-0 h-full w-full object-cover"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-black/45 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/45 via-transparent to-transparent" />
 
-            <div className="absolute bottom-8 left-8 max-w-sm rounded-[2rem] bg-white/90 p-6 shadow-2xl backdrop-blur-xl">
+            <div className="absolute bottom-8 left-8 max-w-sm rounded-4xl bg-white/90 p-6 shadow-2xl backdrop-blur-xl">
               <Building2 className="mb-4 h-6 w-6 text-[#9b7837]" />
               <h2 className="text-2xl font-semibold">
                 Rezidencë vetëm për banim
@@ -87,7 +87,7 @@ export const Residence = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 }}
-              className="rounded-[2rem] border border-[#15120d]/10 bg-white/70 p-6 shadow-[0_20px_70px_rgba(40,30,10,0.08)]"
+              className="rounded-4xl border border-[#15120d]/10 bg-white/70 p-6 shadow-[0_20px_70px_rgba(40,30,10,0.08)]"
             >
               <p className="text-4xl font-semibold tracking-[-0.04em]">
                 {item.value}
@@ -106,7 +106,7 @@ export const Residence = () => {
             <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
               Identiteti
             </p>
-            <h2 className="text-4xl font-semibold leading-tight tracking-[-0.05em] md:text-6xl">
+            <h2 className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl">
               Një projekt i pastër rezidencial, i ndërtuar rreth privatësisë.
             </h2>
           </div>
@@ -155,7 +155,7 @@ export const Residence = () => {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-[2.2rem] border border-white/10 bg-white/[0.06] p-8"
+              className="rounded-[2.2rem] border border-white/10 bg-white/6 p-8"
             >
               <item.icon className="mb-10 h-8 w-8 text-[#d8b56d]" />
               <h3 className="text-3xl font-semibold tracking-[-0.04em]">
@@ -169,7 +169,7 @@ export const Residence = () => {
 
       <section className="px-6 py-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="relative min-h-[560px] overflow-hidden rounded-[2.5rem]">
+          <div className="relative min-h-140 overflow-hidden rounded-[2.5rem]">
             <img
               src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1500&q=80"
               alt="Arkitekturë rezidenciale"
@@ -181,7 +181,7 @@ export const Residence = () => {
             <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
               Për banorët
             </p>
-            <h2 className="text-4xl font-semibold leading-tight tracking-[-0.05em] md:text-6xl">
+            <h2 className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl">
               Çdo zonë ka një qëllim: jetesë më e mirë.
             </h2>
             <p className="mt-6 text-lg leading-8 text-[#62594d]">

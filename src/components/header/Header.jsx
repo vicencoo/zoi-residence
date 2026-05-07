@@ -1,14 +1,16 @@
 import { ArrowRight, Home, Menu, Phone, X } from "lucide-react";
 
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { navItems } from "../constants/navItems";
+import { navItems } from "../../constants/navItems";
 import { Link, NavLink } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
+import { useHeader } from "./useHeader";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [language, setLanguage] = useState("sq");
+  const { handleChangeLanguage, isOpen, selectedLocale, setIsOpen } =
+    useHeader();
+  const { t } = useTranslation("common");
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-6">
@@ -37,12 +39,12 @@ export const Header = () => {
                 to={item.path}
                 key={item.label}
                 className={({ isActive }) =>
-                  `rounded-full px-5 py-3 transition hover:bg-white/10 hover:text-amber-100 ${
+                  `rounded-full px-5 py-3 transition hover:bg-white/10 hover:text-amber-100 capitalize ${
                     isActive ? "bg-white/10 text-amber-100" : ""
                   }`
                 }
               >
-                {item.label}
+                {t(item.label)}
               </NavLink>
             ))}
           </nav>
@@ -51,9 +53,9 @@ export const Header = () => {
             {/* Language Switcher */}
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/4 p-1">
               <button
-                onClick={() => setLanguage("sq")}
+                onClick={() => handleChangeLanguage("sq")}
                 className={`grid h-10 w-10 place-items-center rounded-full transition ${
-                  language === "sq"
+                  selectedLocale === "sq"
                     ? "bg-white/10 ring-1 ring-amber-200/30"
                     : "hover:bg-white/5"
                 }`}
@@ -69,9 +71,9 @@ export const Header = () => {
               </button>
 
               <button
-                onClick={() => setLanguage("en")}
+                onClick={() => handleChangeLanguage("en")}
                 className={`grid h-10 w-10 place-items-center rounded-full transition ${
-                  language === "en"
+                  selectedLocale === "en"
                     ? "bg-white/10 ring-1 ring-amber-200/30"
                     : "hover:bg-white/5"
                 }`}
@@ -98,7 +100,7 @@ export const Header = () => {
               to={"/contact"}
               className="group inline-flex items-center gap-2 rounded-full bg-amber-300 px-5 py-3 text-sm font-semibold text-black shadow-[0_0_40px_rgba(252,211,77,0.22)] transition hover:bg-white"
             >
-              Rezervo vizitë
+              {t("header.reserve-btn")}
               <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
             </Link>
           </div>
@@ -121,18 +123,18 @@ export const Header = () => {
               {/* Mobile Language */}
               <div className="mb-2 flex items-center gap-2">
                 <button
-                  onClick={() => setLanguage("sq")}
+                  onClick={() => handleChangeLanguage("sq")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
-                    language === "sq" ? "bg-white/10" : "bg-white/5"
+                    selectedLocale === "sq" ? "bg-white/10" : "bg-white/5"
                   }`}
                 >
                   🇦🇱 Shqip
                 </button>
 
                 <button
-                  onClick={() => setLanguage("en")}
+                  onClick={() => handleChangeLanguage("en")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
-                    language === "en" ? "bg-white/10" : "bg-white/5"
+                    selectedLocale === "en" ? "bg-white/10" : "bg-white/5"
                   }`}
                 >
                   🇬🇧 English
@@ -146,7 +148,7 @@ export const Header = () => {
                   onClick={() => setIsOpen(false)}
                   className="rounded-2xl bg-white/5 px-4 py-4 text-white/75"
                 >
-                  {item.label}
+                  {t(item.label)}
                 </Link>
               ))}
 
@@ -155,7 +157,7 @@ export const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className="mt-2 rounded-2xl bg-amber-300 px-4 py-4 text-center font-semibold text-black"
               >
-                Rezervo vizitë
+                {t("header.reserve-btn")}
               </Link>
             </div>
           </motion.div>

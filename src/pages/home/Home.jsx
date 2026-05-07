@@ -2,65 +2,17 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
-  Home,
   Waves,
   MapPin,
-  ShieldCheck,
-  Sparkles,
   Phone,
-  Trees,
+  Car,
   //   Instagram,
   //   Facebook,
 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-const propertyCategories = [
-  {
-    type: "Apartamente",
-    title: "Apartamente moderne për familje",
-    description:
-      "Tipologji funksionale, ndriçim natyral dhe organizim inteligjent për jetesë të përditshme komode.",
-    details: ["1+1, 2+1 dhe 3+1", "Ballkone të bollshme", "Pamje të hapura"],
-    button: "Shiko apartamentet",
-    path: "/apartments",
-    image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
-  },
-  {
-    type: "Vila",
-    title: "Vila private me oborr",
-    description:
-      "Hapësira më të mëdha, privatësi maksimale dhe disa vila me pishinë private për një standard më të lartë jetese.",
-    button: "Shiko vilat",
-    path: "/villas",
-    details: ["Oborr privat", "Disa me pishinë", "Arkitekturë premium"],
-    image:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=80",
-  },
-];
-
-const features = [
-  {
-    icon: Home,
-    title: "Vendbanim perfekt",
-    text: "Ambient i qetë, privat dhe i projektuar për familje.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Privatësi & siguri",
-    text: "Hyrje e kontrolluar dhe organizim i menduar rezidencial.",
-  },
-  {
-    icon: Trees,
-    title: "Hapësira të gjelbra",
-    text: "Oborre, rrugica dhe zona të hapura për një jetesë më të qetë.",
-  },
-  {
-    icon: Sparkles,
-    title: "Arkitekturë moderne",
-    text: "Fasada elegante, materiale cilësore dhe detaje luksoze.",
-  },
-];
+import { propertyCategories } from "../../constants/propertyCategories";
+import { features } from "../../constants/features";
+import { useTranslation } from "react-i18next";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 34 },
@@ -70,6 +22,8 @@ const fadeUp = {
 export const HomePage = () => {
   const [active, setActive] = useState(0);
   const navigate = useNavigate();
+  const isMobile = window.innerWidth < 768;
+  const { t } = useTranslation("home");
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#080806] text-white selection:bg-amber-300 selection:text-black">
@@ -87,28 +41,18 @@ export const HomePage = () => {
           animate="visible"
           transition={{ staggerChildren: 0.12 }}
         >
-          {/* <motion.div
-            variants={fadeUp}
-            className="mb-6 inline-flex items-center gap-2 rounded-full border border-amber-300/20 bg-amber-300/10 px-4 py-2 text-sm text-amber-100 backdrop-blur-xl"
-          >
-            <span className="h-2 w-2 rounded-full bg-amber-300 shadow-[0_0_18px_rgba(252,211,77,0.9)]" />
-            Ndërtimet janë në fazën finale
-          </motion.div> */}
-
           <motion.h1
             variants={fadeUp}
-            className="max-w-4xl text-5xl font-semibold leading-[0.98] tracking-[-0.06em] text-white md:text-7xl lg:text-8xl"
+            className="max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.06em] text-white md:text-6xl lg:text-7xl"
           >
-            Jetesa luksoze që fillon me qetësinë.
+            {t("section-one.title")}
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="mt-7 max-w-2xl text-lg leading-8 text-white/62 md:text-xl"
           >
-            Një rezidencë ekskluzive për banim, me apartamente moderne dhe vila
-            private në shitje. Pa restorante, pa zhurmë, vetëm privatësi,
-            elegancë dhe hapësirë për familjen tuaj.
+            {t("section-one.description")}
           </motion.p>
 
           <motion.div
@@ -204,7 +148,7 @@ export const HomePage = () => {
       </section>
 
       <section
-        id="residenca"
+        id="residencconst"
         className="relative z-10 mx-auto max-w-7xl px-6 py-24"
       >
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
@@ -226,8 +170,8 @@ export const HomePage = () => {
           {features.map((item, index) => (
             <motion.div
               key={item.title}
-              initial={{ opacity: 0, y: 28 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={isMobile ? false : { opacity: 0, y: 28 }}
+              whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
               whileHover={{ y: -10, rotateX: 6, rotateY: -6 }}
@@ -266,8 +210,8 @@ export const HomePage = () => {
             <motion.article
               key={property.type}
               onMouseEnter={() => setActive(index)}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={isMobile ? false : { opacity: 0, y: 30 }}
+              whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ y: -14, rotateX: 5, rotateY: index === 0 ? -4 : 4 }}
@@ -277,7 +221,7 @@ export const HomePage = () => {
                 <img
                   src={property.image}
                   alt={property.title}
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                  className="h-full w-full object-cover transition duration-700 md:group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
                 <span className="absolute left-6 top-6 rounded-full bg-black/50 px-5 py-2 text-sm font-medium text-amber-100 backdrop-blur-xl">
@@ -315,6 +259,74 @@ export const HomePage = () => {
         </div>
       </section>
 
+      <section className="relative z-10 mx-auto max-w-7xl px-6 py-10">
+        <motion.div
+          initial={{ opacity: 0, y: 28 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.25 }}
+          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          className="overflow-hidden rounded-[2.5rem] border border-amber-200/20 bg-white/6 shadow-[0_35px_100px_rgba(0,0,0,0.35)] backdrop-blur-2xl"
+        >
+          <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
+            <div className="p-8 md:p-12">
+              <div className="mb-6 grid h-14 w-14 place-items-center rounded-2xl bg-amber-200/15 text-amber-200">
+                <Car className="h-7 w-7" />
+              </div>
+
+              <p className="mb-3 text-sm uppercase tracking-[0.35em] text-amber-200">
+                Parkime opsionale
+              </p>
+
+              <h2 className="text-4xl font-semibold tracking-[-0.04em] md:text-6xl">
+                31 vendparkime për banorët e rezidencës.
+              </h2>
+
+              <p className="mt-5 max-w-xl text-lg leading-8 text-white/58">
+                Çdo parkim ka 12.5 m² sipërfaqe parkimi dhe 8.8 m² sipërfaqe të
+                përbashkët. Parkimet mund të zgjidhen si opsion shtesë bashkë me
+                apartamentin.
+              </p>
+
+              <button
+                onClick={() => navigate("/parking")}
+                className="group mt-8 inline-flex items-center gap-3 rounded-full bg-amber-300 px-7 py-4 font-semibold text-black transition hover:bg-white"
+              >
+                Shiko parkimet
+                <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
+              </button>
+            </div>
+
+            <div className="relative min-h-90">
+              <img
+                src="/images/parking/parking-plan.jpg"
+                alt="Planimetria e parkimeve"
+                className="absolute inset-0 h-full w-full object-cover"
+              />
+
+              <div className="absolute inset-0 bg-linear-to-r from-[#080806] via-black/25 to-transparent" />
+
+              <div className="absolute bottom-6 left-6 right-6 grid gap-3 sm:grid-cols-3">
+                {[
+                  ["31", "Vendparkime"],
+                  ["12.5 m²", "Sip. parkimi"],
+                  ["8.8 m²", "E përbashkët"],
+                ].map(([value, label]) => (
+                  <div
+                    key={label}
+                    className="rounded-2xl border border-white/10 bg-black/35 p-4 backdrop-blur-xl"
+                  >
+                    <p className="text-2xl font-semibold text-amber-200">
+                      {value}
+                    </p>
+                    <p className="mt-1 text-sm text-white/55">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      </section>
+
       <section className="relative z-10 mx-auto max-w-7xl px-6 py-24">
         <div className="overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/6 shadow-[0_40px_120px_rgba(0,0,0,0.45)] backdrop-blur-2xl">
           <div className="grid lg:grid-cols-2">
@@ -333,7 +345,7 @@ export const HomePage = () => {
               <div className="mt-9 grid gap-4 sm:grid-cols-2">
                 {[
                   "Vetëm për banim",
-                  "Pa restorante apo shërbime brenda",
+                  "Ambiet i gjelbër",
                   "Apartamente dhe vila",
                   "Disa vila me pishinë private",
                 ].map((text) => (

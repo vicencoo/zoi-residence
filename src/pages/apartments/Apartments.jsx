@@ -6,8 +6,9 @@ import {
   Home,
   Layers3,
   MousePointerClick,
+  Car,
 } from "lucide-react";
-import { apartmentStairs } from "../data/apartments";
+import { apartmentStairs } from "../../data/apartments";
 import { useNavigate } from "react-router-dom";
 
 export const Apartments = () => {
@@ -173,6 +174,45 @@ export const Apartments = () => {
                     </div>
                   </div>
                 </div>
+
+                {/*  */}
+                <motion.div
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.08 }}
+                  className="mb-7 overflow-hidden rounded-4xl border border-[#9a7330]/20 bg-[#17130d] p-5 text-white shadow-[0_24px_80px_rgba(23,19,13,0.18)]"
+                >
+                  <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
+                    <div className="flex items-start gap-4">
+                      <span className="grid h-13 w-13 shrink-0 place-items-center rounded-2xl bg-[#d8b56d] text-[#17130d]">
+                        <Car className="h-6 w-6" />
+                      </span>
+
+                      <div>
+                        <p className="mb-2 text-xs uppercase tracking-[0.3em] text-[#d8b56d]">
+                          Parkime opsionale
+                        </p>
+
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                          Zgjidh vendparkimin për apartamentin tuaj
+                        </h3>
+
+                        <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
+                          Rezidenca ofron 31 njësi parkimi. Shikoni
+                          planimetrinë, llojet dhe disponueshmërinë e parkimeve.
+                        </p>
+                      </div>
+                    </div>
+
+                    <button
+                      onClick={() => navigate("/parking")}
+                      className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#d8b56d] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-white"
+                    >
+                      Shiko parkimet
+                      <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                    </button>
+                  </div>
+                </motion.div>
 
                 <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                   <div>

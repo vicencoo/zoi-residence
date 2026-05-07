@@ -1,0 +1,1 @@
+export { Residence } from "./Residence";

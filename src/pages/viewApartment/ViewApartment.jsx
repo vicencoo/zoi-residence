@@ -17,7 +17,7 @@ import {
   //   Sofa,
   SquareParking,
 } from "lucide-react";
-import { apartmentStairs } from "../data/apartments";
+import { apartmentStairs } from "../../data/apartments";
 
 export const ViewApartment = () => {
   const { stairSlug, unitSlug } = useParams();

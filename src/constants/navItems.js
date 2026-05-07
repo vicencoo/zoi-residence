@@ -1,7 +1,8 @@
 export const navItems = [
-  { label: "Home", path: "/" },
-  { label: "Residenca", path: "/residence" },
-  { label: "Apartamente", path: "/apartments" },
-  { label: "Vila", path: "/villas" },
-  { label: "Kontakt", path: "/contact" },
+  { label: "header.link1", path: "/" },
+  { label: "header.link2", path: "/residence" },
+  { label: "header.link3", path: "/apartments" },
+  { label: "header.link4", path: "/villas" },
+  { label: "header.link5", path: "/parking" },
+  { label: "header.link6", path: "/contact" },
 ];

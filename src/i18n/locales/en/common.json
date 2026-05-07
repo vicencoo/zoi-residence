@@ -1,0 +1,11 @@
+{
+  "header": {
+    "link1": "home",
+    "link2": "residence",
+    "link3": "apartments",
+    "link4": "villas",
+    "link5": "parkings",
+    "link6": "contact",
+    "reserve-btn": "Book a visit"
+  }
+}

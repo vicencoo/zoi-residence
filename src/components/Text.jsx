@@ -1,4 +1,4 @@
-export const Text = ({
+const Text = ({
   Tag = "p",
   text,
   size = "text-base",
@@ -20,3 +20,5 @@ export const Text = ({
     </Tag>
   );
 };
+
+export default Text;

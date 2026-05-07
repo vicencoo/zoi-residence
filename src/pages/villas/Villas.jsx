@@ -11,7 +11,7 @@ import {
   Trees,
   Waves,
 } from "lucide-react";
-import { villaRows } from "../data/villas";
+import { villaRows } from "../../data/villas";
 import { useNavigate } from "react-router-dom";
 
 export const Villas = () => {

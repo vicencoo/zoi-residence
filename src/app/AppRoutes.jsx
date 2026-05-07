@@ -1,12 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { Layout } from "../layout/Layout";
-import { Apartments } from "../pages/Apartments";
-import { Villas } from "../pages/Villas";
-import { Contact } from "../pages/Contact";
-import { HomePage } from "../pages/Home";
-import { Residence } from "../pages/Residence";
-import { ViewVilla } from "../pages/ViewVilla";
-import { ViewApartment } from "../pages/ViewApartment";
+import { Apartments } from "../pages/apartments";
+import { HomePage } from "../pages/home";
+import { Residence } from "../pages/residence";
+import { ViewApartment } from "../pages/viewApartment";
+import { Villas } from "../pages/villas";
+import { ViewVilla } from "../pages/viewVilla";
+import { Contact } from "../pages/contact";
+import { Parking } from "../pages/parking";
 
 export const AppRoutes = () => {
   return (
@@ -19,6 +20,7 @@ export const AppRoutes = () => {
           path="/apartments/:stairSlug/:unitSlug"
           element={<ViewApartment />}
         />
+        <Route path="/parking" element={<Parking />} />
         <Route path="/villas" element={<Villas />} />
         <Route path="/view-villa/:id" element={<ViewVilla />} />
         <Route path="/contact" element={<Contact />} />

@@ -15,7 +15,7 @@ import {
   Trees,
   Waves,
 } from "lucide-react";
-import { villas } from "../data/villas";
+import { villas } from "../../data/villas";
 
 export const ViewVilla = () => {
   const { id } = useParams();

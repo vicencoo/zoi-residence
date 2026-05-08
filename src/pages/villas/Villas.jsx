@@ -4,13 +4,15 @@ import { VillaCard } from "./VillaCard";
 import { Animate } from "../../components/Animate";
 import { VillaRows } from "./VillaRows";
 import { useVillas } from "./useVillas";
+import { VillasHero } from "./VillasHero";
 
 export const Villas = () => {
   const { animKey, handleRowSelect, selectedRow } = useVillas();
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
-      <section className="relative overflow-hidden px-6 pb-16 pt-36">
+      <VillasHero />
+      {/* <section className="relative overflow-hidden px-6 pb-16 pt-36">
         <div className="absolute -right-40 top-20 h-130 w-130 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
         <div className="absolute -left-40 bottom-0 h-115 w-115 rounded-full bg-[#17130d]/10 blur-[120px]" />
 
@@ -46,7 +48,7 @@ export const Villas = () => {
             </Animate>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[420px_1fr]">
@@ -88,37 +90,37 @@ export const Villas = () => {
           </aside>
 
           <section className="overflow-hidden rounded-[2.7rem] border border-black/10 bg-white/75 p-5 shadow-[0_35px_120px_rgba(55,38,15,0.12)] md:p-7">
-            <Animate key={animKey} preset="fadeIn" duration={0.2}>
-              <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
-                <img
-                  src={selectedRow.image}
-                  alt={selectedRow.title}
-                  loading="eager"
-                  fetchPriority="high"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/25 to-transparent" />
+            {/* <Animate key={animKey} preset="fadeIn" duration={0.2}> */}
+            <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
+              <img
+                src={selectedRow.image}
+                alt={selectedRow.title}
+                loading="eager"
+                fetchPriority="high"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/25 to-transparent" />
 
-                <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 md:flex-row md:items-end">
-                  <div>
-                    <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#d8b56d]">
-                      Rrjeshti i zgjedhur
-                    </p>
-                    <h2 className="text-5xl font-semibold tracking-tighter text-white">
-                      {selectedRow.name}
-                    </h2>
-                    <p className="mt-3 max-w-xl leading-7 text-white/60">
-                      {selectedRow.description}
-                    </p>
-                  </div>
+              <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+                <div>
+                  <p className="mb-3 text-sm font-medium uppercase tracking-[0.32em] text-[#ffcf70]">
+                    Rrjeshti i zgjedhur
+                  </p>
+                  <h2 className="text-5xl font-semibold tracking-tighter text-white">
+                    {selectedRow.name}
+                  </h2>
+                  <p className="mt-3 max-w-xl leading-7 text-white/60">
+                    {selectedRow.description}
+                  </p>
+                </div>
 
-                  <div className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 text-white">
-                    <Home className="h-5 w-5 text-[#d8b56d]" />
-                    <span>{selectedRow.totalVillas} vila</span>
-                  </div>
+                <div className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 text-white">
+                  <Home className="h-5 w-5 text-[#d8b56d]" />
+                  <span>{selectedRow.totalVillas} vila</span>
                 </div>
               </div>
-
+            </div>
+            <Animate key={animKey} preset="fadeIn" duration={0.2}>
               <div className="mb-7">
                 <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#9a7330]">
                   Vilat në këtë rrjesht

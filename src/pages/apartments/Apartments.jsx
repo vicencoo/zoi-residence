@@ -58,34 +58,34 @@ export const Apartments = () => {
           </aside>
 
           <section className="overflow-hidden rounded-[2.7rem] border border-black/10 bg-white/75 p-5 shadow-[0_30px_110px_rgba(55,38,15,0.12)] backdrop-blur-xl md:p-7">
-            <Animate key={animKey} preset="fadeIn" duration={0.2}>
-              <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
-                <img
-                  src={selectedStair.image}
-                  alt={selectedStair.name}
-                  fetchPriority="high"
-                  loading="eager"
-                  className="h-full w-full object-cover"
-                />
-                <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/20 to-transparent" />
+            {/* <Animate key={animKey} preset="fadeIn" duration={0.2}> */}
+            <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
+              <img
+                src={selectedStair.image}
+                alt={selectedStair.name}
+                fetchPriority="high"
+                loading="eager"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/20 to-transparent" />
 
-                <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 text-white md:flex-row md:items-end">
-                  <div>
-                    <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#d8b56d]">
-                      Shkalla e zgjedhur
-                    </p>
-                    <h2 className="text-5xl font-semibold tracking-tighter">
-                      {selectedStair.name}
-                    </h2>
-                  </div>
+              <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 text-white md:flex-row md:items-end">
+                <div>
+                  <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#d8b56d]">
+                    Shkalla e zgjedhur
+                  </p>
+                  <h2 className="text-5xl font-semibold tracking-tighter">
+                    {selectedStair.name}
+                  </h2>
+                </div>
 
-                  <div className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 backdrop-blur-xl">
-                    <Layers3 className="h-5 w-5 text-[#d8b56d]" />
-                    <span>{selectedStair.totalUnits} njësi banimi</span>
-                  </div>
+                <div className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 backdrop-blur-xl">
+                  <Layers3 className="h-5 w-5 text-[#d8b56d]" />
+                  <span>{selectedStair.totalUnits} njësi banimi</span>
                 </div>
               </div>
-
+            </div>
+            <Animate key={animKey} preset="fadeIn" duration={0.2}>
               <div className="mb-7 overflow-hidden rounded-4xl border border-[#9a7330]/20 bg-[#17130d] p-5 text-white shadow-[0_24px_80px_rgba(23,19,13,0.18)]">
                 <div className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
                   <div className="flex items-start gap-4">

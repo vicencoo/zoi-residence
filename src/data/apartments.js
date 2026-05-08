@@ -43,9 +43,9 @@ export const apartmentStairs = [
         pricePerM2: "Me kërkesë",
         image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/imazhi2.jpg",
-          "/images/imazhi2.jpg",
-          "/images/imazhi2.jpg",
+          "/images/vila1.jpg",
+          "/images/vila2.png",
+          "/images/vila3.jpg",
           "/images/imazhi2.jpg",
         ],
         floorPlan: "/images/imazhi2.jpg",
@@ -700,24 +700,24 @@ export const apartmentStairs = [
   },
 ];
 
-export const getApartmentStairsPreview = () =>
-  apartmentStairs.map(({ units, ...stair }) => ({
-    ...stair,
-    units: units.map((unit) => ({
-      id: unit.id,
-      name: unit.name,
-      slug: unit.slug,
-      status: unit.status,
-      type: unit.type,
-      floor: unit.floor,
-      area: unit.area,
-      bedrooms: unit.bedrooms,
-      bathrooms: unit.bathrooms,
-      image: unit.image,
-    })),
-  }));
+// export const getApartmentStairsPreview = () =>
+//   apartmentStairs.map(({ units, ...stair }) => ({
+//     ...stair,
+//     units: units.map((unit) => ({
+//       id: unit.id,
+//       name: unit.name,
+//       slug: unit.slug,
+//       status: unit.status,
+//       type: unit.type,
+//       floor: unit.floor,
+//       area: unit.area,
+//       bedrooms: unit.bedrooms,
+//       bathrooms: unit.bathrooms,
+//       image: unit.image,
+//     })),
+//   }));
 
-export const getApartmentUnit = (stairSlug, unitSlug) =>
-  apartmentStairs
-    .find((stair) => stair.slug === stairSlug)
-    ?.units.find((unit) => unit.slug === unitSlug);
+// export const getApartmentUnit = (stairSlug, unitSlug) =>
+//   apartmentStairs
+//     .find((stair) => stair.slug === stairSlug)
+//     ?.units.find((unit) => unit.slug === unitSlug);

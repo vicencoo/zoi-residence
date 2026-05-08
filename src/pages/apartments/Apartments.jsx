@@ -1,75 +1,31 @@
-import { useState } from "react";
 import {
   ArrowRight,
   Building2,
-  Home,
   Layers3,
   MousePointerClick,
   Car,
 } from "lucide-react";
-import { getApartmentStairsPreview } from "../../data/apartments";
+import { apartmentStairs } from "../../data/apartments";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "../../components/Animate";
+import { Stairs } from "./Stairs";
+import { ApartmentCard } from "./ApartmentCard";
+import { useApartments } from "./useApartments";
+import { ApartmentsHero } from "./ApartmentsHero";
 
 export const Apartments = () => {
-  const stairs = getApartmentStairsPreview();
-  const [selectedStair, setSelectedStair] = useState(stairs[0]);
-  const [animKey, setAnimKey] = useState(0);
   const navigate = useNavigate();
-
-  const handleStairSelect = (stair) => {
-    setSelectedStair(stair);
-    setAnimKey((k) => k + 1);
-  };
+  const { animKey, handleStairSelect, selectedStair } = useApartments();
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
-      <section className="relative overflow-hidden px-6 pb-14 pt-36">
-        <div className="absolute -right-40 top-24 h-130 w-130 rounded-full bg-[#d6b46d]/25 blur-[130px]" />
-        <div className="absolute -left-40 bottom-0 h-105 w-105 rounded-full bg-[#17130d]/10 blur-[130px]" />
-
-        <div className="relative mx-auto max-w-7xl">
-          <Animate
-            as="p"
-            preset="fadeIn"
-            skipAnimation
-            className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]"
-          >
-            Apartamentet
-          </Animate>
-
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end">
-            <Animate
-              as="h1"
-              preset="fadeUp"
-              delay={0.05}
-              skipAnimation
-              className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl"
-            >
-              Zgjidh shkallën dhe eksploro njësitë e banimit.
-            </Animate>
-
-            <Animate
-              as="p"
-              preset="fadeUp"
-              delay={0.12}
-              skipAnimation
-              className="max-w-xl text-lg leading-8 text-[#62594d]"
-            >
-              Apartamentet janë të organizuara në 4 shkallë banimi. Çdo shkallë
-              ka njësitë e saj, të prezantuara qartë për një eksperiencë të
-              thjeshtë dhe elegante.
-            </Animate>
-          </div>
-        </div>
-      </section>
+      <ApartmentsHero />
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[420px_1fr]">
           <aside className="space-y-5">
             <Animate
               preset="fadeUp"
-              skipAnimation
               className="rounded-4xl border border-black/10 bg-white/65 p-5 shadow-[0_24px_80px_rgba(55,38,15,0.08)] backdrop-blur-xl"
             >
               <div className="flex items-center gap-3">
@@ -83,83 +39,32 @@ export const Apartments = () => {
               </div>
             </Animate>
 
-            <div className="grid gap-4">
-              {stairs.map((stair, index) => {
-                const isActive = selectedStair.id === stair.id;
-
-                return (
-                  <Animate
-                    key={stair.id}
-                    as="button"
-                    preset="slideLeft"
-                    delay={index * 0.06}
-                    skipAnimation={index === 0}
-                    onClick={() => handleStairSelect(stair)}
-                    className={`group h-47 w-full overflow-hidden rounded-4xl border p-4 text-left shadow-[0_20px_70px_rgba(55,38,15,0.08)] transition-all duration-300 hover:-translate-y-1 ${
-                      isActive
-                        ? "border-[#9a7330] bg-[#17130d] text-white"
-                        : "border-black/10 bg-white/75 text-[#17130d] hover:bg-white"
-                    }`}
-                  >
-                    <div className="grid h-full gap-4 sm:grid-cols-[150px_1fr]">
-                      <div className="relative h-full overflow-hidden rounded-[1.45rem]">
-                        <img
-                          src={stair.image}
-                          alt={stair.name}
-                          className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
-                        />
-                        <div className="absolute inset-0 bg-linear-to-t from-black/45 to-transparent" />
-                      </div>
-
-                      <div className="flex min-h-0 flex-col justify-between py-1">
-                        <div>
-                          <p
-                            className={`text-xs uppercase tracking-[0.28em] ${
-                              isActive ? "text-[#d8b56d]" : "text-[#9a7330]"
-                            }`}
-                          >
-                            Shkallë banimi
-                          </p>
-                          <h3 className="mt-2 text-3xl font-semibold leading-tight">
-                            {stair.name}
-                          </h3>
-                        </div>
-
-                        <div className="flex items-center justify-between gap-3">
-                          <span
-                            className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold ${
-                              isActive
-                                ? "bg-[#d8b56d] text-[#17130d]"
-                                : "bg-[#17130d] text-white"
-                            }`}
-                          >
-                            {stair.totalUnits} njësi
-                          </span>
-
-                          <span
-                            className={`grid h-10 w-10 shrink-0 place-items-center rounded-full transition ${
-                              isActive
-                                ? "bg-white/10 text-[#d8b56d]"
-                                : "bg-[#f0e6d5] text-[#17130d] group-hover:bg-[#d8b56d]"
-                            }`}
-                          >
-                            <ArrowRight className="h-4 w-4" />
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </Animate>
-                );
-              })}
-            </div>
+            <Animate preset="slideLeft">
+              <div className="grid gap-4">
+                {apartmentStairs.map((stair, index) => {
+                  const isActive = selectedStair.id === stair.id;
+                  return (
+                    <Stairs
+                      handleStairSelect={handleStairSelect}
+                      index={index}
+                      isActive={isActive}
+                      stair={stair}
+                      key={stair.id}
+                    />
+                  );
+                })}
+              </div>
+            </Animate>
           </aside>
 
           <section className="overflow-hidden rounded-[2.7rem] border border-black/10 bg-white/75 p-5 shadow-[0_30px_110px_rgba(55,38,15,0.12)] backdrop-blur-xl md:p-7">
-            <Animate key={animKey} preset="fadeIn" duration={0.2} skipAnimation>
+            <Animate key={animKey} preset="fadeIn" duration={0.2}>
               <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
                 <img
                   src={selectedStair.image}
                   alt={selectedStair.name}
+                  fetchPriority="high"
+                  loading="eager"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/20 to-transparent" />
@@ -204,7 +109,7 @@ export const Apartments = () => {
 
                   <button
                     onClick={() => navigate("/parking")}
-                    className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#d8b56d] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-white"
+                    className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#d8b56d] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-white cursor-pointer"
                   >
                     Shiko parkimet
                     <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
@@ -230,55 +135,12 @@ export const Apartments = () => {
 
               <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                 {selectedStair.units.map((unit, index) => (
-                  <Animate
+                  <ApartmentCard
+                    index={index}
+                    selectedStair={selectedStair}
+                    unit={unit}
                     key={unit.id}
-                    as="article"
-                    preset="fadeUp"
-                    delay={index * 0.05}
-                    onClick={() =>
-                      navigate(`/apartments/${selectedStair.slug}/${unit.slug}`)
-                    }
-                    className="group cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-[#f8f1e6] shadow-[0_16px_50px_rgba(55,38,15,0.08)] transition duration-300 hover:-translate-y-2 hover:bg-white"
-                  >
-                    <div className="relative h-48 overflow-hidden">
-                      <img
-                        src={unit.image}
-                        alt={unit.name}
-                        className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent" />
-
-                      <span className="absolute left-4 top-4 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold text-[#17130d]">
-                        {selectedStair.name}
-                      </span>
-                    </div>
-
-                    <div className="p-5">
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <p className="text-xs uppercase tracking-[0.28em] text-[#9a7330]">
-                            Apartament
-                          </p>
-                          <h4 className="mt-2 text-2xl font-semibold">
-                            {unit.name}
-                          </h4>
-                        </div>
-
-                        <span className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-[#17130d] text-[#d8b56d]">
-                          <Home className="h-5 w-5" />
-                        </span>
-                      </div>
-
-                      <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-5">
-                        <span className="text-sm text-[#62594d]">
-                          Shiko detajet
-                        </span>
-                        <span className="grid h-10 w-10 place-items-center rounded-full bg-[#17130d] text-white transition duration-300 group-hover:bg-[#d8b56d] group-hover:text-[#17130d]">
-                          <ArrowRight className="h-4 w-4" />
-                        </span>
-                      </div>
-                    </div>
-                  </Animate>
+                  />
                 ))}
               </div>
             </Animate>

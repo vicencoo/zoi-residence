@@ -1,15 +1,19 @@
-import { ChevronUp, Home, Mail, MapPin, Phone } from "lucide-react";
+import { Home, Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "../constants/navItems";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { Instagram } from "@mui/icons-material";
+import { WhatsApp } from "@mui/icons-material";
+import { Email } from "@mui/icons-material";
 
-// const navItems = [
-//   { label: "Residenca", href: "#residenca" },
-//   { label: "Apartamente", href: "#kategorite" },
-//   { label: "Vila", href: "#kategorite" },
-//   { label: "Kontakt", href: "#kontakt" },
-// ];
+const FOOTERCONTACT = [
+  { id: 1, icon: <Instagram className="h-4 w-4" /> },
+  { id: 2, icon: <WhatsApp className="h-4 w-4" /> },
+  { id: 3, icon: <Email className="h-4 w-4" /> },
+];
 
 export const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="relative z-10 bg-[#080808] px-6 pb-8 pt-20">
       <div className="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/5.5 shadow-[0_30px_100px_rgba(0,0,0,0.4)] backdrop-blur-2xl">
@@ -40,19 +44,12 @@ export const Footer = () => {
             </h4>
             <div className="grid gap-3 text-white/58">
               {navItems.map((item) => (
-                // <a
-                //   key={item.label}
-                //   href={item.href}
-                //   className="transition hover:text-white"
-                // >
-                //   {item.label}
-                // </a>
                 <Link
                   key={item.label}
                   to={item.path}
-                  className="transition hover:text-white"
+                  className="transition hover:text-white capitalize"
                 >
-                  {item.label}
+                  {t(item.label)}
                 </Link>
               ))}
             </div>
@@ -86,24 +83,14 @@ export const Footer = () => {
               Social
             </h4>
             <div className="flex gap-3">
-              <a
-                href="#"
-                className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200"
-              >
-                {/* <Instagram className="h-4 w-4" /> */}
-              </a>
-              <a
-                href="#"
-                className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200"
-              >
-                {/* <Facebook className="h-4 w-4" /> */}
-              </a>
-              <a
-                href="#"
-                className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200"
-              >
-                <ChevronUp className="h-4 w-4" />
-              </a>
+              {FOOTERCONTACT.map((item) => (
+                <span
+                  key={item.id}
+                  className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200 cursor-pointer"
+                >
+                  {item.icon}
+                </span>
+              ))}
             </div>
             <p className="mt-6 text-sm leading-6 text-white/42">
               Përditësoni kontaktet, adresën dhe linket sociale sipas projektit

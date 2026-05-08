@@ -20,12 +20,12 @@ export const VillaCard = ({ villa, index }) => {
       as="article"
       preset="fadeUp"
       delay={index * 0.05}
-      onClick={() => navigate(`/view-villa/${villa.id}`)}
+      onClick={() => navigate(`/villas/${villa.id}`)}
       className="group cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-white/75 shadow-[0_16px_50px_rgba(55,38,15,0.07)] transition duration-300 hover:-translate-y-2 hover:bg-white"
     >
       <div className="relative h-52 overflow-hidden">
         <img
-          src={villa.image}
+          src={villa.images[0]}
           alt={villa.name}
           loading="lazy"
           className="h-full w-full object-cover transition duration-700 group-hover:scale-105"

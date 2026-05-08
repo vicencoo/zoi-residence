@@ -1,5 +1,4 @@
-import { useMemo, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   ArrowLeft,
   Bath,
@@ -13,18 +12,12 @@ import {
   Trees,
   Waves,
 } from "lucide-react";
-import { villas } from "../../data/villas";
 import { Animate } from "../../components/Animate";
+import { VillaImages } from "./VillaImages";
+import { useViewVilla } from "./useViewVilla";
 
 export const ViewVilla = () => {
-  const { id } = useParams();
-
-  const villa = useMemo(
-    () => villas.find((item) => item.id === id || item.slug === id),
-    [id],
-  );
-
-  const [activeImage, setActiveImage] = useState(villa?.images?.[0]);
+  const { activeImage, handleChangeImage, villa } = useViewVilla();
 
   if (!villa) {
     return (
@@ -32,7 +25,7 @@ export const ViewVilla = () => {
         <div className="mx-auto max-w-4xl rounded-[2.5rem] border border-black/10 bg-white/75 p-10 text-center">
           <h1 className="text-5xl font-semibold">Vila nuk u gjet.</h1>
           <Link
-            to="/vila"
+            to="/villas"
             className="mt-8 inline-flex rounded-full bg-[#17130d] px-7 py-4 font-semibold text-[#d8b56d]"
           >
             Kthehu te vilat
@@ -69,7 +62,7 @@ export const ViewVilla = () => {
           </Link>
 
           <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-            <Animate preset="fadeUp" skipAnimation>
+            <Animate preset="fadeUp">
               <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]">
                 {villa.row} / {villa.category}
               </p>
@@ -84,7 +77,6 @@ export const ViewVilla = () => {
             <Animate
               preset="fadeUp"
               delay={0.08}
-              skipAnimation
               className="rounded-[2.5rem] border border-black/10 bg-white/80 p-6 shadow-[0_24px_80px_rgba(55,38,15,0.1)]"
             >
               <div className="flex flex-wrap gap-3">
@@ -118,54 +110,11 @@ export const ViewVilla = () => {
         </div>
       </section>
 
-      <section className="px-6 pb-24">
-        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-[1fr_340px]">
-          <Animate
-            preset="scaleUp"
-            skipAnimation
-            className="relative h-105 overflow-hidden rounded-[3rem] md:h-160"
-          >
-            <img
-              src={activeImage}
-              alt={villa.name}
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-linear-to-t from-black/60 via-transparent to-transparent" />
-            <div className="absolute bottom-7 left-7 right-7 rounded-4xl border border-white/10 bg-black/35 p-5 backdrop-blur-xl text-white">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
-                Galeria
-              </p>
-              <h2 className="mt-2 text-2xl font-semibold">
-                Pamje ilustruese e {villa.name}
-              </h2>
-            </div>
-          </Animate>
-
-          <div className="grid gap-4">
-            {villa.images?.map((image, index) => (
-              <button
-                key={image}
-                onClick={() => setActiveImage(image)}
-                className={`group relative h-32 overflow-hidden rounded-4xl border text-left transition md:h-auto ${
-                  activeImage === image
-                    ? "border-[#9a7330]"
-                    : "border-black/10 hover:border-[#9a7330]/60"
-                }`}
-              >
-                <img
-                  src={image}
-                  alt={`${villa.name} ${index + 1}`}
-                  className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-black/20" />
-                <span className="absolute bottom-4 left-4 rounded-full bg-white/90 px-4 py-2 text-xs font-semibold text-[#17130d]">
-                  Foto {index + 1}
-                </span>
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+      <VillaImages
+        activeImage={activeImage}
+        handleChangeImage={handleChangeImage}
+        villa={villa}
+      />
 
       <section className="px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr]">

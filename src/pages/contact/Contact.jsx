@@ -116,7 +116,7 @@ export const Contact = () => {
                 placeholder="Mesazhi juaj"
               />
 
-              <button className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#d8b56d] px-7 py-4 font-semibold text-[#17130d] transition hover:bg-[#17130d] hover:text-white">
+              <button className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#d8b56d] px-7 py-4 font-semibold text-[#17130d] transition hover:bg-[#17130d] hover:text-white cursor-pointer">
                 Dërgo kërkesën
                 <Send className="h-5 w-5 transition group-hover:translate-x-1" />
               </button>

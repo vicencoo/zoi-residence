@@ -22,7 +22,7 @@ export const AppRoutes = () => {
         />
         <Route path="/parking" element={<Parking />} />
         <Route path="/villas" element={<Villas />} />
-        <Route path="/view-villa/:id" element={<ViewVilla />} />
+        <Route path="/villas/:id" element={<ViewVilla />} />
         <Route path="/contact" element={<Contact />} />
       </Route>
     </Routes>

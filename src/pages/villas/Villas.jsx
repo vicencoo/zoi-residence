@@ -1,18 +1,12 @@
-import { useState } from "react";
-import { ArrowRight, Home } from "lucide-react";
-import { getVillaRowsPreview } from "../../data/villas";
+import { Home } from "lucide-react";
+import { villaRows } from "../../data/villas";
 import { VillaCard } from "./VillaCard";
 import { Animate } from "../../components/Animate";
+import { VillaRows } from "./VillaRows";
+import { useVillas } from "./useVillas";
 
 export const Villas = () => {
-  const rows = getVillaRowsPreview();
-  const [selectedRow, setSelectedRow] = useState(rows[0]);
-  const [animKey, setAnimKey] = useState(0);
-
-  const handleRowSelect = (row) => {
-    setSelectedRow(row);
-    setAnimKey((k) => k + 1);
-  };
+  const { animKey, handleRowSelect, selectedRow } = useVillas();
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
@@ -26,7 +20,6 @@ export const Villas = () => {
             preset="fadeIn"
             delay={0.04}
             duration={0.03}
-            skipAnimation
             className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]"
           >
             Vilat
@@ -36,7 +29,6 @@ export const Villas = () => {
             <Animate
               as="h1"
               preset="fadeUp"
-              skipAnimation
               className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl"
             >
               Vila private të organizuara sipas rrjeshtave.
@@ -46,7 +38,6 @@ export const Villas = () => {
               as="p"
               preset="fadeUp"
               delay={0.08}
-              skipAnimation
               className="max-w-xl text-lg leading-8 text-[#62594d]"
             >
               Zgjidhni rrjeshtin T-01, T-02 ose T-03 për të parë vilat
@@ -62,7 +53,6 @@ export const Villas = () => {
           <aside className="space-y-5">
             <Animate
               preset="fadeUp"
-              skipAnimation
               className="rounded-4xl border border-black/10 bg-white/80 p-5 shadow-[0_16px_50px_rgba(55,38,15,0.07)]"
             >
               <div className="flex items-center gap-3">
@@ -78,78 +68,33 @@ export const Villas = () => {
               </div>
             </Animate>
 
-            <div className="grid gap-4">
-              {rows.map((row, index) => {
-                const isActive = selectedRow.id === row.id;
+            <Animate preset="slideLeft">
+              <div className="grid gap-4">
+                {villaRows.map((row, index) => {
+                  const isActive = selectedRow.id === row.id;
 
-                return (
-                  <Animate
-                    key={row.id}
-                    as="button"
-                    preset="slideLeft"
-                    delay={index * 0.06}
-                    skipAnimation={index === 0}
-                    onClick={() => handleRowSelect(row)}
-                    className={`group h-47.5 w-full overflow-hidden rounded-4xl border p-4 text-left transition-all duration-300 hover:-translate-y-1 ${
-                      isActive
-                        ? "border-[#17130d] bg-[#17130d] text-white"
-                        : "border-black/10 bg-white/75 text-[#17130d] hover:bg-white"
-                    }`}
-                  >
-                    <div className="grid h-full gap-4 sm:grid-cols-[150px_1fr]">
-                      <div className="relative h-full overflow-hidden rounded-[1.45rem]">
-                        <img
-                          src={row.image}
-                          alt={row.name}
-                          loading="eager"
-                          className="h-full w-full object-cover"
-                        />
-                        <div className="absolute inset-0 bg-linear-to-t from-black/55 to-transparent" />
-                      </div>
-
-                      <div className="flex min-h-0 flex-col justify-between py-1">
-                        <div>
-                          <p
-                            className={`text-xs uppercase tracking-[0.28em] ${isActive ? "text-[#d8b56d]" : "text-[#9a7330]"}`}
-                          >
-                            Rrjesht vilash
-                          </p>
-                          <h3 className="mt-2 text-3xl font-semibold leading-tight">
-                            {row.name}
-                          </h3>
-                          <p
-                            className={`mt-2 line-clamp-2 text-sm leading-6 ${isActive ? "text-white/60" : "text-[#62594d]"}`}
-                          >
-                            {row.description}
-                          </p>
-                        </div>
-
-                        <div className="flex items-center justify-between gap-3">
-                          <span
-                            className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-semibold ${
-                              isActive
-                                ? "bg-[#d8b56d] text-[#17130d]"
-                                : "bg-[#17130d] text-[#d8b56d]"
-                            }`}
-                          >
-                            {row.totalVillas} vila
-                          </span>
-                          <ArrowRight className="h-5 w-5 transition duration-300 group-hover:translate-x-1" />
-                        </div>
-                      </div>
-                    </div>
-                  </Animate>
-                );
-              })}
-            </div>
+                  return (
+                    <VillaRows
+                      handleRowSelect={handleRowSelect}
+                      index={index}
+                      isActive={isActive}
+                      row={row}
+                      key={row.id}
+                    />
+                  );
+                })}
+              </div>
+            </Animate>
           </aside>
 
           <section className="overflow-hidden rounded-[2.7rem] border border-black/10 bg-white/75 p-5 shadow-[0_35px_120px_rgba(55,38,15,0.12)] md:p-7">
-            <Animate key={animKey} preset="fadeIn" duration={0.2} skipAnimation>
+            <Animate key={animKey} preset="fadeIn" duration={0.2}>
               <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
                 <img
                   src={selectedRow.image}
                   alt={selectedRow.title}
+                  loading="eager"
+                  fetchPriority="high"
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/25 to-transparent" />

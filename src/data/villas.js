@@ -38,12 +38,8 @@ export const villaRows = [
           "Ndriçim natyral",
           "Ambient familjar",
         ],
-        images: [
-          "/images/imazhi1.jpg",
-          "/images/imazhi1.jpg",
-          "/images/imazhi1.jpg",
-        ],
-        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
+        images: ["/images/vila1.jpg", "/images/vila2.png", "/images/vila3.jpg"],
+        floorPlans: ["/images/imazhi1.jpg", "images/vila2.jpg"],
       },
       {
         id: "t-01-vila-02",
@@ -397,24 +393,24 @@ export const villaRows = [
   },
 ];
 
-export const villas = villaRows.flatMap((row) => row.villas);
+// export const villas = villaRows.flatMap((row) => row.villas);
 
-export const getVillaRowsPreview = () =>
-  villaRows.map(({ villas, ...row }) => ({
-    ...row,
-    villas: villas.map((villa) => ({
-      id: villa.id,
-      name: villa.name,
-      slug: villa.slug,
-      status: villa.status,
-      category: villa.category,
-      shortDescription: villa.shortDescription,
-      area: villa.area,
-      bedrooms: villa.bedrooms,
-      bathrooms: villa.bathrooms,
-      image: villa.images[0],
-    })),
-  }));
+// export const getVillaRowsPreview = () =>
+//   villaRows.map(({ villas, ...row }) => ({
+//     ...row,
+//     villas: villas.map((villa) => ({
+//       id: villa.id,
+//       name: villa.name,
+//       slug: villa.slug,
+//       status: villa.status,
+//       category: villa.category,
+//       shortDescription: villa.shortDescription,
+//       area: villa.area,
+//       bedrooms: villa.bedrooms,
+//       bathrooms: villa.bathrooms,
+//       image: villa.images[0],
+//     })),
+//   }));
 
-export const getVillaBySlug = (slug) =>
-  villaRows.flatMap((row) => row.villas).find((villa) => villa.slug === slug);
+// export const getVillaBySlug = (slug) =>
+//   villaRows.flatMap((row) => row.villas).find((villa) => villa.slug === slug);

@@ -8,27 +8,23 @@ import { Villas } from "../pages/villas";
 import { ViewVilla } from "../pages/viewVilla";
 import { Contact } from "../pages/contact";
 import { Parking } from "../pages/parking";
-import { RouteThemeColor } from "../components/RouteThemeColor";
 
 export const AppRoutes = () => {
   return (
-    <>
-      <RouteThemeColor />
-      <Routes>
-        <Route element={<Layout />}>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/residence" element={<Residence />} />
-          <Route path="/apartments" element={<Apartments />} />
-          <Route
-            path="/apartments/:stairSlug/:unitSlug"
-            element={<ViewApartment />}
-          />
-          <Route path="/parking" element={<Parking />} />
-          <Route path="/villas" element={<Villas />} />
-          <Route path="/view-villa/:id" element={<ViewVilla />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </>
+    <Routes>
+      <Route element={<Layout />}>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/residence" element={<Residence />} />
+        <Route path="/apartments" element={<Apartments />} />
+        <Route
+          path="/apartments/:stairSlug/:unitSlug"
+          element={<ViewApartment />}
+        />
+        <Route path="/parking" element={<Parking />} />
+        <Route path="/villas" element={<Villas />} />
+        <Route path="/view-villa/:id" element={<ViewVilla />} />
+        <Route path="/contact" element={<Contact />} />
+      </Route>
+    </Routes>
   );
 };

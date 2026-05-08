@@ -44,7 +44,7 @@ export const HomeParking = () => {
 
           <div className="relative min-h-90">
             <img
-              src="/images/parking/parking-plan.jpg"
+              src="/images/parkimi.jpg"
               alt="Planimetria e parkimeve"
               className="absolute inset-0 h-full w-full object-cover"
             />

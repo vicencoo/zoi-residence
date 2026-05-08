@@ -142,14 +142,16 @@ export const Header = () => {
               </div>
 
               {navItems.map((item) => (
-                <Link
+                <NavLink
                   key={item.label}
                   to={item.path}
                   onClick={() => setIsOpen(false)}
-                  className="rounded-2xl bg-white/5 px-4 py-4 text-white/75"
+                  className={({ isActive }) =>
+                    `rounded-2xl px-4 py-4 capitalize ${isActive ? "bg-white/25 text-amber-100" : "bg-white/5 text-white/75"}`
+                  }
                 >
                   {t(item.label)}
-                </Link>
+                </NavLink>
               ))}
 
               <Link

@@ -20,7 +20,7 @@ export const apartmentStairs = [
     name: "Shkalla 1",
     slug: "shkalla-1",
     totalUnits: 5,
-    image: "/images/apartments/stairs/shkalla-1.jpg",
+    image: "/images/imazhi2.jpg",
     units: [
       {
         id: 1,
@@ -41,14 +41,14 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-1-njesia-1.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-1-njesia-1.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-1-njesia-1-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament elegant me hapësira të bollshme dhe ndriçim natyral.",
         description:
@@ -90,13 +90,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-1-njesia-2.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-1-njesia-2.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-1-njesia-2-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription: "Apartament kompakt, ideal për çift ose investim.",
         description:
           "Njësi 1+1 me planimetri efikase, ballkon funksional dhe ambient të ndriçuar.",
@@ -130,13 +130,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-1-njesia-3.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-1-njesia-3.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-1-njesia-3-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament familjar me orientim të mirë dhe shpërndarje praktike.",
         description:
@@ -173,14 +173,14 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-1-njesia-4.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-1-njesia-4.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-1-njesia-4-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament i madh për familje që kërkojnë komoditet maksimal.",
         description:
@@ -217,13 +217,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-1-njesia-5.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-1-njesia-5.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-1-njesia-5-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament i qetë dhe funksional me organizim të pastër.",
         description:
@@ -248,7 +248,7 @@ export const apartmentStairs = [
     name: "Shkalla 2",
     slug: "shkalla-2",
     totalUnits: 2,
-    image: "/images/apartments/stairs/shkalla-2.jpg",
+    image: "/images/imazhi2.jpg",
     units: [
       {
         id: 1,
@@ -269,13 +269,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-2-njesia-1.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-2-njesia-1.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-2-njesia-1-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament i ndriçuar me orientim jugor dhe planimetri elegante.",
         description:
@@ -311,14 +311,14 @@ export const apartmentStairs = [
         parking: "I përfshirë",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-2-njesia-2.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-2-njesia-2.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-2-njesia-2-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament premium me hapësira të mëdha dhe dy ballkone.",
         description:
@@ -345,7 +345,7 @@ export const apartmentStairs = [
     name: "Shkalla 3",
     slug: "shkalla-3",
     totalUnits: 3,
-    image: "/images/apartments/stairs/shkalla-3.jpg",
+    image: "/images/imazhi2.jpg",
     units: [
       {
         id: 1,
@@ -366,13 +366,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-3-njesia-1.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-3-njesia-1.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-3-njesia-1-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament praktik dhe i ngrohtë, ideal për banim ose investim.",
         description:
@@ -407,14 +407,14 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-3-njesia-2.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-3-njesia-2.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-3-njesia-2-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament i gjerë me orientim të shkëlqyer dhe ballkon të madh.",
         description:
@@ -450,13 +450,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-3-njesia-3.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-3-njesia-3.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-3-njesia-3-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament funksional 2+1 me organizim të qartë dhe ballkon.",
         description:
@@ -481,7 +481,7 @@ export const apartmentStairs = [
     name: "Shkalla 4",
     slug: "shkalla-4",
     totalUnits: 5,
-    image: "/images/apartments/stairs/shkalla-4.jpg",
+    image: "/images/imazhi2.jpg",
     units: [
       {
         id: 1,
@@ -502,13 +502,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-4-njesia-1.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-4-njesia-1.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-4-njesia-1-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament me orientim jugor dhe hapësira të organizuara mirë.",
         description:
@@ -544,13 +544,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-4-njesia-2.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-4-njesia-2.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-4-njesia-2-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Njësi 1+1 me planimetri praktike dhe ndriçim natyral.",
         description:
@@ -585,14 +585,14 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-4-njesia-3.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-4-njesia-3.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-4-njesia-3-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament i gjerë 2+1 me orientim shumë të favorshëm.",
         description:
@@ -629,14 +629,14 @@ export const apartmentStairs = [
         parking: "I përfshirë",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-4-njesia-4.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-4-njesia-4.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
-          "/images/apartments/interiors/bathroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-4-njesia-4-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament premium 3+1 me sipërfaqe të madhe dhe dy ballkone.",
         description:
@@ -673,13 +673,13 @@ export const apartmentStairs = [
         parking: "Opsional",
         price: "Me kërkesë",
         pricePerM2: "Me kërkesë",
-        image: "/images/apartments/units/shkalla-4-njesia-5.jpg",
+        image: "/images/imazhi2.jpg",
         gallery: [
-          "/images/apartments/units/shkalla-4-njesia-5.jpg",
-          "/images/apartments/interiors/living-room.jpg",
-          "/images/apartments/interiors/bedroom.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
+          "/images/imazhi2.jpg",
         ],
-        floorPlan: "/images/apartments/plans/shkalla-4-njesia-5-plan.jpg",
+        floorPlan: "/images/imazhi2.jpg",
         shortDescription:
           "Apartament modern me pamje të hapur dhe ambient të rehatshëm.",
         description:
@@ -699,3 +699,25 @@ export const apartmentStairs = [
     ],
   },
 ];
+
+export const getApartmentStairsPreview = () =>
+  apartmentStairs.map(({ units, ...stair }) => ({
+    ...stair,
+    units: units.map((unit) => ({
+      id: unit.id,
+      name: unit.name,
+      slug: unit.slug,
+      status: unit.status,
+      type: unit.type,
+      floor: unit.floor,
+      area: unit.area,
+      bedrooms: unit.bedrooms,
+      bathrooms: unit.bathrooms,
+      image: unit.image,
+    })),
+  }));
+
+export const getApartmentUnit = (stairSlug, unitSlug) =>
+  apartmentStairs
+    .find((stair) => stair.slug === stairSlug)
+    ?.units.find((unit) => unit.slug === unitSlug);

@@ -5,7 +5,7 @@ export const villaRows = [
     title: "Rrjeshti T-01",
     description:
       "Rrjeshti i parë i vilave me pozicionim të qetë dhe akses të lehtë.",
-    image: "/images/villas/rows/t-01.jpg",
+    image: "/images/imazhi1.jpg",
     totalVillas: 4,
     villas: [
       {
@@ -39,14 +39,11 @@ export const villaRows = [
           "Ambient familjar",
         ],
         images: [
-          "/images/villas/t-01/vila-01/cover.jpg",
-          "/images/villas/t-01/vila-01/1.jpg",
-          "/images/villas/t-01/vila-01/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-01/vila-01/plan-ground.jpg",
-          "/images/villas/t-01/vila-01/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-01-vila-02",
@@ -78,14 +75,11 @@ export const villaRows = [
           "Materiale cilësore",
         ],
         images: [
-          "/images/villas/t-01/vila-02/cover.jpg",
-          "/images/villas/t-01/vila-02/1.jpg",
-          "/images/villas/t-01/vila-02/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-01/vila-02/plan-ground.jpg",
-          "/images/villas/t-01/vila-02/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-01-vila-03",
@@ -117,14 +111,11 @@ export const villaRows = [
           "Parkim privat",
         ],
         images: [
-          "/images/villas/t-01/vila-03/cover.jpg",
-          "/images/villas/t-01/vila-03/1.jpg",
-          "/images/villas/t-01/vila-03/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-01/vila-03/plan-ground.jpg",
-          "/images/villas/t-01/vila-03/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-01-vila-04",
@@ -156,14 +147,11 @@ export const villaRows = [
           "Arkitekturë moderne",
         ],
         images: [
-          "/images/villas/t-01/vila-04/cover.jpg",
-          "/images/villas/t-01/vila-04/1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
           "/images/villas/t-01/vila-04/2.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-01/vila-04/plan-ground.jpg",
-          "/images/villas/t-01/vila-04/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
     ],
   },
@@ -173,7 +161,7 @@ export const villaRows = [
     name: "T-02",
     title: "Rrjeshti T-02",
     description: "Rrjeshti qendror i vilave me disa tipologji premium.",
-    image: "/images/villas/rows/t-02.jpg",
+    image: "/images/imazhi1.jpg",
     totalVillas: 5,
     villas: [
       {
@@ -206,14 +194,11 @@ export const villaRows = [
           "Ambient i gjelbëruar",
         ],
         images: [
-          "/images/villas/t-02/vila-05/cover.jpg",
-          "/images/villas/t-02/vila-05/1.jpg",
-          "/images/villas/t-02/vila-05/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-02/vila-05/plan-ground.jpg",
-          "/images/villas/t-02/vila-05/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-02-vila-06",
@@ -245,14 +230,11 @@ export const villaRows = [
           "Materiale cilësore",
         ],
         images: [
-          "/images/villas/t-02/vila-06/cover.jpg",
-          "/images/villas/t-02/vila-06/1.jpg",
-          "/images/villas/t-02/vila-06/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-02/vila-06/plan-ground.jpg",
-          "/images/villas/t-02/vila-06/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-02-vila-07",
@@ -284,14 +266,11 @@ export const villaRows = [
           "Arkitekturë moderne",
         ],
         images: [
-          "/images/villas/t-02/vila-07/cover.jpg",
-          "/images/villas/t-02/vila-07/1.jpg",
-          "/images/villas/t-02/vila-07/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-02/vila-07/plan-ground.jpg",
-          "/images/villas/t-02/vila-07/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-02-vila-08",
@@ -323,14 +302,11 @@ export const villaRows = [
           "Ndriçim natyral",
         ],
         images: [
-          "/images/villas/t-02/vila-08/cover.jpg",
-          "/images/villas/t-02/vila-08/1.jpg",
-          "/images/villas/t-02/vila-08/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-02/vila-08/plan-ground.jpg",
-          "/images/villas/t-02/vila-08/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
       {
         id: "t-02-vila-09",
@@ -362,14 +338,11 @@ export const villaRows = [
           "Privatësi e lartë",
         ],
         images: [
-          "/images/villas/t-02/vila-09/cover.jpg",
-          "/images/villas/t-02/vila-09/1.jpg",
-          "/images/villas/t-02/vila-09/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-02/vila-09/plan-ground.jpg",
-          "/images/villas/t-02/vila-09/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
     ],
   },
@@ -378,7 +351,8 @@ export const villaRows = [
     name: "T-03",
     title: "Rrjeshti T-03",
     description: "Rrjesht ekskluziv me një vilë të veçantë.",
-    image: "/images/villas/rows/t-03.jpg",
+    image: "/images/imazhi1.jpg",
+
     totalVillas: 1,
     villas: [
       {
@@ -413,17 +387,34 @@ export const villaRows = [
           "Suitë master",
         ],
         images: [
-          "/images/villas/t-03/vila-09/cover.jpg",
-          "/images/villas/t-03/vila-09/1.jpg",
-          "/images/villas/t-03/vila-09/2.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
+          "/images/imazhi1.jpg",
         ],
-        floorPlans: [
-          "/images/villas/t-03/vila-09/plan-ground.jpg",
-          "/images/villas/t-03/vila-09/plan-first.jpg",
-        ],
+        floorPlans: ["/images/imazhi1.jpg", "/images/imazhi1.jpg"],
       },
     ],
   },
 ];
 
 export const villas = villaRows.flatMap((row) => row.villas);
+
+export const getVillaRowsPreview = () =>
+  villaRows.map(({ villas, ...row }) => ({
+    ...row,
+    villas: villas.map((villa) => ({
+      id: villa.id,
+      name: villa.name,
+      slug: villa.slug,
+      status: villa.status,
+      category: villa.category,
+      shortDescription: villa.shortDescription,
+      area: villa.area,
+      bedrooms: villa.bedrooms,
+      bathrooms: villa.bathrooms,
+      image: villa.images[0],
+    })),
+  }));
+
+export const getVillaBySlug = (slug) =>
+  villaRows.flatMap((row) => row.villas).find((villa) => villa.slug === slug);

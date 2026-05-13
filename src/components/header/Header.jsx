@@ -1,4 +1,4 @@
-import { ArrowRight, Home, Menu, Phone, X } from "lucide-react";
+import { ArrowRight, Menu, Phone, X } from "lucide-react";
 
 import { motion } from "framer-motion";
 import { navItems } from "../../constants/navItems";
@@ -10,6 +10,7 @@ import { useTranslation } from "react-i18next";
 export const Header = () => {
   const { handleChangeLanguage, isOpen, selectedLocale, setIsOpen } =
     useHeader();
+
   const { t } = useTranslation("common");
 
   return (
@@ -17,10 +18,15 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl rounded-[1.7rem] border border-white/10 bg-[#080806]/70 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
-            <div className="relative grid h-12 w-12 place-items-center rounded-2xl border border-amber-300/30 bg-white/10 shadow-2xl transition group-hover:rotate-6">
-              <div className="absolute inset-1 rounded-2xl bg-linear-to-br from-amber-200/25 to-transparent" />
-              <Home className="relative h-5 w-5 text-amber-200" />
-            </div>
+            {/* <div className="relative grid h-12 w-12 place-items-center rounded-xl border border-amber-300/30 bg-white/10 shadow-2xl transition group-hover:rotate-6"> */}
+            {/* <div className="absolute inset-1 rounded-2xl bg-linear-to-br from-amber-200/25 to-transparent" /> */}
+            {/* <Home className="relative h-5 w-5 text-amber-200" /> */}
+            {/* </div> */}
+            <img
+              src="/images/favicons/zoi-villas-logo.webp"
+              alt="ZOI VILLA ICON"
+              className="w-12 h-12 transition group-hover:rotate-6"
+            />
 
             <div>
               <p className="text-lg font-semibold tracking-[0.24em] text-white">
@@ -127,6 +133,7 @@ export const Header = () => {
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
                     selectedLocale === "sq" ? "bg-white/10" : "bg-white/5"
                   }`}
+                  Link
                 >
                   🇦🇱 Shqip
                 </button>

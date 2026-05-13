@@ -6,7 +6,7 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage }) => {
       <div className="mx-auto max-w-7xl">
         <Animate
           preset="scaleUp"
-          className="relative h-105 overflow-hidden rounded-[3rem] border border-black/10 bg-white/75 shadow-[0_30px_110px_rgba(55,38,15,0.12)] md:h-170"
+          className="relative h-105 overflow-hidden rounded-[3rem] border border-black/10 bg-white/75 shadow-[0_30px_110px_rgba(55,38,15,0.12)] md:h-170 "
         >
           <img
             src={activeImage}
@@ -29,6 +29,7 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage }) => {
         </Animate>
 
         <div className="mt-5 flex gap-4 overflow-x-auto pb-3">
+          {/* <div className="flex px-1 mt-5 pb-3 w-full lg:grid lg:grid-cols-7 gap-3 overflow-x-auto md:overflow-visible snap-x snap-mandatory"> */}
           {villa.images?.map((image, index) => {
             const isActive = activeImage === image;
 

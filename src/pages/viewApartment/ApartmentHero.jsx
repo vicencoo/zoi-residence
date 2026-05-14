@@ -12,7 +12,7 @@ export const ApartmentHero = ({ stair, unit }) => {
       <div className="relative mx-auto max-w-7xl">
         <button
           onClick={() => navigate("/apartments")}
-          className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-medium text-[#62594d] backdrop-blur-xl transition hover:bg-white hover:text-[#17130d]"
+          className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-medium text-[#62594d] backdrop-blur-xl transition hover:bg-white hover:text-[#17130d] cursor-pointer"
         >
           <ArrowLeft className="h-4 w-4" />
           Kthehu te apartamentet

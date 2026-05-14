@@ -83,7 +83,7 @@ export const Hero = ({ fadeUp, t }) => {
           className="relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl transform-3d"
         >
           <img
-            src="https://images.unsplash.com/photo-1600607688969-a5bfcd646154?auto=format&fit=crop&w=1600&q=80"
+            src="/images/ZOI_Villa_Residence.jpg"
             alt="Rezidencë moderne luksoze"
             className="h-130 w-full rounded-[1.7rem] object-cover"
           />

@@ -21,18 +21,18 @@ export const ApartmentSidebar = ({ stair, unit }) => {
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
+            <p className="text-sm text-[#62594d]">Parkimi</p>
+            <strong>{unit.parking}</strong>
+          </div>
+
+          <div className="rounded-2xl bg-[#f4efe6] p-4">
             <p className="text-sm text-[#62594d]">Kuzhina</p>
             <strong>{unit.kitchen}</strong>
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Ballkone</p>
-            <strong>{unit.balconies}</strong>
-          </div>
-
-          <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Sallon</p>
-            <strong>{unit.livingRooms}</strong>
+            <p className="text-sm text-[#62594d]">Kati</p>
+            <strong>{unit.floor}</strong>
           </div>
         </div>
       </div>
@@ -71,21 +71,6 @@ export const ApartmentSidebar = ({ stair, unit }) => {
         >
           Kontakto në WhatsApp
         </a>
-      </div>
-
-      <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-6 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
-        <p className="mb-4 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-          Përreth
-        </p>
-
-        <div className="space-y-3">
-          {unit.nearby.map((item) => (
-            <div key={item} className="flex items-center gap-3">
-              <span className="h-2 w-2 rounded-full bg-[#9a7330]" />
-              <span className="text-[#62594d]">{item}</span>
-            </div>
-          ))}
-        </div>
       </div>
     </aside>
   );

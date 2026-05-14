@@ -26,7 +26,7 @@ export const ViewApartment = () => {
           <h1 className="text-3xl font-semibold">Apartamenti nuk u gjet.</h1>
           <button
             onClick={() => navigate("/apartments")}
-            className="mt-6 rounded-full bg-[#17130d] px-6 py-3 text-white"
+            className="mt-6 rounded-full bg-[#17130d] px-6 py-3 text-white cursor-pointer"
           >
             Kthehu te apartamentet
           </button>
@@ -40,11 +40,11 @@ export const ViewApartment = () => {
 
   const stats = [
     { label: "Sipërfaqe totale", value: `${unit.area} m²`, icon: Ruler },
+    { label: "Sipërfaqe neto", value: `${unit.netArea} m²`, icon: Ruler },
     { label: "Dhoma gjumi", value: unit.bedrooms, icon: BedDouble },
     { label: "Tualete", value: unit.bathrooms, icon: Bath },
     { label: "Kati", value: unit.floor, icon: Layers3 },
     { label: "Orientimi", value: unit.orientation, icon: Compass },
-    { label: "Parkim", value: unit.parking, icon: SquareParking },
   ];
 
   return (
@@ -85,20 +85,8 @@ export const ViewApartment = () => {
               })}
             </div>
 
-            <section className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
-              <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-                Përshkrimi
-              </p>
-              <h2 className="text-4xl font-semibold tracking-tight">
-                Jetim modern, funksional dhe elegant.
-              </h2>
-              <p className="mt-5 text-lg leading-8 text-[#62594d]">
-                {unit.description}
-              </p>
-            </section>
-
             <section className="grid gap-8 lg:grid-cols-2">
-              <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
+              {/* <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
                 <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
                   Ambientet
                 </p>
@@ -114,6 +102,17 @@ export const ViewApartment = () => {
                     </div>
                   ))}
                 </div>
+              </div>  */}
+              <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
+                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
+                  Përshkrimi
+                </p>
+                <h2 className="text-3xl font-semibold tracking-tight">
+                  Jetim modern, funksional dhe elegant.
+                </h2>
+                <p className="mt-5 text-lg leading-8 text-[#62594d]">
+                  {unit.description}
+                </p>
               </div>
 
               <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">

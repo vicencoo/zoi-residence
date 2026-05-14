@@ -10,8 +10,7 @@ export const PROPERTY_CATEGS = (t) => [
     ],
     button: `${t("propertyCateg.cardButton1")}`,
     path: "/apartments",
-    image:
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/apartments.jpg",
   },
   {
     type: `${t("propertyCateg.cardType2")}`,
@@ -24,7 +23,6 @@ export const PROPERTY_CATEGS = (t) => [
     ],
     button: `${t("propertyCateg.cardButton2")}`,
     path: "/villas",
-    image:
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=80",
+    image: "/images/villas.jpg",
   },
 ];

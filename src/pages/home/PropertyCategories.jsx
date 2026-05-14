@@ -1,14 +1,16 @@
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { PROPERTY_CATEGS } from "../../constants/propertyCategories";
 
 export const PropertyCategories = ({
-  propertyCategories,
   active,
   handleChangeActive,
   isMobile,
+  t,
 }) => {
   const navigate = useNavigate();
+  const propertyCategories = PROPERTY_CATEGS(t);
   return (
     <section
       id="kategorite"
@@ -16,15 +18,13 @@ export const PropertyCategories = ({
     >
       <div className="mb-10 text-center">
         <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#9a7330]">
-          Kategoritë e pronave
+          {t("propertyCateg.label")}
         </p>
         <h2 className="text-4xl font-semibold tracking-[-0.04em] text-[#17130d] md:text-6xl">
-          Apartamente dhe vila në shitje
+          {t("propertyCateg.title")}
         </h2>
         <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-[#62594d]">
-          Në Home shfaqim vetëm një prezantim të shkurtër të rezidencës. Faqet e
-          dedikuara për apartamente dhe vila mund të kenë planimetri, çmime,
-          galeri dhe disponueshmëri të plotë.
+          {t("propertyCateg.description")}
         </p>
       </div>
 

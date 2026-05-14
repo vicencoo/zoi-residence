@@ -1,54 +1,20 @@
 import { Home } from "lucide-react";
-import { villaRows } from "../../data/villas";
 import { VillaCard } from "./VillaCard";
 import { Animate } from "../../components/Animate";
 import { VillaRows } from "./VillaRows";
 import { useVillas } from "./useVillas";
 import { VillasHero } from "./VillasHero";
+import { useTranslation } from "react-i18next";
 
 export const Villas = () => {
-  const { animKey, handleRowSelect, selectedRow } = useVillas();
+  const { animKey, handleRowSelect, selectedRow, villaRows } = useVillas();
+  const { t } = useTranslation("villas");
+
+  console.log("selectedRow:", selectedRow);
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
-      <VillasHero />
-      {/* <section className="relative overflow-hidden px-6 pb-16 pt-36">
-        <div className="absolute -right-40 top-20 h-130 w-130 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
-        <div className="absolute -left-40 bottom-0 h-115 w-115 rounded-full bg-[#17130d]/10 blur-[120px]" />
-
-        <div className="relative mx-auto max-w-7xl">
-          <Animate
-            as="p"
-            preset="fadeIn"
-            delay={0.04}
-            duration={0.03}
-            className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]"
-          >
-            Vilat
-          </Animate>
-
-          <div className="grid gap-8 lg:grid-cols-[1fr_0.75fr] lg:items-end">
-            <Animate
-              as="h1"
-              preset="fadeUp"
-              className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl"
-            >
-              Vila private të organizuara sipas rrjeshtave.
-            </Animate>
-
-            <Animate
-              as="p"
-              preset="fadeUp"
-              delay={0.08}
-              className="max-w-xl text-lg leading-8 text-[#62594d]"
-            >
-              Zgjidhni rrjeshtin T-01, T-02 ose T-03 për të parë vilat
-              përkatëse. Çdo vilë mund të hapet më vonë në faqen e saj të
-              detajeve.
-            </Animate>
-          </div>
-        </div>
-      </section> */}
+      <VillasHero t={t} />
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[420px_1fr]">
@@ -62,9 +28,11 @@ export const Villas = () => {
                   <Home className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm text-[#62594d]">Organizimi</p>
+                  <p className="text-sm text-[#62594d]">
+                    {t("organization.title")}
+                  </p>
                   <h2 className="text-xl font-semibold text-[#17130d]">
-                    3 rrjeshta vilash
+                    {t("organization.text")}
                   </h2>
                 </div>
               </div>
@@ -81,6 +49,7 @@ export const Villas = () => {
                       index={index}
                       isActive={isActive}
                       row={row}
+                      t={t}
                       key={row.id}
                     />
                   );
@@ -132,7 +101,7 @@ export const Villas = () => {
 
               <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
                 {selectedRow.villas.map((villa, index) => (
-                  <VillaCard villa={villa} index={index} key={villa.id} />
+                  <VillaCard villa={villa} index={index} t={t} key={villa.id} />
                 ))}
               </div>
             </Animate>

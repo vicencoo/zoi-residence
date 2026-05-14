@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "label": "Vilat",
+    "title": "Vila private të organizuara sipas rrjeshtave.",
+    "text": "Zgjidhni rrjeshtin T-01, T-02 ose T-03 për të parë vilat përkatëse. Çdo vilë mund të hapet në faqen e saj të detajeve."
+  },
+  "organization": {
+    "title": "Organizimi",
+    "text": "3 rrjeshta vilash"
+  },
+  "rowLabel": "Rrjesht vilash",
+  "totalRowVillas": "vila",
+
+  "rows": {
+    "t01": {
+      "title": "Rrjeshti T-01",
+      "description": "Rrjeshti i parë i vilave me pozicionim të qetë dhe akses të lehtë."
+    },
+
+    "t02": {
+      "title": "Rrjeshti T-02",
+      "description": "Rrjeshti qendror i vilave me disa tipologji premium."
+    },
+
+    "t03": {
+      "title": "Rrjeshti T-03",
+      "description": "Rrjesht ekskluziv me një vilë të veçantë."
+    }
+  },
+
+  "villas": {
+    "villa01": {
+      "name": "Vila 01",
+      "status": "Në shitje",
+      "category": "Vilë rezidenciale",
+      "shortDescription": "Vilë elegante me hapësira të bollshme dhe oborr privat.",
+      "description": "Vila 01 ofron një organizim modern të ambienteve të banimit, oborr privat dhe hapësira të përshtatshme për jetesë familjare.",
+      "orientation": "Jug-Lindje",
+      "feature1": "Oborr privat",
+      "feature2": "Parkim për 1 makinë",
+      "feature3": "Fasadë moderne",
+      "feature4": "Ndriçim natyral",
+      "feature5": "Ambient familjar"
+    },
+    "villa02": {
+      "name": "Vila 02",
+      "status": "Në shitje",
+      "category": "Vilë rezidenciale",
+      "shortDescription": "Vilë moderne me organizim funksional dhe privatësi.",
+      "description": "Vila 02 është e menduar për familje që kërkojnë qetësi, privatësi dhe hapësira të mirëorganizuara.",
+      "orientation": "Jug",
+      "feature1": "Oborr i gjelbëruar",
+      "feature2": "Hapësirë dite e hapur",
+      "feature3": "Dritare të mëdha",
+      "feature4": "Parkim privat",
+      "feature5": "Materiale cilësore"
+    },
+    "villa03": {
+      "name": "Vila 03",
+      "status": "Në shitje",
+      "category": "Vilë premium",
+      "shortDescription": "Vilë premium me hapësira të mëdha dhe oborr privat.",
+      "description": "Vila 03 kombinon arkitekturën moderne me një planimetri të rehatshme për jetesë afatgjatë.",
+      "orientation": "Perëndim",
+      "feature1": "Pishinë private",
+      "feature2": "Oborr privat",
+      "feature3": "Suitë master",
+      "feature4": "Verandë",
+      "feature5": "Parkim privat"
+    },
+    "villa04": {
+      "name": "Vila 04",
+      "status": "Në shitje",
+      "category": "Vilë premium",
+      "shortDescription": "Vilë me pozicion të favorshëm dhe hapësira private.",
+      "description": "Vila 04 ofron privatësi të lartë, ndriçim natyral dhe hapësira të bollshme për familje.",
+      "orientation": "Jug-Perëndim",
+      "feature1": "Pishinë private",
+      "feature2": "Oborr i madh",
+      "feature3": "Hyrje private",
+      "feature4": "Hapësira të hapura",
+      "feature5": "Arkitekturë moderne"
+    },
+    "villa05": {
+      "name": "Vila 05",
+      "status": "Në shitje",
+      "category": "Vilë rezidenciale",
+      "shortDescription": "Vilë moderne për jetesë familjare komode.",
+      "description": "Vila 05 është pjesë e rrjeshtit T-02 dhe ofron hapësira të organizuara, oborr privat dhe parkim.",
+      "orientation": "Lindje",
+      "feature1": "Oborr privat",
+      "feature2": "Parkim privat",
+      "feature3": "Ndriçim natyral",
+      "feature4": "Fasadë moderne",
+      "feature5": "Ambient i gjelbëruar"
+    },
+    "villa06": {
+      "name": "Vila 06",
+      "status": "Në shitje",
+      "category": "Vilë rezidenciale",
+      "shortDescription": "Vilë me oborr privat dhe planimetri funksionale.",
+      "description": "Vila 06 ofron një organizim të qartë të ambienteve, ndriçim natyral dhe privatësi për familje.",
+      "orientation": "Jug",
+      "feature1": "Oborr privat",
+      "feature2": "Parkim për 2 makina",
+      "feature3": "Hapësirë dite e hapur",
+      "feature4": "Dritare të mëdha",
+      "feature5": "Materiale cilësore"
+    },
+    "villa07": {
+      "name": "Vila 07",
+      "status": "Në shitje",
+      "category": "Vilë premium",
+      "shortDescription": "Vilë premium me hapësira të mëdha dhe oborr privat.",
+      "description": "Vila 07 kombinon standardin premium me komoditetin e një shtëpie familjare moderne.",
+      "orientation": "Jug-Lindje",
+      "feature1": "Oborr privat",
+      "feature2": "Parkim për 2 makina",
+      "feature3": "Hapësirë dite e hapur",
+      "feature4": "Dritare të mëdha",
+      "feature5": "Arkitekturë moderne"
+    },
+    "villa08": {
+      "name": "Vila 08",
+      "status": "Në shitje",
+      "category": "Vilë premium",
+      "shortDescription": "Vilë premium me hapësira të mëdha dhe oborr privat.",
+      "description": "Vila 07 kombinon standardin premium me komoditetin e një shtëpie familjare moderne.",
+      "orientation": "Jug-Lindje",
+      "feature1": "Pishinë private",
+      "feature2": "Ndriçim natyral",
+      "feature3": "Hapësirë dite e hapur",
+      "feature4": "Hyrje private",
+      "feature5": "Parkim për 2 makina"
+    },
+    "villa09": {
+      "name": "Vila 09",
+      "status": "Ekskluzive",
+      "category": "Vilë signature",
+      "shortDescription": "Vilë e veçantë me privatësi maksimale dhe pozicion unik.",
+      "description": "Vila 09 në rrjeshtin T-03 është konceptuar si një pronë më ekskluzive, me hapësira të mëdha, oborr privat dhe potencial për pishinë private.",
+      "orientation": "Jug-Perëndim",
+      "feature1": "Pozicion ekskluziv",
+      "feature2": "Ndriçim natyral",
+      "feature3": "Privatësi maksimale",
+      "feature4": "Parking privat",
+      "feature5": "Oborr i madh"
+    }
+  },
+  "villaCard": {
+    "rooms": "dhoma",
+    "toilets": "tualete",
+    "parkings": "parkime",
+    "floors": "kate",
+    "hasPool": "Pishinë private",
+    "viewVllaDetails": "Shiko detajet"
+  }
+}

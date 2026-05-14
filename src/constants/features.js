@@ -1,24 +1,24 @@
 import { Home, ShieldCheck, Sparkles, Trees } from "lucide-react";
 
-export const features = [
+export const FEATURES = (t) => [
   {
     icon: Home,
-    title: "Vendbanim perfekt",
-    text: "Ambient i qetë, privat dhe i projektuar për familje.",
+    title: `${t("features.cardTitle1")}`,
+    text: `${t("features.cardText1")}`,
   },
   {
     icon: ShieldCheck,
-    title: "Privatësi & siguri",
-    text: "Hyrje e kontrolluar dhe organizim i menduar rezidencial.",
+    title: `${t("features.cardTitle2")}`,
+    text: `${t("features.cardText2")}`,
   },
   {
     icon: Trees,
-    title: "Hapësira të gjelbra",
-    text: "Oborre, rrugica dhe zona të hapura për një jetesë më të qetë.",
+    title: `${t("features.cardTitle3")}`,
+    text: `${t("features.cardText3")}`,
   },
   {
     icon: Sparkles,
-    title: "Arkitekturë moderne",
-    text: "Fasada elegante, materiale cilësore dhe detaje luksoze.",
+    title: `${t("features.cardTitle4")}`,
+    text: `${t("features.cardText4")}`,
   },
 ];

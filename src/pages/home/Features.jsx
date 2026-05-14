@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
+import { FEATURES } from "../../constants/features";
 
-export const Features = ({ features, isMobile }) => {
+export const Features = ({ isMobile, t }) => {
+  const features = FEATURES(t);
   return (
     <section
       id="residencconst"
@@ -9,16 +11,13 @@ export const Features = ({ features, isMobile }) => {
       <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
         <div>
           <p className="mb-3 text-sm uppercase tracking-[0.35em] text-[#9a7330]">
-            Pse kjo rezidencë?
+            {t("features.label")}
           </p>
           <h2 className="max-w-3xl text-4xl font-semibold tracking-[-0.04em] text-[#17130d] md:text-6xl">
-            E ndërtuar për njerëz që duan më shumë se një shtëpi.
+            {t("features.title")}
           </h2>
         </div>
-        <p className="max-w-md text-[#62594d]">
-          Çdo element është menduar për banim cilësor: qetësi, akses i lehtë,
-          hapësira private dhe arkitekturë që ruan vlerën me kohën.
-        </p>
+        <p className="max-w-md text-[#62594d]">{t("features.description")}</p>
       </div>
 
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">

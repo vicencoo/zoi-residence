@@ -1,6 +1,70 @@
 {
-  "section-one": {
-    "title": "Jetesa luksoze që fillon me qetësinë.",
-    "description": "Një rezidencë ekskluzive për banim, me apartamente moderne dhe vila private në shitje. Pa restorante, pa zhurmë, vetëm privatësi, elegancë dhe hapësirë për familjen tuaj."
+  "hero": {
+    "title": "Privatësi, elegancë dhe qetësi në çdo detaj.",
+    "description": "Një komunitet rezidencial privat me apartamente moderne dhe vila ekskluzive, i projektuar për qetësi, privatësi dhe një standard jetese premium.",
+    "discover": "Zbulo rezidencën",
+    "contact": "Kontakto agjentin",
+    "location": "Vendndodhje premium",
+    "imageText": "Qetësi, privatësi dhe stil modern",
+    "miniCardTitle": "Vila me pishinë",
+    "miniCardText": "Ekskluzive & private",
+    "info1": "Rezidencë banimi",
+    "info2": "Kategori pronash",
+    "info3": "Fazë ndërtimi"
+  },
+  "features": {
+    "label": "Pse kjo rezidencë?",
+    "title": "E ndërtuar për njerëz që duan më shumë se një shtëpi.",
+    "description": "Një rezidencë e projektuar për rehati afatgjatë, privatësi dhe estetikë që ruan vlerën me kalimin e kohës.",
+    "cardTitle1": "Komunitet privat",
+    "cardTitle2": "Privatësi & siguri",
+    "cardTitle3": "Hapësira të gjelbra",
+    "cardTitle4": "Arkitekturë moderne",
+    "cardText1": "Ambient i qetë, privat dhe i projektuar për familje.",
+    "cardText2": "Hyrje e kontrolluar dhe organizim i menduar rezidencial.",
+    "cardText3": "Oborre, rrugica dhe zona të hapura për një jetesë më të qetë.",
+    "cardText4": "Fasada elegante, materiale cilësore dhe detaje luksoze."
+  },
+  "propertyCateg": {
+    "label": "Kategoritë e pronave",
+    "title": "Apartamente dhe vila në shitje",
+    "description": "Apartamente dhe vila të projektuara për stile të ndryshme jetese, me planimetri funksionale dhe standard modern ndërtimi.",
+    "cardType1": "Apartamente",
+    "cardTitle1": "Apartamente moderne për familje",
+    "cardDescription1": "Planimetri funksionale, ndriçim natyral dhe hapësira të menduara për rehati të përditshme.",
+    "cardDetails1_1": "Ballkone të bollshme",
+    "cardDetails1_2": "Pamje të hapura",
+    "cardButton1": "Shiko apartamentet",
+    "cardType2": "Vila",
+    "cardTitle2": "Vila private me oborr",
+    "cardDescription2": "Hapësira të bollshme, privatësi maksimale dhe vila të përzgjedhura me pishinë private për një standard më të lartë jetese.",
+    "cardDetails2_1": "Oborr privat",
+    "cardDetails2_2": "Disa me pishinë",
+    "cardDetails2_3": "Arkitekturë premium",
+    "cardButton2": "Shiko vilat"
+  },
+  "parking": {
+    "label": "Parkime opsionale",
+    "title": "Vendparkime të organizuara për çdo rezident.",
+    "description": "Vendparkime të organizuara dhe lehtësisht të aksesueshme, të disponueshme si opsion shtesë për banorët.",
+    "button": "Shiko parkimet",
+    "cardInfo1": "Vendparkime",
+    "cardInfo2": "Sip. parkimi",
+    "cardInfo3": "E përbashkët"
+  },
+  "investment": {
+    "label": "Një investim afatgjatë",
+    "title": "Një komunitet privat i ndërtuar për jetë afatgjatë.",
+    "description": "Rezidenca kombinon arkitekturën moderne, privatësinë dhe ambientet e gjelbra për një mënyrë jetese më të qetë dhe të sigurt.",
+    "info1": "Vendbanim i sigurt",
+    "info2": "Ambient i gjelbër",
+    "info3": "Apartamente dhe vila",
+    "info4": "Vila me pishinë private"
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Rezervoni një prezantim privat të rezidencës.",
+    "description": "Ekipi ynë do t'ju prezantojë rezidencën, tipologjitë e pronave dhe mundësitë e rezervimit.",
+    "button": "Kontakto"
   }
 }

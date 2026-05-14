@@ -1,23 +1,29 @@
-export const propertyCategories = [
+export const PROPERTY_CATEGS = (t) => [
   {
-    type: "Apartamente",
-    title: "Apartamente moderne për familje",
-    description:
-      "Tipologji funksionale, ndriçim natyral dhe organizim inteligjent për jetesë të përditshme komode.",
-    details: ["1+1, 2+1 dhe 3+1", "Ballkone të bollshme", "Pamje të hapura"],
-    button: "Shiko apartamentet",
+    type: `${t("propertyCateg.cardType1")}`,
+    title: `${t("propertyCateg.cardTitle1")}`,
+    description: `${t("propertyCateg.cardDescription1")}`,
+    details: [
+      "1+1, 2+1 dhe 3+1",
+      `${t("propertyCateg.cardDetails1_1")}`,
+      `${t("propertyCateg.cardDetails1_2")}`,
+    ],
+    button: `${t("propertyCateg.cardButton1")}`,
     path: "/apartments",
     image:
       "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    type: "Vila",
-    title: "Vila private me oborr",
-    description:
-      "Hapësira më të mëdha, privatësi maksimale dhe disa vila me pishinë private për një standard më të lartë jetese.",
-    button: "Shiko vilat",
+    type: `${t("propertyCateg.cardType2")}`,
+    title: `${t("propertyCateg.cardTitle2")}`,
+    description: `${t("propertyCateg.cardDescription2")}`,
+    details: [
+      `${t("propertyCateg.cardDetails2_1")}`,
+      `${t("propertyCateg.cardDetails2_2")}`,
+      `${t("propertyCateg.cardDetails2_3")}`,
+    ],
+    button: `${t("propertyCateg.cardButton2")}`,
     path: "/villas",
-    details: ["Oborr privat", "Disa me pishinë", "Arkitekturë premium"],
     image:
       "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=1400&q=80",
   },

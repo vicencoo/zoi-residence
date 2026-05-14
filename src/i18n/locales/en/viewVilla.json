@@ -1,0 +1,43 @@
+{
+  "backToVillas": "Back to Villas",
+  "noVillaFound": "The villa could not be found.",
+  "images": {
+    "label": "Gallery",
+    "illustrativeView": "Illustrative view of {{villaname}}",
+    "image": "Image"
+  },
+  "details": {
+    "detail1": "Built Area",
+    "detail2": "Land Area",
+    "detail3": "Bedrooms",
+    "detail4": "Bathrooms",
+    "detail5": "Parking Spaces",
+    "detail6": "Floors",
+    "detail7": "Orientation",
+    "detail8": "Swimming Pool",
+    "hasPool": "Yes",
+    "noPool": "No"
+  },
+  "privatePool": "Private Swimming Pool",
+  "privateGarden": "Private Garden",
+  "price": "Price",
+  "askForPrice": "Available Upon Request",
+  "features": {
+    "briefing": "Overview",
+    "label": "Key Villa Highlights",
+    "featuresLabel": "Features",
+    "featuresText": "Discover the details that make this residence truly exceptional.",
+    "featuresButton": "Request Information About This Villa"
+  },
+  "layout": {
+    "label": "Floor Plans",
+    "text": "Spatial organization across all levels",
+    "floors": "floors"
+  },
+  "contact": {
+    "label": "Private Viewing",
+    "title": "Would you like to experience {{villaname}} in person?",
+    "text": "Contact our sales team for pricing, availability, private tours, and complete technical details regarding this residence.",
+    "contactButton": "Contact Us"
+  }
+}

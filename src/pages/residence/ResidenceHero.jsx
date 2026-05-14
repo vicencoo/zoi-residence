@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
 
-export const ResidenceHero = () => {
+export const ResidenceHero = ({ t }) => {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-36">
       <div className="absolute right-0 top-0 h-105 w-105 rounded-full bg-[#d8b56d]/25 blur-[110px]" />
@@ -13,17 +13,15 @@ export const ResidenceHero = () => {
           className="self-end"
         >
           <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
-            Koncepti i rezidencës
+            {t("hero.label")}
           </p>
 
           <h1 className="max-w-3xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl">
-            Jo thjesht banesa. Një mënyrë më e qetë jetese.
+            {t("hero.title")}
           </h1>
 
           <p className="mt-7 max-w-xl text-lg leading-8 text-[#5f574b]">
-            Zoi Villa Residence është menduar si një komunitet privat për banim,
-            ku çdo detaj favorizon qetësinë, privatësinë dhe jetesën e
-            përditshme familjare.
+            {t("hero.description")}
           </p>
         </motion.div>
 
@@ -43,11 +41,9 @@ export const ResidenceHero = () => {
 
           <div className="absolute bottom-8 left-8 max-w-sm rounded-4xl bg-white/90 p-6 shadow-2xl backdrop-blur-xl">
             <Building2 className="mb-4 h-6 w-6 text-[#9b7837]" />
-            <h2 className="text-2xl font-semibold">
-              Rezidencë vetëm për banim
-            </h2>
+            <h2 className="text-2xl font-semibold">{t("hero.cardTitle")}</h2>
             <p className="mt-3 leading-7 text-[#6a6257]">
-              Pa restorante dhe pa shërbime komerciale brenda kompleksit.
+              {t("hero.cardDescription")}
             </p>
           </div>
         </motion.div>

@@ -1,7 +1,14 @@
 import { motion } from "framer-motion";
 import { ArrowRight, MapPin, Phone, Waves } from "lucide-react";
 
+const HERO_INFO = (t) => [
+  ["100%", `${t("hero.info1")}`],
+  ["2", `${t("hero.info2")}`],
+  ["Finale", `${t("hero.info3")}`],
+];
+
 export const Hero = ({ fadeUp, t }) => {
+  const heroInfo = HERO_INFO(t);
   return (
     <section className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-12 px-6 pb-10 pt-36 lg:grid-cols-[1fr_0.95fr]">
       <motion.div
@@ -13,14 +20,14 @@ export const Hero = ({ fadeUp, t }) => {
           variants={fadeUp}
           className="max-w-4xl text-4xl font-semibold leading-[0.98] tracking-[-0.06em] text-[#17130d] md:text-6xl lg:text-7xl"
         >
-          {t("section-one.title")}
+          {t("hero.title")}
         </motion.h1>
 
         <motion.p
           variants={fadeUp}
           className="mt-7 max-w-2xl text-lg leading-8 text-[#62594d] md:text-xl"
         >
-          {t("section-one.description")}
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
@@ -31,7 +38,8 @@ export const Hero = ({ fadeUp, t }) => {
             href="#residenca"
             className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#17130d] px-7 py-4 font-semibold text-white transition hover:scale-[1.02] hover:bg-[#d8b56d] hover:text-[#17130d]"
           >
-            Zbulo rezidencën
+            {t("hero.discover")}
+
             <ArrowRight className="h-5 w-5 transition group-hover:translate-x-1" />
           </a>
           <a
@@ -39,7 +47,7 @@ export const Hero = ({ fadeUp, t }) => {
             className="inline-flex items-center justify-center gap-3 rounded-full border border-black/10 bg-white/65 px-7 py-4 font-semibold text-[#17130d] backdrop-blur-xl transition hover:bg-white"
           >
             <Phone className="h-5 w-5" />
-            Kontakto agjentin
+            {t("hero.contact")}
           </a>
         </motion.div>
 
@@ -47,11 +55,7 @@ export const Hero = ({ fadeUp, t }) => {
           variants={fadeUp}
           className="mt-12 grid max-w-2xl grid-cols-3 gap-4"
         >
-          {[
-            ["100%", "Rezidencë banimi"],
-            ["2", "Kategori pronash"],
-            ["Finale", "Fazë ndërtimi"],
-          ].map(([number, label]) => (
+          {heroInfo.map(([number, label]) => (
             <div
               key={label}
               className="rounded-3xl border border-black/10 bg-white/65 p-5 shadow-[0_8px_30px_rgba(55,38,15,0.08)] backdrop-blur-xl"
@@ -63,7 +67,6 @@ export const Hero = ({ fadeUp, t }) => {
         </motion.div>
       </motion.div>
 
-      {/* Hero image card */}
       <motion.div
         initial={{ opacity: 0, scale: 0.92, rotateY: -18 }}
         animate={{ opacity: 1, scale: 1, rotateY: 0 }}
@@ -89,10 +92,10 @@ export const Hero = ({ fadeUp, t }) => {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <p className="text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
-                  Vendndodhje premium
+                  {t("hero.location")}
                 </p>
                 <h2 className="mt-2 text-2xl font-semibold text-white">
-                  Qetësi, privatësi dhe stil modern
+                  {t("hero.imageText")}
                 </h2>
               </div>
               <div className="grid h-12 w-12 place-items-center rounded-2xl bg-[#d8b56d] text-[#17130d]">
@@ -109,9 +112,9 @@ export const Hero = ({ fadeUp, t }) => {
         >
           <Waves className="mb-3 h-6 w-6 text-[#9a7330]" />
           <p className="text-sm font-semibold text-[#17130d]">
-            Vila me pishinë
+            {t("hero.miniCardTitle")}
           </p>
-          <p className="text-xs text-[#62594d]">Ekskluzive & private</p>
+          <p className="text-xs text-[#62594d]">{t("hero.miniCardText")}</p>
         </motion.div>
       </motion.div>
     </section>

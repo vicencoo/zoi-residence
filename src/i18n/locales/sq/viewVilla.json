@@ -1,0 +1,44 @@
+{
+  "backToVillas": "Kthehu te vilat",
+  "noVillaFound": "Vila nuk u gjet.",
+  "images": {
+    "label": "Galeria",
+    "illustrativeView": "Pamje ilustruese e {{villaname}}",
+    "image": "Foto"
+  },
+  "details": {
+    "detail1": "Sipërfaqe ndërtimi",
+    "detail2": "Sipërfaqe trualli",
+    "detail3": "Dhoma gjumi",
+    "detail4": "Tualete",
+    "detail5": "Parkime",
+    "detail6": "Kate",
+    "detail7": "Orientimi",
+    "detail8": "Pishinë",
+    "hasPool": "Po",
+    "noPool": "Jo"
+  },
+  "privatePool": "Pishinë private",
+  "privateGardern": "Oborr privat",
+  "price": "Çmimi",
+  "askForPrice": "Me kërkesë",
+  "features": {
+    "briefing": "Përmbledhje",
+    "label": " Detajet kryesore të vilës",
+
+    "featuresLabel": "Veçoritë",
+    "featuresText": "Çfarë e bën këtë vilë të veçantë?",
+    "featuresButton": "Kërko informacion për këtë vilë"
+  },
+  "layout": {
+    "label": "Planimetritë",
+    "text": "Organizimi sipas kateve",
+    "floors": "kate"
+  },
+  "contact": {
+    "label": "Vizitë private",
+    "title": " Dëshironi ta shikoni {{villaname}} nga afër?",
+    "text": "Kontaktoni ekipin e shitjeve për çmimin, disponueshmërinë, vizitën në rezidencë dhe çdo detaj teknik të vilës.",
+    "contactButton": "Kontakto tani"
+  }
+}

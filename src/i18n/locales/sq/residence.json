@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "label": "Koncepti i rezidencës",
+    "title": "Më shumë se një rezidencë. Një mënyrë më e qetë jetese.",
+    "description": "Zoi Villa Residence është një komunitet rezidencial privat, ku çdo detaj është projektuar për qetësi, privatësi dhe jetesë familjare afatgjatë.",
+    "cardTitle": "Një komunitet privat banimi",
+    "cardDescription": "Një ambient i dedikuar plotësisht për banorët dhe jetesën private."
+  },
+  "stats": {
+    "statTitle4": "Faza finale",
+    "statDesc1": "Rezidencë banimi",
+    "statDesc2": "Shërbime komerciale brenda",
+    "statDesc3": "Tipologji: apartamente & vila",
+    "statDesc4": "Në ndërtim"
+  },
+  "identityLabel": "Identiteti",
+  "identityTitle": "Një komunitet rezidencial i ndërtuar rreth privatësisë.",
+  "principles": {
+    "principle1": "Privatësi më e lartë për banorët",
+    "principle2": "Qarkullim i reduktuar i jashtëm",
+    "principle3": "Ambient i qetë për familje",
+    "principle4": "Arkitekturë moderne dhe e pastër",
+    "principle5": "Hapësira të menduara për rehati"
+  },
+  "highlights": {
+    "card1Title": "Privatësi",
+    "card2Title": "Qetësi",
+    "card3Title": "Standard jetese",
+    "card1Text": "Rezidenca është konceptuar për banorët, jo për qarkullim publik.",
+    "card2Text": "Mungesa e aktiviteteve komerciale ndihmon në ruajtjen e atmosferës së qetë.",
+    "card3Text": "Apartamente moderne dhe vila të përzgjedhura me pishinë private."
+  },
+  "livingExperience": {
+    "label": "Për banorët",
+    "title": "Çdo hapësirë është menduar për një jetë më të qetë.",
+    "description": "Hapësirat e hapura, privatësia e vilave dhe organizimi i rezidencës krijojnë një ambient të balancuar për jetesë afatgjatë.",
+    "button": "Kërko prezantim"
+  }
+}

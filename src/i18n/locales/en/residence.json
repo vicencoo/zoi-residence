@@ -1,0 +1,39 @@
+{
+  "hero": {
+    "label": "The Residence Concept",
+    "title": "More than a residence. A quieter way of living.",
+    "description": "Zoi Villa Residence is a private residential community where every detail is designed for tranquility, privacy and long-term family living.",
+    "cardTitle": "A private residential community",
+    "cardDescription": "An environment fully dedicated to residents and private living."
+  },
+  "stats": {
+    "statTitle4": "Final phase",
+    "statDesc1": "Residential community",
+    "statDesc2": "Commercial services within the complex",
+    "statDesc3": "Apartment & villa typologies",
+    "statDesc4": "Under construction"
+  },
+  "identityLabel": "Identity",
+  "identityTitle": "A residential community built around privacy.",
+  "principles": {
+    "principle1": "Greater privacy for residents",
+    "principle2": "Reduced external traffic",
+    "principle3": "A peaceful environment for families",
+    "principle4": "Modern and refined architecture",
+    "principle5": "Spaces designed for comfort"
+  },
+  "highlights": {
+    "card1Title": "Privacy",
+    "card2Title": "Tranquility",
+    "card3Title": "Lifestyle",
+    "card1Text": "The residence is designed for residents, not for public circulation.",
+    "card2Text": "The absence of commercial activity helps preserve a calm atmosphere.",
+    "card3Text": "Modern apartments and selected villas with private pools."
+  },
+  "livingExperience": {
+    "label": "For Residents",
+    "title": "Every space is designed for a quieter way of life.",
+    "description": "Open spaces, villa privacy and the organization of the residence create a balanced environment for long-term living.",
+    "button": "Request a presentation"
+  }
+}

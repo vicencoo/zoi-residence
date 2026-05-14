@@ -1,6 +1,70 @@
 {
-  "section-one": {
-    "title": "Luxurious living that begins with tranquility.",
-    "description": "An exclusive residential residence, with modern apartments and private villas for sale. No restaurants, no noise, just privacy, elegance and space for your family."
+  "hero": {
+    "title": "Privacy, elegance and tranquility in every detail.",
+    "description": "A private residential community with modern apartments and exclusive villas, designed for peace, privacy and a premium lifestyle.",
+    "discover": "Discover the residence",
+    "contact": "Contact the agent",
+    "location": "Premium location",
+    "imageText": "Peace, privacy and modern style",
+    "miniCardTitle": "Villas with pools",
+    "miniCardText": "Exclusive & private",
+    "info1": "Residential community",
+    "info2": "Property categories",
+    "info3": "Construction phase"
+  },
+  "features": {
+    "label": "Why this residence?",
+    "title": "Built for people who want more than just a home.",
+    "description": "A residence designed for long-term comfort, privacy and timeless aesthetics that preserve value over time.",
+    "cardTitle1": "Private community",
+    "cardTitle2": "Privacy & security",
+    "cardTitle3": "Green spaces",
+    "cardTitle4": "Modern architecture",
+    "cardText1": "A peaceful and private environment designed for families.",
+    "cardText2": "Controlled access and a thoughtfully planned residential layout.",
+    "cardText3": "Courtyards, pathways and open spaces for a calmer lifestyle.",
+    "cardText4": "Elegant facades, quality materials and refined luxury details."
+  },
+  "propertyCateg": {
+    "label": "Property categories",
+    "title": "Apartments and villas for sale",
+    "description": "Apartments and villas designed for different lifestyles, featuring functional layouts and modern construction standards.",
+    "cardType1": "Apartments",
+    "cardTitle1": "Modern apartments for families",
+    "cardDescription1": "Functional floor plans, natural light and thoughtfully designed spaces for everyday comfort.",
+    "cardDetails1_1": "Spacious balconies",
+    "cardDetails1_2": "Open views",
+    "cardButton1": "View apartments",
+    "cardType2": "Villas",
+    "cardTitle2": "Private villas with gardens",
+    "cardDescription2": "Spacious living areas, maximum privacy and selected villas with private pools for a higher standard of living.",
+    "cardDetails2_1": "Private garden",
+    "cardDetails2_2": "Selected villas with pools",
+    "cardDetails2_3": "Premium architecture",
+    "cardButton2": "View villas"
+  },
+  "parking": {
+    "label": "Optional parking",
+    "title": "Organized parking spaces for every resident.",
+    "description": "Well-organized and easily accessible parking spaces available as an additional option for residents.",
+    "button": "View parking",
+    "cardInfo1": "Parking spaces",
+    "cardInfo2": "Parking area",
+    "cardInfo3": "Shared area"
+  },
+  "investment": {
+    "label": "A long-term investment",
+    "title": "A private community built for long-term living.",
+    "description": "The residence combines modern architecture, privacy and green surroundings for a quieter and safer lifestyle.",
+    "info1": "Secure residence",
+    "info2": "Green environment",
+    "info3": "Apartments & villas",
+    "info4": "Villas with private pools"
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Book a private presentation of the residence.",
+    "description": "Our sales team will introduce you to the residence, property types and reservation opportunities.",
+    "button": "Contact us"
   }
 }

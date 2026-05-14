@@ -12,7 +12,7 @@ import {
 } from "lucide-react";
 import { Animate } from "../../components/Animate";
 
-export const VillaCard = ({ villa, index }) => {
+export const VillaCard = ({ villa, index, t }) => {
   const navigate = useNavigate();
 
   return (
@@ -66,31 +66,33 @@ export const VillaCard = ({ villa, index }) => {
           </span>
           <span className="flex items-center gap-2">
             <BedDouble className="h-4 w-4 text-[#9a7330]" />
-            {villa.bedrooms} dhoma
+            {villa.bedrooms} {t("villaCard.rooms")}
           </span>
           <span className="flex items-center gap-2">
             <Bath className="h-4 w-4 text-[#9a7330]" />
-            {villa.bathrooms} tualete
+            {villa.bathrooms} {t("villaCard.toilets")}
           </span>
           <span className="flex items-center gap-2">
             <Car className="h-4 w-4 text-[#9a7330]" />
-            {villa.parking} parkime
+            {villa.parking} {t("villaCard.parkings")}
           </span>
           <span className="flex items-center gap-2">
             <Layers3 className="h-4 w-4 text-[#9a7330]" />
-            {villa.floors} kate
+            {villa.floors} {t("villaCard.floors")}
           </span>
         </div>
 
         {villa.hasPool && (
           <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-[#e8dac0] px-4 py-2 text-sm font-medium text-[#17130d]">
             <Waves className="h-4 w-4 text-[#9a7330]" />
-            Pishinë private
+            {t("villaCard.hasPool")}
           </div>
         )}
 
         <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-5">
-          <span className="text-sm text-[#62594d]">Shiko detajet</span>
+          <span className="text-sm text-[#62594d]">
+            {t("villaCard.viewVllaDetails")}
+          </span>
           <span className="grid h-10 w-10 place-items-center rounded-full bg-[#17130d] text-[#d8b56d] transition duration-300 group-hover:translate-x-1">
             <ArrowRight className="h-4 w-4" />
           </span>

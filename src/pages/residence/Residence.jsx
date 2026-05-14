@@ -1,33 +1,22 @@
 import { motion } from "framer-motion";
-import {
-  ArrowUpRight,
-  Check,
-  Leaf,
-  Lock,
-  MoveRight,
-  Waves,
-} from "lucide-react";
+import { ArrowUpRight, Check } from "lucide-react";
 import { ResidenceHero } from "./ResidenceHero";
-
-const residenceStats = [
-  { value: "100%", label: "Rezidencë banimi" },
-  { value: "0", label: "Shërbime komerciale brenda" },
-  { value: "2", label: "Tipologji: apartamente & vila" },
-  { value: "Finale", label: "Fazë ndërtimi" },
-];
-
-const principles = [
-  "Privatësi më e lartë për banorët",
-  "Më pak qarkullim i jashtëm",
-  "Ambient i qetë për familje",
-  "Arkitekturë moderne dhe e pastër",
-  "Hapësira të organizuara me kujdes",
-];
+import {
+  PRINCIPLES,
+  RESIDENCE_HIGHLIGHTS,
+  RESIDENCE_STATS,
+} from "../../constants/residence";
+import { useTranslation } from "react-i18next";
+import { LivingExperience } from "./LivingExperience";
 
 export const Residence = () => {
+  const { t } = useTranslation("residence");
+  const residenceStats = RESIDENCE_STATS(t);
+  const principles = PRINCIPLES(t);
+  const highlights = RESIDENCE_HIGHLIGHTS(t);
   return (
     <main className="min-h-screen bg-[#f3eee4] text-[#15120d]">
-      <ResidenceHero />
+      <ResidenceHero t={t} />
 
       <section className="px-6 pb-24">
         <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-4">
@@ -55,10 +44,10 @@ export const Residence = () => {
         <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
-              Identiteti
+              {t("identityLabel")}
             </p>
             <h2 className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl">
-              Një projekt i pastër rezidencial, i ndërtuar rreth privatësisë.
+              {t("identityTitle")}
             </h2>
           </div>
 
@@ -87,23 +76,7 @@ export const Residence = () => {
 
       <section className="bg-[#15120d] px-6 py-28 text-white">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-3">
-          {[
-            {
-              icon: Lock,
-              title: "Privatësi",
-              text: "Rezidenca është konceptuar për banorët, jo për qarkullim publik.",
-            },
-            {
-              icon: Leaf,
-              title: "Qetësi",
-              text: "Mungesa e aktiviteteve komerciale ndihmon në ruajtjen e atmosferës së qetë.",
-            },
-            {
-              icon: Waves,
-              title: "Komoditet",
-              text: "Apartamente moderne dhe vila, disa me pishinë private.",
-            },
-          ].map((item) => (
+          {highlights.map((item) => (
             <div
               key={item.title}
               className="rounded-[2.2rem] border border-white/10 bg-white/6 p-8"
@@ -118,39 +91,7 @@ export const Residence = () => {
         </div>
       </section>
 
-      <section className="px-6 py-28">
-        <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="relative min-h-140 overflow-hidden rounded-[2.5rem]">
-            <img
-              src="https://images.unsplash.com/photo-1600566752355-35792bedcfea?auto=format&fit=crop&w=1500&q=80"
-              alt="Arkitekturë rezidenciale"
-              className="absolute inset-0 h-full w-full object-cover"
-            />
-          </div>
-
-          <div className="flex flex-col justify-center rounded-[2.5rem] bg-[#e6dccb] p-8 md:p-12">
-            <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
-              Për banorët
-            </p>
-            <h2 className="text-4xl font-semibold leading-tight tracking-tighter md:text-6xl">
-              Çdo zonë ka një qëllim: jetesë më e mirë.
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-[#62594d]">
-              Rrugicat, hapësirat e hapura, privatësia e vilave dhe organizimi i
-              apartamenteve krijojnë një ambient të balancuar për banim
-              afatgjatë.
-            </p>
-
-            <a
-              href="/contact"
-              className="mt-9 inline-flex w-fit items-center gap-3 rounded-full bg-[#15120d] px-7 py-4 font-semibold text-white transition hover:bg-[#9b7837]"
-            >
-              Kërko prezantim
-              <MoveRight className="h-5 w-5" />
-            </a>
-          </div>
-        </div>
-      </section>
+      <LivingExperience t={t} />
     </main>
   );
 };

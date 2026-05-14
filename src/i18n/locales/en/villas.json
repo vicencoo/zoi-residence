@@ -1,0 +1,158 @@
+{
+  "hero": {
+    "label": "Villas",
+    "title": "Private villas thoughtfully arranged across exclusive rows.",
+    "text": "Select Row T-01, T-02, or T-03 to explore the corresponding villas. Each residence features its own dedicated details page."
+  },
+  "organization": {
+    "title": "Master Plan",
+    "text": "3 exclusive villa rows"
+  },
+  "rowLabel": "Villa Row",
+  "totalRowVillas": "villas",
+
+  "rows": {
+    "t01": {
+      "title": "Row T-01",
+      "description": "The first collection of villas, offering a peaceful setting and effortless accessibility."
+    },
+
+    "t02": {
+      "title": "Row T-02",
+      "description": "The central villa row featuring a refined selection of premium residences."
+    },
+
+    "t03": {
+      "title": "Row T-03",
+      "description": "An exclusive row showcasing a signature standalone villa."
+    }
+  },
+
+  "villas": {
+    "villa01": {
+      "name": "Villa 01",
+      "status": "Available",
+      "category": "Residential Villa",
+      "shortDescription": "Elegant villa featuring spacious interiors and a private courtyard.",
+      "description": "Villa 01 offers a contemporary residential layout with a private courtyard and thoughtfully designed spaces tailored for modern family living.",
+      "orientation": "South-East",
+      "feature1": "Private courtyard",
+      "feature2": "Parking for 1 vehicle",
+      "feature3": "Contemporary façade",
+      "feature4": "Natural daylight",
+      "feature5": "Family-oriented environment"
+    },
+    "villa02": {
+      "name": "Villa 02",
+      "status": "Available",
+      "category": "Residential Villa",
+      "shortDescription": "Modern villa with a functional layout and enhanced privacy.",
+      "description": "Villa 02 is designed for families seeking tranquility, privacy, and well-organized living spaces.",
+      "orientation": "South",
+      "feature1": "Landscaped courtyard",
+      "feature2": "Open-plan living area",
+      "feature3": "Expansive windows",
+      "feature4": "Private parking",
+      "feature5": "Premium-quality materials"
+    },
+    "villa03": {
+      "name": "Villa 03",
+      "status": "Available",
+      "category": "Premium Villa",
+      "shortDescription": "Premium villa with expansive interiors and a private courtyard.",
+      "description": "Villa 03 blends contemporary architecture with a comfortable and functional layout designed for long-term living.",
+      "orientation": "West",
+      "feature1": "Private swimming pool",
+      "feature2": "Private courtyard",
+      "feature3": "Master suite",
+      "feature4": "Outdoor veranda",
+      "feature5": "Private parking"
+    },
+    "villa04": {
+      "name": "Villa 04",
+      "status": "Available",
+      "category": "Premium Villa",
+      "shortDescription": "Premium villa with a privileged position and secluded outdoor spaces.",
+      "description": "Villa 04 offers elevated privacy, abundant natural light, and spacious interiors ideal for family living.",
+      "orientation": "South-West",
+      "feature1": "Private swimming pool",
+      "feature2": "Spacious courtyard",
+      "feature3": "Private entrance",
+      "feature4": "Open-concept spaces",
+      "feature5": "Contemporary architecture"
+    },
+    "villa05": {
+      "name": "Villa 05",
+      "status": "Available",
+      "category": "Residential Villa",
+      "shortDescription": "Modern villa designed for comfortable family living.",
+      "description": "Part of Row T-02, Villa 05 offers thoughtfully organized spaces, a private courtyard, and dedicated parking.",
+      "orientation": "East",
+      "feature1": "Private courtyard",
+      "feature2": "Private parking",
+      "feature3": "Natural daylight",
+      "feature4": "Modern façade",
+      "feature5": "Green surroundings"
+    },
+    "villa06": {
+      "name": "Villa 06",
+      "status": "Available",
+      "category": "Residential Villa",
+      "shortDescription": "Villa with a private courtyard and a highly functional floor plan.",
+      "description": "Villa 06 features a clear spatial organization, generous natural light, and privacy tailored for contemporary family living.",
+      "orientation": "South",
+      "feature1": "Private courtyard",
+      "feature2": "Parking for 2 vehicles",
+      "feature3": "Open-plan living area",
+      "feature4": "Large windows",
+      "feature5": "Premium-quality materials"
+    },
+    "villa07": {
+      "name": "Villa 07",
+      "status": "Available",
+      "category": "Premium Villa",
+      "shortDescription": "Premium villa with generous interiors and a private courtyard.",
+      "description": "Villa 07 combines premium living standards with the comfort and elegance of a modern family residence.",
+      "orientation": "South-East",
+      "feature1": "Private courtyard",
+      "feature2": "Parking for 2 vehicles",
+      "feature3": "Open-plan living area",
+      "feature4": "Large windows",
+      "feature5": "Modern architecture"
+    },
+    "villa08": {
+      "name": "Villa 08",
+      "status": "Available",
+      "category": "Premium Villa",
+      "shortDescription": "Premium villa featuring expansive interiors and refined outdoor living.",
+      "description": "Villa 08 is designed to deliver a balance of luxury, privacy, and contemporary comfort.",
+      "orientation": "South-East",
+      "feature1": "Private swimming pool",
+      "feature2": "Natural daylight",
+      "feature3": "Open-plan living area",
+      "feature4": "Private entrance",
+      "feature5": "Parking for 2 vehicles"
+    },
+    "villa09": {
+      "name": "Villa 09",
+      "status": "Exclusive",
+      "category": "Signature Villa",
+      "shortDescription": "Distinctive villa offering exceptional privacy and a unique setting.",
+      "description": "Located within Row T-03, Villa 09 is envisioned as the project’s most exclusive residence, featuring expansive living spaces, a private courtyard, and the potential for a private swimming pool.",
+      "orientation": "South-West",
+      "feature1": "Exclusive positioning",
+      "feature2": "Natural daylight",
+      "feature3": "Maximum privacy",
+      "feature4": "Private parking",
+      "feature5": "Expansive courtyard"
+    }
+  },
+  "villaCard": {
+    "rooms": "rooms",
+    "toilets": "bathrooms",
+    "parkings": "parking spaces",
+    "floors": "floors",
+    "hasPool": "Private swimming pool",
+    "viewVllaDetails": "View Details"
+  }
+}

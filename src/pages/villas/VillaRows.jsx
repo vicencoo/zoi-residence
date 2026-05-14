@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-export const VillaRows = ({ row, handleRowSelect, isActive }) => {
+export const VillaRows = ({ row, handleRowSelect, isActive, t }) => {
   return (
     <button
       onClick={() => handleRowSelect(row)}
@@ -26,7 +26,7 @@ export const VillaRows = ({ row, handleRowSelect, isActive }) => {
             <p
               className={`text-xs uppercase tracking-[0.28em] ${isActive ? "text-[#d8b56d]" : "text-[#9a7330]"}`}
             >
-              Rrjesht vilash
+              {t("rowLabel")}
             </p>
             <h3 className="text-3xl font-semibold leading-tight">{row.name}</h3>
             <p
@@ -44,7 +44,7 @@ export const VillaRows = ({ row, handleRowSelect, isActive }) => {
                   : "bg-[#17130d] text-[#d8b56d]"
               }`}
             >
-              {row.totalVillas} vila
+              {row.totalVillas} {t("totalRowVillas")}
             </span>
             <ArrowRight className="h-5 w-5 transition duration-300 group-hover:translate-x-1" />
           </div>

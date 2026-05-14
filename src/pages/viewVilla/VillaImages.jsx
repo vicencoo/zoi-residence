@@ -1,6 +1,6 @@
 import { Animate } from "../../components/Animate";
 
-export const VillaImages = ({ activeImage, villa, handleChangeImage }) => {
+export const VillaImages = ({ activeImage, villa, handleChangeImage, t }) => {
   return (
     <section className="px-6 pb-24">
       <div className="mx-auto max-w-7xl">
@@ -20,10 +20,10 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage }) => {
 
           <div className="absolute bottom-6 left-6 right-6 rounded-4xl border border-white/10 bg-black/35 p-5 text-white backdrop-blur-xl md:bottom-8 md:left-8 md:right-8">
             <p className="text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
-              Galeria
+              {t("images.label")}
             </p>
             <h2 className="mt-2 text-2xl font-semibold md:text-3xl">
-              Pamje ilustruese e {villa.name}
+              {t("images.illustrativeView", { villaname: villa.name })}
             </h2>
           </div>
         </Animate>
@@ -59,7 +59,7 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage }) => {
                 />
 
                 <span className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-[#17130d]">
-                  Foto {index + 1}
+                  {t("images.image")} {index + 1}
                 </span>
               </button>
             );

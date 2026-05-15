@@ -1,0 +1,200 @@
+{
+  "hero": {
+    "label": "Apartments",
+    "text": "Choose the staircase and explore the residential units.",
+    "description": "The apartments are organized into 4 residential staircases. Each staircase has its own units, clearly presented for a simple and elegant experience."
+  },
+  "organization": "Organization",
+  "totalStairs": "4 residential staircases",
+  "selectedStairLabel": "Selected staircase",
+  "totalUnitsLabel": "residential units",
+  "parking": {
+    "label": "Optional parking",
+    "title": "Choose the parking space for your apartment",
+    "text": "The residence offers 31 parking units. View the floor plans, types, and parking availability.",
+    "button": "View parking"
+  },
+  "residentialUnitsLabel": "Residential units",
+  "selectUnitInstruction": "Click a unit for details",
+  "apartmtentCard": {
+    "cardTitle": "Apartment",
+    "cardButton": "View details"
+  },
+  "stairs": {
+    "title": "Residential staircase",
+    "unit": "units"
+  },
+  "kitchen": "Open space",
+  "appParking": "Optional",
+  "price": "Upon request",
+  "pricePerM2": "Upon request",
+
+  "commonFeatures": {
+    "feature1": "Natural lighting",
+    "feature2": "Functional layout",
+    "feature3": "Thermal and acoustic insulation",
+    "feature4": "Double-glazed windows",
+    "feature5": "Elevator in the building",
+    "feature6": "Secure entrance",
+    "feature7": "High-quality construction materials"
+  },
+
+  "stair1": {
+    "name": "Staircase 1",
+    "slug": "staircase-1",
+
+    "unit1": {
+      "name": "Residential unit no. 1",
+      "slug": "unit-1",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South-East",
+      "shortDescription": "Elegant apartment with spacious areas and natural lighting.",
+      "description": "Modern residential unit, suitable for families, with practical organization and an open living area."
+    },
+    "unit2": {
+      "name": "Residential unit no. 2",
+      "slug": "unit-2",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "West",
+      "shortDescription": "Compact apartment, ideal for couples or investment.",
+      "description": "1+1 unit with efficient floor planning, functional balcony, and bright living space."
+    },
+    "unit3": {
+      "name": "Residential unit no. 3",
+      "slug": "unit-3",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "East",
+      "shortDescription": "Family apartment with good orientation and practical layout.",
+      "description": "Balanced space between the living and sleeping areas, with two bathrooms."
+    },
+    "unit4": {
+      "name": "Residential unit no. 4",
+      "slug": "unit-4",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South-West",
+      "shortDescription": "Large apartment for families seeking maximum comfort.",
+      "description": "3+1 unit with two balconies, spacious areas, and very favorable orientation."
+    },
+    "unit5": {
+      "name": "Residential unit no. 5",
+      "slug": "unit-5",
+      "status": "For sale",
+      "type": "3+1 Apartment",
+      "orientation": "North-East",
+      "shortDescription": "Quiet and functional apartment with a clean layout.",
+      "description": "Ideal solution for family living, with three bedrooms and two bathrooms."
+    }
+  },
+
+  "stair2": {
+    "name": "Staircase 2",
+    "slug": "staircase-2",
+
+    "unit1": {
+      "name": "Residential unit no. 1",
+      "slug": "unit-1",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South",
+      "shortDescription": "Bright apartment with southern orientation and elegant floor planning.",
+      "description": "Residential unit suitable for families, with spacious living areas."
+    },
+    "unit2": {
+      "name": "Residential unit no. 2",
+      "slug": "unit-2",
+      "status": "For sale",
+      "type": "3+1 Apartment",
+      "orientation": "South-West",
+      "shortDescription": "Premium apartment with large spaces.",
+      "description": "3+1 unit for families seeking high living standards, comfort, and privacy."
+    }
+  },
+
+  "stair3": {
+    "name": "Staircase 3",
+    "slug": "staircase-3",
+
+    "unit1": {
+      "name": "Residential unit no. 1",
+      "slug": "unit-1",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "East",
+      "shortDescription": "Practical and cozy apartment, ideal for living or investment.",
+      "description": "2+1 unit with spacious areas and good natural lighting."
+    },
+    "unit2": {
+      "name": "Residential unit no. 2",
+      "slug": "unit-2",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South-East",
+      "shortDescription": "Spacious apartment with excellent orientation.",
+      "description": "2+1 unit designed for family comfort, with an open living area and well-organized rooms."
+    },
+    "unit3": {
+      "name": "Residential unit no. 3",
+      "slug": "unit-3",
+      "status": "For sale",
+      "type": "3+1 Apartment",
+      "orientation": "West",
+      "shortDescription": "Spacious 3+1 apartment with a clear layout.",
+      "description": "Unit suitable for large families, with three bedrooms and a comfortable living area."
+    }
+  },
+
+  "stair4": {
+    "name": "Staircase 4",
+    "slug": "staircase-4",
+
+    "unit1": {
+      "name": "Residential unit no. 1",
+      "slug": "unit-1",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South",
+      "shortDescription": "Apartment with southern orientation and well-organized spaces.",
+      "description": "Modern unit for families, with an open living room and two bedrooms."
+    },
+    "unit2": {
+      "name": "Residential unit no. 2",
+      "slug": "unit-2",
+      "status": "For sale",
+      "type": "3+1 Apartment",
+      "orientation": "East",
+      "shortDescription": "Spacious 3+1 apartment with a clear layout.",
+      "description": "Unit suitable for large families, with three bedrooms and a comfortable living area."
+    },
+    "unit3": {
+      "name": "Residential unit no. 3",
+      "slug": "unit-3",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "South-West",
+      "shortDescription": "Spacious 2+1 apartment with very favorable orientation.",
+      "description": "Large unit with two bedrooms and a comfortable living area."
+    },
+    "unit4": {
+      "name": "Residential unit no. 4",
+      "slug": "unit-4",
+      "status": "For sale",
+      "type": "3+1 Apartment",
+      "orientation": "South-East",
+      "shortDescription": "Premium 3+1 apartment with a large surface area.",
+      "description": "Ideal unit for large families, with elegant spaces, privacy, and excellent orientation."
+    },
+    "unit5": {
+      "name": "Residential unit no. 5",
+      "slug": "unit-5",
+      "status": "For sale",
+      "type": "2+1 Apartment",
+      "orientation": "West",
+      "shortDescription": "Modern apartment with open views and a comfortable atmosphere.",
+      "description": "2+1 unit with efficient organization, two bathrooms, two bedrooms, and spaces suitable for family living."
+    }
+  }
+}

@@ -3,7 +3,8 @@ import { Animate } from "../../components/Animate";
 export const VillaImages = ({ activeImage, villa, handleChangeImage, t }) => {
   return (
     <section className="px-6 pb-24">
-      <div className="mx-auto max-w-7xl">
+      {/* <div className="mx-auto max-w-7xl"> */}
+      <div className="mx-auto max-w-7xl w-full">
         <Animate
           preset="scaleUp"
           className="relative h-105 overflow-hidden rounded-[3rem] border border-black/10 bg-white/75 shadow-[0_30px_110px_rgba(55,38,15,0.12)] md:h-170 "
@@ -27,8 +28,8 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage, t }) => {
             </h2>
           </div>
         </Animate>
-
-        <div className="mt-5 flex gap-4 overflow-x-auto pb-3">
+        <div className="mt-5 flex gap-4 overflow-x-auto py-1 px-1 scrollbar-hide">
+          {/* <div className="mt-5 flex gap-4 overflow-x-auto pb-3 max-w-full"> */}
           {/* <div className="flex px-1 mt-5 pb-3 w-full lg:grid lg:grid-cols-7 gap-3 overflow-x-auto md:overflow-visible snap-x snap-mandatory"> */}
           {villa.images?.map((image, index) => {
             const isActive = activeImage === image;
@@ -38,7 +39,7 @@ export const VillaImages = ({ activeImage, villa, handleChangeImage, t }) => {
                 key={image}
                 type="button"
                 onClick={() => handleChangeImage(image)}
-                className={`relative h-24 w-32 shrink-0 overflow-hidden rounded-3xl border transition duration-300 md:h-32 md:w-44 ${
+                className={`relative h-24 shrink-0 w-32 overflow-hidden rounded-3xl border transition duration-300 md:h-32 md:w-44 ${
                   isActive
                     ? "border-[#9a7330] ring-4 ring-[#d8b56d]/30"
                     : "border-black/10 opacity-75 hover:opacity-100"

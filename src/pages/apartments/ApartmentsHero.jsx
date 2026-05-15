@@ -1,6 +1,6 @@
 import { Animate } from "../../components/Animate";
 
-export const ApartmentsHero = () => {
+export const ApartmentsHero = ({ t }) => {
   return (
     <section className="relative overflow-hidden px-6 pb-14 pt-36">
       <div className="absolute -right-40 top-24 h-130 w-130 rounded-full bg-[#d6b46d]/25 blur-[130px]" />
@@ -12,7 +12,7 @@ export const ApartmentsHero = () => {
           preset="fadeIn"
           className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]"
         >
-          Apartamentet
+          {t("hero.label")}
         </Animate>
 
         <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end">
@@ -22,7 +22,7 @@ export const ApartmentsHero = () => {
             delay={0.05}
             className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl"
           >
-            Zgjidh shkallën dhe eksploro njësitë e banimit.
+            {t("hero.text")}
           </Animate>
 
           <Animate
@@ -31,9 +31,7 @@ export const ApartmentsHero = () => {
             delay={0.12}
             className="max-w-xl text-lg leading-8 text-[#62594d]"
           >
-            Apartamentet janë të organizuara në 4 shkallë banimi. Çdo shkallë ka
-            njësitë e saj, të prezantuara qartë për një eksperiencë të thjeshtë
-            dhe elegante.
+            {t("hero.description")}
           </Animate>
         </div>
       </div>

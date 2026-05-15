@@ -1,6 +1,6 @@
 import { ArrowRight } from "lucide-react";
 
-export const Stairs = ({ handleStairSelect, stair, isActive }) => {
+export const Stairs = ({ handleStairSelect, stair, isActive, t }) => {
   return (
     <button
       onClick={() => handleStairSelect(stair)}
@@ -28,7 +28,7 @@ export const Stairs = ({ handleStairSelect, stair, isActive }) => {
                 isActive ? "text-[#d8b56d]" : "text-[#9a7330]"
               }`}
             >
-              Shkallë banimi
+              {t("stairs.title")}
             </p>
             <h3 className="mt-2 text-3xl font-semibold leading-tight">
               {stair.name}
@@ -43,7 +43,7 @@ export const Stairs = ({ handleStairSelect, stair, isActive }) => {
                   : "bg-[#17130d] text-white"
               }`}
             >
-              {stair.totalUnits} njësi
+              {stair.totalUnits} {t("stairs.unit")}
             </span>
 
             <span

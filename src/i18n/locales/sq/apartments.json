@@ -1,0 +1,178 @@
+{
+  "hero": {
+    "label": "Apartamentet",
+    "text": "Zgjidh shkallën dhe eksploro njësitë e banimit.",
+    "description": " Apartamentet janë të organizuara në 4 shkallë banimi. Çdo shkallë ka njësitë e saj, të prezantuara qartë për një eksperiencë të thjeshtë dhe elegante."
+  },
+  "organization": "Organizimi",
+  "totalStairs": "4 shkallë banimi",
+  "selectedStairLabel": "Shkalla e zgjedhur",
+  "totalUnitsLabel": "njësi banimi",
+  "parking": {
+    "label": "Parkime opsionale",
+    "title": "Zgjidh vendparkimin për apartamentin tuaj",
+    "text": "Rezidenca ofron 31 njësi parkimi. Shikoni planimetrinë, llojet dhe disponueshmërinë e parkimeve.",
+    "button": "Shiko parkimet"
+  },
+  "residentialUnitsLabel": "Njësitë e banimit",
+  "selectUnitInstruction": "Kliko një njësi për detaje",
+  "apartmtentCard": {
+    "cardTitle": "Apartament",
+    "cardButton": "Shiko detajet"
+  },
+  "stairs": {
+    "title": "Shkallë banimi",
+    "unit": "njësi"
+  },
+  "kitchen": "Open space",
+  "appParking": "Opsional",
+  "price": "Me kërkesë",
+  "pricePerM2": "Me kërkesë",
+
+  "commonFeatures": {
+    "feature1": "Ndriçim natyral",
+    "feature2": "Organizim funksional",
+    "feature3": "Izolim termik dhe akustik",
+    "feature4": "Dritare me dopio xham",
+    "feature5": "Ashensor në ndërtesë",
+    "feature6": "Hyrje e sigurt",
+    "feature7": "Materiale cilësore ndërtimi"
+  },
+
+  "stair1": {
+    "name": "Shkalla 1",
+
+    "unit1": {
+      "name": "Njësi banimi nr. 1",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug-Lindje",
+      "shortDescription": "Apartament elegant me hapësira të bollshme dhe ndriçim natyral.",
+      "description": "Njësi banimi moderne, e përshtatshme për familje, me organizim praktik dhe ambient dite të hapur."
+    },
+    "unit2": {
+      "name": "Njësi banimi nr. 2",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Perëndim",
+      "shortDescription": "Apartament kompakt, ideal për çift ose investim.",
+      "description": "Njësi 1+1 me planimetri efikase, ballkon funksional dhe ambient të ndriçuar."
+    },
+    "unit3": {
+      "name": "Njësi banimi nr. 3",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Lindje",
+      "shortDescription": "Apartament familjar me orientim të mirë dhe shpërndarje praktike.",
+      "description": "Hapësirë e balancuar mes zonës së ditës dhe zonës së natës, me dy tualete."
+    },
+    "unit4": {
+      "name": "Njësi banimi nr. 4",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug-Perëndim",
+      "shortDescription": "Apartament i madh për familje që kërkojnë komoditet maksimal.",
+      "description": "Njësi 3+1 me dy ballkone, hapësira të mëdha dhe orientim shumë të favorshëm."
+    },
+    "unit5": {
+      "name": "Njësi banimi nr. 5",
+      "status": "Në shitje",
+      "type": "Apartament 3+1",
+      "orientation": "Veri-Lindje",
+      "shortDescription": "Apartament i qetë dhe funksional me organizim të pastër.",
+      "description": "Zgjidhje ideale për banim familjar, me tre dhoma gjumi dhe dy tualete."
+    }
+  },
+  "stair2": {
+    "name": "Shkalla 2",
+
+    "unit1": {
+      "name": "Njësi banimi nr. 1",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug",
+      "shortDescription": "Apartament i ndriçuar me orientim jugor dhe planimetri elegante.",
+      "description": "Njësi banimi e përshtatshme për familje, me hapësira të bollshme."
+    },
+    "unit2": {
+      "name": "Njësi banimi nr. 2",
+      "status": "Në shitje",
+      "type": "Apartament 3+1",
+      "orientation": "Jug-Perëndim",
+      "shortDescription": "Apartament premium me hapësira të mëdha.",
+      "description": "Njësi 3+1 për familje që kërkojnë standard të lartë banimi, komoditet dhe privatësi."
+    }
+  },
+  "stair3": {
+    "name": "Shkalla 3",
+
+    "unit1": {
+      "name": "Njësi banimi nr. 1",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Lindje",
+      "shortDescription": "Apartament praktik dhe i ngrohtë, ideal për banim ose investim.",
+      "description": "Njësi 2+1 me hapësira të bollshme dhe ndriçim të mirë natyral."
+    },
+    "unit2": {
+      "name": "Njësi banimi nr. 2",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug-Lindje",
+      "shortDescription": "Apartament i gjerë me orientim të shkëlqyer.",
+      "description": "Njësi 2+1 e projektuar për komoditet familjar, me zonë dite të hapur dhe dhoma të rregullta."
+    },
+    "unit3": {
+      "name": "Njësi banimi nr. 3",
+      "status": "Në shitje",
+      "type": "Apartament 3+1",
+      "orientation": "Perëndim",
+      "shortDescription": "Apartament i bollshem 3+1 me organizim të qartë.",
+      "description": "Njësi e përshtatshme për familje të madhe, me tre dhoma gjumi dhe ambient dite komod."
+    }
+  },
+  "stair4": {
+    "name": "Shkalla 4",
+
+    "unit1": {
+      "name": "Njësi banimi nr. 1",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug",
+      "shortDescription": "Apartament me orientim jugor dhe hapësira të organizuara mirë.",
+      "description": "Njësi moderne për familje, me sallon të hapur me dy dhoma gjumi."
+    },
+    "unit2": {
+      "name": "Njësi banimi nr. 2",
+      "status": "Në shitje",
+      "type": "Apartament 3+1",
+      "orientation": "Lindje",
+      "shortDescription": "Apartament i bollshem 3+1 me organizim të qartë.",
+      "description": "Njësi e përshtatshme për familje të madhe, me tre dhoma gjumi dhe ambient dite komod."
+    },
+    "unit3": {
+      "name": "Njësi banimi nr. 3",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Jug-Perëndim",
+      "shortDescription": "Apartament i gjerë 2+1 me orientim shumë të favorshëm.",
+      "description": "Njësi e bollshme, me dy dhoma gjumi dhe ambient dite komod."
+    },
+    "unit4": {
+      "name": "Njësi banimi nr. 4",
+      "status": "Në shitje",
+      "type": "Apartament 3+1",
+      "orientation": "Jug-Lindje",
+      "shortDescription": "Apartament premium 3+1 me sipërfaqe të madhe.",
+      "description": "Njësi ideale për familje të mëdha, me hapësira elegante, privatësi dhe orientim shumë të mirë."
+    },
+    "unit5": {
+      "name": "Njësi banimi nr. 5",
+      "status": "Në shitje",
+      "type": "Apartament 2+1",
+      "orientation": "Perëndim",
+      "shortDescription": "Apartament modern me pamje të hapur dhe ambient të rehatshëm.",
+      "description": "Njësi 2+1 me organizim efikas, dy tualete, dy dhoma gjumi dhe hapësira të përshtatshme për banim familjar."
+    }
+  }
+}

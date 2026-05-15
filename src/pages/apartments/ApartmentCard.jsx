@@ -2,9 +2,8 @@ import { useNavigate } from "react-router-dom";
 import { Animate } from "../../components/Animate";
 import { ArrowRight, Home } from "lucide-react";
 
-export const ApartmentCard = ({ unit, index, selectedStair }) => {
+export const ApartmentCard = ({ unit, index, selectedStair, t }) => {
   const navigate = useNavigate();
-  console.log(unit);
 
   return (
     <Animate
@@ -31,7 +30,7 @@ export const ApartmentCard = ({ unit, index, selectedStair }) => {
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-[#9a7330]">
-              Apartament
+              {t("apartmtentCard.cardTitle")}
             </p>
             <h4 className="mt-2 text-2xl font-semibold">{unit.name}</h4>
           </div>
@@ -42,7 +41,9 @@ export const ApartmentCard = ({ unit, index, selectedStair }) => {
         </div>
 
         <div className="mt-6 flex items-center justify-between border-t border-black/10 pt-5">
-          <span className="text-sm text-[#62594d]">Shiko detajet</span>
+          <span className="text-sm text-[#62594d]">
+            {t("apartmtentCard.cardButton")}
+          </span>
           <span className="grid h-10 w-10 place-items-center rounded-full bg-[#17130d] text-white transition duration-300 group-hover:bg-[#d8b56d] group-hover:text-[#17130d]">
             <ArrowRight className="h-4 w-4" />
           </span>

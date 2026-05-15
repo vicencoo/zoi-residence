@@ -2,7 +2,7 @@ import { ArrowLeft, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const ApartmentHero = ({ stair, unit }) => {
+export const ApartmentHero = ({ stair, unit, t }) => {
   const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden px-6 pb-16 pt-32">
@@ -15,7 +15,7 @@ export const ApartmentHero = ({ stair, unit }) => {
           className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-medium text-[#62594d] backdrop-blur-xl transition hover:bg-white hover:text-[#17130d] cursor-pointer"
         >
           <ArrowLeft className="h-4 w-4" />
-          Kthehu te apartamentet
+          {t("hero.goBackButton")}
         </button>
 
         <div className="grid gap-10 lg:grid-cols-[1fr_430px] lg:items-end">
@@ -44,7 +44,7 @@ export const ApartmentHero = ({ stair, unit }) => {
           >
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm text-white/55">Statusi</p>
+                <p className="text-sm text-white/55">{t("hero.status")}</p>
                 <h2 className="mt-1 text-2xl font-semibold text-[#d8b56d]">
                   {unit.status}
                 </h2>
@@ -57,11 +57,11 @@ export const ApartmentHero = ({ stair, unit }) => {
 
             <div className="mt-8 grid grid-cols-2 gap-4 border-t border-white/10 pt-6">
               <div>
-                <p className="text-sm text-white/45">Çmimi</p>
+                <p className="text-sm text-white/45">{t("hero.price")}</p>
                 <p className="mt-1 text-xl font-semibold">{unit.price}</p>
               </div>
               <div>
-                <p className="text-sm text-white/45">Çmimi / m²</p>
+                <p className="text-sm text-white/45">{t("hero.pricePerM2")}</p>
                 <p className="mt-1 text-xl font-semibold">{unit.pricePerM2}</p>
               </div>
             </div>

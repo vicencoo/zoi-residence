@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "goBackButton": "Back to apartments",
+    "status": "Status",
+    "price": "Price",
+    "pricePerM2": "Price / m²"
+  },
+  "notFound": {
+    "label": "Apartment not found.",
+    "backButton": "Back to apartments"
+  },
+  "stats": {
+    "label1": "Total area",
+    "label2": "Net area",
+    "label3": "Bedrooms",
+    "label4": "Bathrooms",
+    "label5": "Floor",
+    "label6": "Orientation"
+  },
+  "apartmentImages": {
+    "gallery": "Gallery",
+    "label": "Apartment view"
+  },
+  "description": {
+    "destLabel": "Description",
+    "descText": "Modern and elegant living.",
+    "characteristicsLabel": "Characteristics"
+  },
+  "planimetryLabel": "Floor plan",
+  "planimetryText": "Space organization",
+
+  "apartmentSidebar": {
+    "location": "Location",
+    "type": "Typology",
+    "parking": "Parking",
+    "kitchen": "Kitchen",
+    "floor": "Floor",
+    "contact": {
+      "label": "Contact",
+      "text": "Inquire about this apartment",
+      "wpButton": "Contact on WhatsApp"
+    }
+  }
+}

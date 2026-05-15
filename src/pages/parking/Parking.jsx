@@ -3,34 +3,38 @@ import { ParkingHero } from "./ParkingHero";
 import { ParkingPlan } from "./ParkingPlan";
 import { ParkingCard } from "./ParkingCard";
 import { ParkingSidebar } from "./ParkingSidebar";
+import { useTranslation } from "react-i18next";
 
-const parkingSpaces = Array.from({ length: 31 }, (_, index) => {
-  const number = index + 1;
-  const code = `P-${String(number).padStart(2, "0")}`;
+const Parking_Spaces = (t) =>
+  Array.from({ length: 31 }, (_, index) => {
+    const number = index + 1;
+    const code = `P-${String(number).padStart(2, "0")}`;
 
-  return {
-    id: number,
-    code,
-    status: "Në shitje",
-    type: "Vend parkimi standard",
-    level: "-1",
-    parkingArea: 12.5,
-    sharedArea: 8.8,
-    totalArea: 21.3,
-    image: `/images/parkimi.jpg`,
-  };
-});
+    return {
+      id: number,
+      code,
+      status: `${t("parkingSpaces.status")}`,
+      type: `${t("parkingSpaces.type")}`,
+      level: "-1",
+      parkingArea: 12.5,
+      sharedArea: 8.8,
+      totalArea: 21.3,
+      image: `/images/parkimi.jpg`,
+    };
+  });
 
 export const Parking = () => {
+  const { t } = useTranslation("parking");
+  const parkingSpaces = Parking_Spaces(t);
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
       {/*  */}
-      <ParkingHero />
+      <ParkingHero t={t} />
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_360px]">
           <div className="space-y-8">
-            <ParkingPlan />
+            <ParkingPlan t={t} />
 
             <section>
               <Animate
@@ -39,11 +43,13 @@ export const Parking = () => {
               >
                 <div>
                   <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#9a7330]">
-                    Njësitë e parkimit
+                    {/* Njësitë e parkimit */}
+                    {t("parkingUnitsText")}
                   </p>
 
                   <h2 className="text-4xl font-semibold tracking-tight">
-                    31 vendparkime
+                    {/* 31 vendparkime */}
+                    {t("parkingUnits")}
                   </h2>
                 </div>
               </Animate>
@@ -53,6 +59,7 @@ export const Parking = () => {
                   <ParkingCard
                     parking={parking}
                     index={index}
+                    t={t}
                     key={parking.id}
                   />
                 ))}
@@ -61,7 +68,7 @@ export const Parking = () => {
           </div>
 
           {/* Parking Sidebar */}
-          <ParkingSidebar />
+          <ParkingSidebar t={t} />
         </div>
       </section>
     </main>

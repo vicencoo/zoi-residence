@@ -12,14 +12,13 @@ export const ViewVilla = () => {
 
   if (!villa) {
     return (
-      <main className="min-h-screen bg-[#f4efe6] px-6 py-36 text-[#17130d]">
+      <main className="min-h-screen bg-[#f4efe6] px-6 py-36 text-[#17130d] ">
         <div className="mx-auto max-w-4xl rounded-[2.5rem] border border-black/10 bg-white/75 p-10 text-center">
           <h1 className="text-5xl font-semibold"> {t("noVillaFound")}</h1>
           <Link
             to="/villas"
-            className="mt-8 inline-flex rounded-full bg-[#17130d] px-7 py-4 font-semibold text-[#d8b56d]"
+            className="mt-8 inline-flex rmin-h-screenounded-full bg-[#17130d] px-7 py-4 font-semibold text-[#d8b56d]"
           >
-            {/* Kthehu te vilat */}
             {t("backToVillas")}
           </Link>
         </div>
@@ -30,7 +29,7 @@ export const ViewVilla = () => {
   const details = VIEW_VILLA_DETAILS(t, villa);
 
   return (
-    <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
+    <main className="min-h-screen bg-[#f4efe6] text-[#17130d] overflow-x-clip">
       <section className="relative overflow-hidden px-6 pb-16 pt-32">
         <div className="absolute -right-40 top-20 h-130 w-130 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
         <div className="absolute -left-40 bottom-0 h-115 w-115 rounded-full bg-[#17130d]/10 blur-[120px]" />
@@ -154,13 +153,13 @@ export const ViewVilla = () => {
               ))}
             </div>
 
-            <Link
-              to="/contact"
+            <a
+              href="tel:+355682025455"
               className="mt-9 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#d8b56d] px-7 py-4 font-semibold text-[#17130d] transition hover:bg-white"
             >
               {t("features.featuresButton")}
               <Phone className="h-5 w-5" />
-            </Link>
+            </a>
           </Animate>
         </div>
       </section>
@@ -184,13 +183,13 @@ export const ViewVilla = () => {
             </span>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 items-start">
             {villa.floorPlans?.map((plan, index) => (
               <div
                 key={plan}
                 className="overflow-hidden rounded-[2.2rem] border border-black/10 bg-[#f4efe6]"
               >
-                <div className="relative h-80">
+                <div className="relative">
                   <img
                     src={plan}
                     alt={`Planimetria kati ${index + 1}`}
@@ -224,13 +223,13 @@ export const ViewVilla = () => {
                 {t("contact.text")}
               </p>
             </div>
-            <Link
-              to="/contact"
+            <a
+              href="tel:+355682025455"
               className="inline-flex items-center justify-center gap-3 rounded-full bg-[#d8b56d] px-8 py-5 font-semibold text-[#17130d] transition hover:bg-white"
             >
               {t("contact.contactButton")}
               <Phone className="h-5 w-5" />
-            </Link>
+            </a>
           </div>
         </Animate>
       </section>

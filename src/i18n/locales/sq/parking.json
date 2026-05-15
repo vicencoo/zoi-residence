@@ -1,0 +1,53 @@
+{
+  "hero": {
+    "backToAppartments": "Kthehu te apartamentet",
+    "title": "Parkimet",
+    "chooseParkingText": "Zgjidh vendparkimin ideal për apartamentin tuaj.",
+    "parkingDescription": " Rezidenca ofron 31 njësi parkimi. Secila njësi ka 12.5 m² sipërfaqe parkimi dhe 8.8 m² sipërfaqe të përbashkët.",
+    "totalText": "Totali",
+    "parkingsText": "vendparkime",
+    "parking": "Parkim",
+    "commonText": "E përbashkët"
+  },
+  "parkingPlan": {
+    "label": "Planimetria",
+    "title": "Organizimi i parkimeve",
+    "text": "Shikoni planin e përgjithshëm të parkimeve dhe më poshtë çdo njësi individuale.",
+    "level": "Niveli -1"
+  },
+  "parkingUnitsText": "Njësitë e parkimit",
+  "parkingUnits": "31 vendparkime",
+  "parkingCard": {
+    "parkingLabel": " Vend parkimi",
+    "parkingSpace": "Sip. parkimi",
+    "common": "E përbashkët",
+    "total": "Total"
+  },
+  "parkingSpaces": {
+    "type": "Vend parkimi standard",
+    "status": "Në shitje"
+  },
+  "parkingInfo": {
+    "info1": "Numri i parkimeve",
+    "info2": "Sipërfaqe parkimi",
+    "info3": "Sipërfaqe e përbashkët",
+    "info4": "Sipërfaqe totale",
+    "info5": "Niveli"
+  },
+  "parkingSidebar": {
+    "summary": "Përmbledhje",
+    "contact": {
+      "title": "Rezervim",
+      "text": "Dëshironi të rezervoni parkim?",
+      "description": "Parkimet janë opsionale dhe mund të diskutohen bashkë me apartamentin e zgjedhur.",
+      "button": "Kontakto për parkim"
+    },
+    "included": {
+      "label": "Përfshihet",
+      "info1": "Vend i dedikuar për automjet",
+      "info2": "Akses i lehtë nga rezidenca",
+      "info3": "Sipërfaqe standarde 12.5 m²",
+      "info4": "Organizim i qartë në planimetri"
+    }
+  }
+}

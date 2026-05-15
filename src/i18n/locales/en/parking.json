@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "backToAppartments": "Back to apartments",
+    "title": "Parking",
+    "chooseParkingText": "Choose the ideal parking space for your apartment.",
+    "parkingDescription": "The residence offers 31 parking units. Each unit has 12.5 m² parking area and 8.8 m² shared area.",
+    "totalText": "Total",
+    "parkingsText": "parking spaces",
+    "parking": "Parking",
+    "commonText": "Shared"
+  },
+  "parkingPlan": {
+    "label": "Floor plan",
+    "title": "Parking organization",
+    "text": "View the general parking plan and below each individual unit.",
+    "level": "Level -1"
+  },
+  "parkingUnitsText": "Parking units",
+  "parkingUnits": "31 parking spaces",
+  "parkingCard": {
+    "parkingLabel": "Parking space",
+    "parkingSpace": "Parking area",
+    "common": "Shared",
+    "total": "Total"
+  },
+  "parkingSpaces": { "type": "Standard parking space", "status": "For sale" },
+  "parkingInfo": {
+    "info1": "Number of parking spaces",
+    "info2": "Parking area",
+    "info3": "Shared area",
+    "info4": "Total area",
+    "info5": "Level"
+  },
+  "parkingSidebar": {
+    "summary": "Summary",
+    "contact": {
+      "title": "Reservation",
+      "text": "Would you like to reserve a parking space?",
+      "description": "Parking spaces are optional and can be discussed together with the selected apartment.",
+      "button": "Contact for parking"
+    },
+    "included": {
+      "label": "Included",
+      "info1": "Dedicated vehicle space",
+      "info2": "Easy access from the residence",
+      "info3": "Standard area of 12.5 m²",
+      "info4": "Clear organization in the floor plan"
+    }
+  }
+}

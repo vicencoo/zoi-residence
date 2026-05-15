@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Animate } from "../../components/Animate";
 import { ArrowLeft, Car } from "lucide-react";
 
-export const ParkingHero = () => {
+export const ParkingHero = ({ t }) => {
   const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden px-6 pb-14 pt-36">
@@ -15,7 +15,7 @@ export const ParkingHero = () => {
           className="mb-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-white/70 px-5 py-3 text-sm font-semibold text-[#62594d] transition hover:bg-white hover:text-[#17130d] cursor-pointer"
         >
           <ArrowLeft className="h-4 w-4" />
-          Kthehu te apartamentet
+          {t("hero.backToAppartments")}
         </button>
 
         <div className="grid gap-8 lg:grid-cols-[1fr_420px] lg:items-end">
@@ -25,7 +25,7 @@ export const ParkingHero = () => {
               preset="fadeIn"
               className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]"
             >
-              Parkimet
+              {t("hero.title")}
             </Animate>
 
             <Animate
@@ -34,7 +34,7 @@ export const ParkingHero = () => {
               delay={0.05}
               className="max-w-4xl text-5xl font-semibold leading-[0.95] tracking-[-0.06em] md:text-7xl"
             >
-              Zgjidh vendparkimin ideal për apartamentin tuaj.
+              {t("hero.chooseParkingText")}
             </Animate>
 
             <Animate
@@ -43,8 +43,7 @@ export const ParkingHero = () => {
               delay={0.12}
               className="mt-6 max-w-2xl text-lg leading-8 text-[#62594d]"
             >
-              Rezidenca ofron 31 njësi parkimi. Secila njësi ka 12.5 m²
-              sipërfaqe parkimi dhe 8.8 m² sipërfaqe të përbashkët.
+              {t("hero.parkingDescription")}
             </Animate>
           </div>
 
@@ -55,9 +54,9 @@ export const ParkingHero = () => {
           >
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-white/50">Totali</p>
+                <p className="text-sm text-white/50">{t("hero.totalText")}</p>
                 <h2 className="text-5xl font-semibold text-[#d8b56d]">31</h2>
-                <p className="mt-1 text-white/55">vendparkime</p>
+                <p className="mt-1 text-white/55">{t("hero.parkingsText")}</p>
               </div>
 
               <span className="grid h-16 w-16 place-items-center rounded-2xl bg-white/10 text-[#d8b56d]">
@@ -67,12 +66,12 @@ export const ParkingHero = () => {
 
             <div className="mt-6 grid grid-cols-2 gap-3 border-t border-white/10 pt-6">
               <div className="rounded-2xl bg-white/8 p-4">
-                <p className="text-sm text-white/45">Parkim</p>
+                <p className="text-sm text-white/45">{t("hero.parking")}</p>
                 <strong>12.5 m²</strong>
               </div>
 
               <div className="rounded-2xl bg-white/8 p-4">
-                <p className="text-sm text-white/45">E përbashkët</p>
+                <p className="text-sm text-white/45">{t("hero.commonText")}</p>
                 <strong>8.8 m²</strong>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import { Map } from "lucide-react";
 import { Animate } from "../../components/Animate";
 
-export const ParkingPlan = () => {
+export const ParkingPlan = ({ t }) => {
   return (
     <Animate
       preset="scaleUp"
@@ -21,22 +21,26 @@ export const ParkingPlan = () => {
         <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 text-white md:flex-row md:items-end">
           <div>
             <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
-              Planimetria
+              {/* Planimetria */}
+              {t("parkingPlan.label")}
             </p>
 
             <h2 className="text-4xl font-semibold tracking-tight">
-              Organizimi i parkimeve
+              {/* Organizimi i parkimeve */}
+              {t("parkingPlan.title")}
             </h2>
 
             <p className="mt-3 max-w-2xl text-white/65">
-              Shikoni planin e përgjithshëm të parkimeve dhe më poshtë çdo njësi
-              individuale.
+              {/* Shikoni planin e përgjithshëm të parkimeve dhe më poshtë çdo njësi
+              individuale. */}
+              {t("parkingPlan.text")}
             </p>
           </div>
 
           <span className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 backdrop-blur-xl">
             <Map className="h-5 w-5 text-[#d8b56d]" />
-            Niveli -1
+            {/* Niveli -1 */}
+            {t("parkingPlan.level")}
           </span>
         </div>
       </div>

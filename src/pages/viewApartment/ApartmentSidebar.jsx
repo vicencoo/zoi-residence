@@ -1,6 +1,6 @@
 import { Building2, Mail, Phone } from "lucide-react";
 
-export const ApartmentSidebar = ({ stair, unit }) => {
+export const ApartmentSidebar = ({ stair, unit, t }) => {
   return (
     <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
       <div className="rounded-[2.4rem] border border-black/10 bg-white/80 p-6 shadow-[0_24px_80px_rgba(55,38,15,0.1)] backdrop-blur-xl">
@@ -9,29 +9,39 @@ export const ApartmentSidebar = ({ stair, unit }) => {
             <Building2 className="h-6 w-6" />
           </span>
           <div>
-            <p className="text-sm text-[#62594d]">Vendndodhja</p>
+            <p className="text-sm text-[#62594d]">
+              {t("apartmentSidebar.location")}
+            </p>
             <h3 className="text-xl font-semibold">{stair.name}</h3>
           </div>
         </div>
 
         <div className="mt-6 grid grid-cols-2 gap-3">
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Tipologjia</p>
+            <p className="text-sm text-[#62594d]">
+              {t("apartmentSidebar.type")}
+            </p>
             <strong>{unit.type}</strong>
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Parkimi</p>
+            <p className="text-sm text-[#62594d]">
+              {t("apartmentSidebar.parking")}
+            </p>
             <strong>{unit.parking}</strong>
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Kuzhina</p>
+            <p className="text-sm text-[#62594d]">
+              {t("apartmentSidebar.kitchen")}
+            </p>
             <strong>{unit.kitchen}</strong>
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-sm text-[#62594d]">Kati</p>
+            <p className="text-sm text-[#62594d]">
+              {t("apartmentSidebar.floor")}
+            </p>
             <strong>{unit.floor}</strong>
           </div>
         </div>
@@ -39,10 +49,10 @@ export const ApartmentSidebar = ({ stair, unit }) => {
 
       <div className="rounded-[2.4rem] bg-[#17130d] p-6 text-white shadow-[0_30px_90px_rgba(23,19,13,0.25)]">
         <p className="text-sm uppercase tracking-[0.3em] text-[#d8b56d]">
-          Kontakt
+          {t("apartmentSidebar.contact.label")}
         </p>
         <h3 className="mt-3 text-3xl font-semibold tracking-tight">
-          Interesohuni për këtë apartament
+          {t("apartmentSidebar.contact.text")}
         </h3>
 
         <div className="mt-6 space-y-3">
@@ -69,7 +79,7 @@ export const ApartmentSidebar = ({ stair, unit }) => {
           rel="noreferrer"
           className="mt-5 block rounded-full bg-[#d8b56d] px-6 py-4 text-center font-semibold text-[#17130d] transition hover:bg-white"
         >
-          Kontakto në WhatsApp
+          {t("apartmentSidebar.contact.wpButton")}
         </a>
       </div>
     </aside>

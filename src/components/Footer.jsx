@@ -33,14 +33,13 @@ export const Footer = () => {
               </div>
             </div>
             <p className="mt-6 max-w-sm leading-7 text-white/55">
-              Rezidencë private për banim, me apartamente moderne dhe vila të
-              projektuara për qetësi, privatësi dhe jetesë premium.
+              {t("footer.description")}
             </p>
           </div>
 
           <div>
             <h4 className="mb-5 text-sm uppercase tracking-[0.28em] text-amber-200">
-              Navigim
+              {t("footer.navigationLabel")}
             </h4>
             <div className="grid gap-3 text-white/58">
               {navItems.map((item) => (
@@ -57,14 +56,14 @@ export const Footer = () => {
 
           <div>
             <h4 className="mb-5 text-sm uppercase tracking-[0.28em] text-amber-200">
-              Kontakt
+              {t("footer.contactLabel")}
             </h4>
             <div className="grid gap-3 text-white/58">
               <a
-                href="tel:+355690000000"
+                href="tel:+355682025455"
                 className="inline-flex items-center gap-3 transition hover:text-white"
               >
-                <Phone className="h-4 w-4" /> +355 69 000 0000
+                <Phone className="h-4 w-4" /> +355 68 202 5455
               </a>
               <a
                 href="mailto:sales@auraresidence.al"
@@ -73,14 +72,14 @@ export const Footer = () => {
                 <Mail className="h-4 w-4" /> sales@auraresidence.al
               </a>
               <span className="inline-flex items-center gap-3">
-                <MapPin className="h-4 w-4" /> Tiranë, Shqipëri
+                <MapPin className="h-4 w-4" /> {t("footer.adress")}
               </span>
             </div>
           </div>
 
           <div>
             <h4 className="mb-5 text-sm uppercase tracking-[0.28em] text-amber-200">
-              Social
+              {t("footer.socialLabel")}
             </h4>
             <div className="flex gap-3">
               {FOOTERCONTACT.map((item) => (
@@ -93,15 +92,14 @@ export const Footer = () => {
               ))}
             </div>
             <p className="mt-6 text-sm leading-6 text-white/42">
-              Përditësoni kontaktet, adresën dhe linket sociale sipas projektit
-              real.
+              {t("footer.socialText")}
             </p>
           </div>
         </div>
 
         <div className="flex flex-col justify-between gap-4 border-t border-white/10 px-8 py-6 text-sm text-white/38 md:flex-row md:px-12">
-          <p>© 2026 Zoi Villa Residence. Të gjitha të drejtat e rezervuara.</p>
-          <p>Projektuar për shitje rezidenciale premium.</p>
+          <p>{t("footer.footerRights")}</p>
+          <p>{t("footer.footerProjected")}</p>
         </div>
       </div>
     </footer>

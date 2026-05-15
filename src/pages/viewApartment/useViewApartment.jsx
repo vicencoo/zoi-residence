@@ -1,9 +1,17 @@
 import { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
-import { apartmentStairs } from "../../data/apartments";
+import { APARTMENT_STAIRS } from "../../data/apartments";
+import { useTranslation } from "react-i18next";
 
 export const useViewApartment = () => {
+  const { t, i18n } = useTranslation("apartments");
   const { stairSlug, unitSlug } = useParams();
+
+  const apartmentStairs = useMemo(
+    () => APARTMENT_STAIRS(t),
+    [t, i18n.language],
+  );
+
   const [activeImage, setActiveImage] = useState(0);
 
   const handleChangeImage = (image) => setActiveImage(image);
@@ -14,11 +22,8 @@ export const useViewApartment = () => {
 
     if (!stair || !unit) return null;
 
-    return {
-      stair,
-      unit,
-    };
-  }, [stairSlug, unitSlug]);
+    return { stair, unit };
+  }, [stairSlug, unitSlug, apartmentStairs]);
 
   return { activeImage, apartment, handleChangeImage };
 };

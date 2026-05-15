@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "goBackButton": "Kthehu te apartamentet",
+    "status": "Statusi",
+    "price": "Çmimi",
+    "pricePerM2": "Çmimi / m²"
+  },
+  "notFound": {
+    "label": "Apartamenti nuk u gjet.",
+    "backButton": "Kthehu te apartamentet"
+  },
+  "stats": {
+    "label1": "Sipërfaqe totale",
+    "label2": "Sipërfaqe neto",
+    "label3": "Dhoma gjumi",
+    "label4": "Tualete",
+    "label5": "Kati",
+    "label6": "Orientimi"
+  },
+  "apartmentImages": {
+    "gallery": "Galeria",
+    "label": "Pamje e apartamentit"
+  },
+  "description": {
+    "destLabel": "Përshkrimi",
+    "descText": "Jetesë moderne dhe elegante.",
+    "characteristicsLabel": "Karakteristikat"
+  },
+  "planimetryLabel": "Planimetria",
+  "planimetryText": "Organizimi i hapësirës",
+
+  "apartmentSidebar": {
+    "location": "Vendndodhja",
+    "type": "Tipologjia",
+    "parking": "Parkimi",
+    "kitchen": "Kuzhina",
+    "floor": "Kati",
+    "contact": {
+      "label": "Kontakt",
+      "text": "Interesohuni për këtë apartament",
+      "wpButton": "Kontakto në WhatsApp"
+    }
+  }
+}

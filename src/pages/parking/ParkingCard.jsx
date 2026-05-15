@@ -1,7 +1,7 @@
 import { Car } from "lucide-react";
 import { Animate } from "../../components/Animate";
 
-export const ParkingCard = ({ parking, index }) => {
+export const ParkingCard = ({ parking, index, t }) => {
   return (
     <Animate
       preset="fadeUp"
@@ -24,7 +24,7 @@ export const ParkingCard = ({ parking, index }) => {
         <div className="absolute bottom-4 left-4 right-4 flex items-end justify-between text-white">
           <div>
             <p className="text-xs uppercase tracking-[0.28em] text-[#d8b56d]">
-              Vend parkimi
+              {t("parkingCard.parkingLabel")}
             </p>
 
             <h3 className="mt-2 text-3xl font-semibold">{parking.code}</h3>
@@ -39,12 +39,14 @@ export const ParkingCard = ({ parking, index }) => {
       <div className="p-5">
         <div className="grid grid-cols-2 gap-3">
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-xs text-[#62594d]">Sip. parkimi</p>
+            <p className="text-xs text-[#62594d]">
+              {t("parkingCard.parkingSpace")}
+            </p>
             <strong>{parking.parkingArea} m²</strong>
           </div>
 
           <div className="rounded-2xl bg-[#f4efe6] p-4">
-            <p className="text-xs text-[#62594d]">E përbashkët</p>
+            <p className="text-xs text-[#62594d]">{t("parkingCard.common")}</p>
             <strong>{parking.sharedArea} m²</strong>
           </div>
         </div>
@@ -55,7 +57,7 @@ export const ParkingCard = ({ parking, index }) => {
           </span>
 
           <span className="text-sm text-[#62594d]">
-            Total {parking.totalArea} m²
+            {t("parkingCard.total")} {parking.totalArea} m²
           </span>
         </div>
       </div>

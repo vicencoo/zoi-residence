@@ -1,0 +1,34 @@
+{
+  "contactOptions": {
+    "title": "Kontakt",
+    "text": "Rezervoni një konsultim privat.",
+    "description": "Na kontaktoni për informacion mbi apartamentet, vilat, parkimet,çmimet dhe mundësitë e rezervimit në Zoi Villa Residence.",
+    "info": {
+      "title1": "telefon",
+      "title2": "whatsApp",
+      "title3": "email",
+      "text1": "Flisni direkt me ekipin e shitjeve.",
+      "text2": "Merrni përgjigje të shpejtë për disponueshmërinë.",
+      "text3": "Na kontaktoni për informacion të detajuar.",
+      "cta1": "Telefono tani",
+      "cta2": "Shkruaj në WhatsApp",
+      "cta3": "Dërgo email"
+    }
+  },
+  "privateVisit": "Vizitë private",
+  "discoverText": "Zbuloni rezidencën nga afër.",
+  "consultText": " Një konsultim i dedikuar ju ndihmon të kuptoni më mirë tipologjitë, planimetritë dhe opsionet e rezervimit.",
+  "reserveWhatsappText": "Rezervo në WhatsApp",
+  "scheduleTitle": "Orari",
+  "scheduleText": "Me takim paraprak",
+  "weekDays": "E Hënë — E Premte",
+  "weekDaysTime": "09:00 — 18:00",
+  "weekEndDay": "E Shtunë",
+  "weekEndTime": "10:00 — 14:00",
+  "location": {
+    "title": "Vendndodhja",
+    "location": "Tiranë, Shqipëri",
+    "description": "Zoi Villa Residence është projektuar për banim privat, qetësi dhe akses të lehtë në qytet.",
+    "openOnMap": "Hap në hartë"
+  }
+}

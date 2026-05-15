@@ -8,27 +8,28 @@ import {
   Layers3,
   Maximize2,
   Ruler,
-  SquareParking,
 } from "lucide-react";
 import { useViewApartment } from "./useViewApartment";
 import { AparmentImages } from "./ApartmentImages";
 import { ApartmentSidebar } from "./ApartmentSidebar";
 import { ApartmentHero } from "./ApartmentHero";
+import { useTranslation } from "react-i18next";
 
 export const ViewApartment = () => {
   const navigate = useNavigate();
   const { activeImage, apartment, handleChangeImage } = useViewApartment();
+  const { t } = useTranslation("viewApartment");
 
   if (!apartment) {
     return (
       <main className="grid min-h-screen place-items-center bg-[#f4efe6] px-6 text-[#17130d]">
         <div className="max-w-xl rounded-4xl bg-white p-10 text-center shadow-xl">
-          <h1 className="text-3xl font-semibold">Apartamenti nuk u gjet.</h1>
+          <h1 className="text-3xl font-semibold">{t("notFound.label")}</h1>
           <button
             onClick={() => navigate("/apartments")}
             className="mt-6 rounded-full bg-[#17130d] px-6 py-3 text-white cursor-pointer"
           >
-            Kthehu te apartamentet
+            {t("notFound.backButton")}
           </button>
         </div>
       </main>
@@ -39,17 +40,17 @@ export const ViewApartment = () => {
   const images = unit.gallery?.length ? unit.gallery : [unit.image];
 
   const stats = [
-    { label: "Sipërfaqe totale", value: `${unit.area} m²`, icon: Ruler },
-    { label: "Sipërfaqe neto", value: `${unit.netArea} m²`, icon: Ruler },
-    { label: "Dhoma gjumi", value: unit.bedrooms, icon: BedDouble },
-    { label: "Tualete", value: unit.bathrooms, icon: Bath },
-    { label: "Kati", value: unit.floor, icon: Layers3 },
-    { label: "Orientimi", value: unit.orientation, icon: Compass },
+    { label: `${t("stats.label1")}`, value: `${unit.area} m²`, icon: Ruler },
+    { label: `${t("stats.label2")}`, value: `${unit.netArea} m²`, icon: Ruler },
+    { label: `${t("stats.label3")}`, value: unit.bedrooms, icon: BedDouble },
+    { label: `${t("stats.label4")}`, value: unit.bathrooms, icon: Bath },
+    { label: `${t("stats.label5")}`, value: unit.floor, icon: Layers3 },
+    { label: `${t("stats.label6")}`, value: unit.orientation, icon: Compass },
   ];
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
-      <ApartmentHero stair={stair} unit={unit} />
+      <ApartmentHero stair={stair} unit={unit} t={t} />
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1fr_390px]">
@@ -59,6 +60,7 @@ export const ViewApartment = () => {
               handleChangeImage={handleChangeImage}
               images={images}
               unit={unit}
+              t={t}
             />
 
             <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
@@ -86,29 +88,12 @@ export const ViewApartment = () => {
             </div>
 
             <section className="grid gap-8 lg:grid-cols-2">
-              {/* <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
-                <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-                  Ambientet
-                </p>
-
-                <div className="mt-6 space-y-4">
-                  {unit.rooms.map((room) => (
-                    <div
-                      key={room.name}
-                      className="flex items-center justify-between border-b border-black/10 pb-4"
-                    >
-                      <span className="text-[#62594d]">{room.name}</span>
-                      <strong>{room.area} m²</strong>
-                    </div>
-                  ))}
-                </div>
-              </div>  */}
               <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
                 <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-                  Përshkrimi
+                  {t("description.destLabel")}
                 </p>
                 <h2 className="text-3xl font-semibold tracking-tight">
-                  Jetim modern, funksional dhe elegant.
+                  {t("description.descText")}
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-[#62594d]">
                   {unit.description}
@@ -117,7 +102,7 @@ export const ViewApartment = () => {
 
               <div className="rounded-[2.4rem] border border-black/10 bg-white/75 p-7 shadow-[0_24px_80px_rgba(55,38,15,0.08)]">
                 <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-                  Karakteristikat
+                  {t("description.characteristicsLabel")}
                 </p>
 
                 <div className="mt-6 grid gap-3">
@@ -138,10 +123,10 @@ export const ViewApartment = () => {
                 <div className="mb-6 flex items-center justify-between gap-4">
                   <div>
                     <p className="mb-3 text-sm uppercase tracking-[0.3em] text-[#9a7330]">
-                      Planimetria
+                      {t("planimetryLabel")}
                     </p>
                     <h2 className="text-4xl font-semibold tracking-tight">
-                      Organizimi i hapësirës
+                      {t("planimetryText")}
                     </h2>
                   </div>
 
@@ -159,7 +144,7 @@ export const ViewApartment = () => {
             )}
           </div>
 
-          <ApartmentSidebar stair={stair} unit={unit} />
+          <ApartmentSidebar stair={stair} unit={unit} t={t} />
         </div>
       </section>
     </main>

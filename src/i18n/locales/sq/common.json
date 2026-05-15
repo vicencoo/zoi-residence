@@ -7,5 +7,15 @@
     "link5": "vendparkime",
     "link6": "kontakt",
     "reserve-btn": "Rezervo vizitë"
+  },
+  "footer": {
+    "description": "Rezidencë private për banim, me apartamente moderne dhe vila të projektuara për qetësi, privatësi dhe jetesë premium.",
+    "navigationLabel": "Navigim",
+    "contactLabel": "Kontakt",
+    "adress": "Tiranë, Shqipëri",
+    "socialLabel": "Social",
+    "socialText": " Përditësoni kontaktet, adresën dhe linket sociale sipas projektit real.",
+    "footerRights": "© 2026 Zoi Villa Residence. Të gjitha të drejtat e rezervuara.",
+    "footerProjected": "Projektuar për shitje rezidenciale premium."
   }
 }

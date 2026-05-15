@@ -18,10 +18,6 @@ export const Header = () => {
       <div className="mx-auto max-w-7xl rounded-[1.7rem] border border-white/10 bg-[#080806]/70 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
-            {/* <div className="relative grid h-12 w-12 place-items-center rounded-xl border border-amber-300/30 bg-white/10 shadow-2xl transition group-hover:rotate-6"> */}
-            {/* <div className="absolute inset-1 rounded-2xl bg-linear-to-br from-amber-200/25 to-transparent" /> */}
-            {/* <Home className="relative h-5 w-5 text-amber-200" /> */}
-            {/* </div> */}
             <img
               src="/images/favicons/zoi-villas-logo.webp"
               alt="ZOI VILLA ICON"
@@ -96,7 +92,7 @@ export const Header = () => {
             </div>
 
             <a
-              href="tel:+355690000000"
+              href="tel:+355682025455"
               className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/70 transition hover:border-amber-200/40 hover:text-amber-200"
             >
               <Phone className="h-4 w-4" />

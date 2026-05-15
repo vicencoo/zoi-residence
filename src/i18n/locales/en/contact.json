@@ -1,0 +1,34 @@
+{
+  "contactOptions": {
+    "title": "Contact",
+    "text": "Book a private consultation.",
+    "description": "Contact us for information about apartments, villas, parking spaces, pricing, and reservation opportunities at Zoi Villa Residence.",
+    "info": {
+      "title1": "phone",
+      "title2": "whatsApp",
+      "title3": "email",
+      "text1": "Speak directly with the sales team.",
+      "text2": "Get quick answers about availability.",
+      "text3": "Contact us for detailed information.",
+      "cta1": "Call now",
+      "cta2": "Write on WhatsApp",
+      "cta3": "Send email"
+    }
+  },
+  "privateVisit": "Private visit",
+  "discoverText": "Discover the residence up close.",
+  "consultText": "A dedicated consultation helps you better understand the typologies, floor plans, and reservation options.",
+  "reserveWhatsappText": "Reserve on WhatsApp",
+  "scheduleTitle": "Schedule",
+  "scheduleText": "By appointment",
+  "weekDays": "Monday — Friday",
+  "weekDaysTime": "09:00 — 18:00",
+  "weekEndDay": "Saturday",
+  "weekEndTime": "10:00 — 14:00",
+  "location": {
+    "title": "Location",
+    "location": "Tirana, Albania",
+    "description": "Zoi Villa Residence is designed for private living, tranquility, and easy access to the city.",
+    "openOnMap": "Open on map"
+  }
+}

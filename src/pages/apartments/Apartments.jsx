@@ -5,21 +5,23 @@ import {
   MousePointerClick,
   Car,
 } from "lucide-react";
-import { apartmentStairs } from "../../data/apartments";
 import { useNavigate } from "react-router-dom";
 import { Animate } from "../../components/Animate";
 import { Stairs } from "./Stairs";
 import { ApartmentCard } from "./ApartmentCard";
 import { useApartments } from "./useApartments";
 import { ApartmentsHero } from "./ApartmentsHero";
+import { useTranslation } from "react-i18next";
 
 export const Apartments = () => {
   const navigate = useNavigate();
-  const { animKey, handleStairSelect, selectedStair } = useApartments();
+  const { animKey, handleStairSelect, selectedStair, apartmentStairs } =
+    useApartments();
+  const { t } = useTranslation("apartments");
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
-      <ApartmentsHero />
+      <ApartmentsHero t={t} />
 
       <section className="px-6 pb-28">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[420px_1fr]">
@@ -33,8 +35,8 @@ export const Apartments = () => {
                   <Building2 className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-sm text-[#62594d]">Organizimi</p>
-                  <h2 className="text-xl font-semibold">4 shkallë banimi</h2>
+                  <p className="text-sm text-[#62594d]"> {t("organization")}</p>
+                  <h2 className="text-xl font-semibold">{t("totalStairs")}</h2>
                 </div>
               </div>
             </Animate>
@@ -49,6 +51,7 @@ export const Apartments = () => {
                       index={index}
                       isActive={isActive}
                       stair={stair}
+                      t={t}
                       key={stair.id}
                     />
                   );
@@ -72,7 +75,7 @@ export const Apartments = () => {
               <div className="absolute bottom-6 left-6 right-6 flex flex-col justify-between gap-5 text-white md:flex-row md:items-end">
                 <div>
                   <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#d8b56d]">
-                    Shkalla e zgjedhur
+                    {t("selectedStairLabel")}
                   </p>
                   <h2 className="text-5xl font-semibold tracking-tighter">
                     {selectedStair.name}
@@ -81,7 +84,9 @@ export const Apartments = () => {
 
                 <div className="flex w-fit items-center gap-3 rounded-2xl bg-white/15 px-5 py-4 backdrop-blur-xl">
                   <Layers3 className="h-5 w-5 text-[#d8b56d]" />
-                  <span>{selectedStair.totalUnits} njësi banimi</span>
+                  <span>
+                    {selectedStair.totalUnits} {t("totalUnitsLabel")}
+                  </span>
                 </div>
               </div>
             </div>
@@ -95,14 +100,13 @@ export const Apartments = () => {
 
                     <div>
                       <p className="mb-2 text-xs uppercase tracking-[0.3em] text-[#d8b56d]">
-                        Parkime opsionale
+                        {t("parking.label")}
                       </p>
                       <h3 className="text-2xl font-semibold tracking-tight">
-                        Zgjidh vendparkimin për apartamentin tuaj
+                        {t("parking.title")}
                       </h3>
                       <p className="mt-2 max-w-2xl text-sm leading-6 text-white/60">
-                        Rezidenca ofron 31 njësi parkimi. Shikoni planimetrinë,
-                        llojet dhe disponueshmërinë e parkimeve.
+                        {t("parking.text")}
                       </p>
                     </div>
                   </div>
@@ -111,7 +115,7 @@ export const Apartments = () => {
                     onClick={() => navigate("/parking")}
                     className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#d8b56d] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-white cursor-pointer"
                   >
-                    Shiko parkimet
+                    {t("parking.button")}
                     <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
                   </button>
                 </div>
@@ -120,7 +124,8 @@ export const Apartments = () => {
               <div className="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
                 <div>
                   <p className="mb-3 text-sm uppercase tracking-[0.32em] text-[#9a7330]">
-                    Njësitë e banimit
+                    {/* Njësitë e banimit */}
+                    {t("residentialUnitsLabel")}
                   </p>
                   <h3 className="text-4xl font-semibold tracking-tighter">
                     {selectedStair.name}
@@ -129,7 +134,8 @@ export const Apartments = () => {
 
                 <div className="flex items-center gap-3 rounded-full bg-[#f1e6d4] px-5 py-3 text-sm text-[#62594d]">
                   <MousePointerClick className="h-4 w-4 text-[#9a7330]" />
-                  Kliko një njësi për detaje
+                  {/* Kliko një njësi për detaje */}
+                  {t("selectUnitInstruction")}
                 </div>
               </div>
 
@@ -139,6 +145,7 @@ export const Apartments = () => {
                     index={index}
                     selectedStair={selectedStair}
                     unit={unit}
+                    t={t}
                     key={unit.id}
                   />
                 ))}

@@ -7,5 +7,15 @@
     "link5": "parkings",
     "link6": "contact",
     "reserve-btn": "Book a visit"
+  },
+  "footer": {
+    "description": "Private residential residence with modern apartments and villas designed for tranquility, privacy, and premium living.",
+    "navigationLabel": "Navigation",
+    "contactLabel": "Contact",
+    "adress": "Tirana, Albania",
+    "socialLabel": "Social",
+    "socialText": "Update the contacts, address, and social links according to the actual project.",
+    "footerRights": "© 2026 Zoi Villa Residence. All rights reserved.",
+    "footerProjected": "Designed for premium residential sales."
   }
 }

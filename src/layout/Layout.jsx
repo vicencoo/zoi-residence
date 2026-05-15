@@ -9,7 +9,7 @@ export const Layout = () => {
 
       <div className="flex flex-1">
         {/* <Sidebar/> */}
-        <main className="flex-1">
+        <main className="flex-1 min-w-0">
           <Outlet />
         </main>
       </div>

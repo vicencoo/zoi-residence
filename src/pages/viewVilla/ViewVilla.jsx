@@ -74,7 +74,7 @@ export const ViewVilla = () => {
                 {villa.hasGarden && (
                   <span className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-[#f4efe6] px-5 py-3 text-sm text-[#62594d]">
                     <Trees className="h-4 w-4 text-[#9a7330]" />
-                    {t("privateGardern")}
+                    {t("privateGarden")}
                   </span>
                 )}
               </div>

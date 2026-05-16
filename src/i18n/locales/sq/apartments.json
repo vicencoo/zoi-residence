@@ -68,7 +68,7 @@
     },
     "unit4": {
       "name": "Njësi banimi nr. 4",
-      "status": "Në shitje",
+      "status": "E shitur",
       "type": "Apartament 2+1",
       "orientation": "Jug-Perëndim",
       "shortDescription": "Apartament i madh për familje që kërkojnë komoditet maksimal.",
@@ -76,7 +76,7 @@
     },
     "unit5": {
       "name": "Njësi banimi nr. 5",
-      "status": "Në shitje",
+      "status": "E shitur",
       "type": "Apartament 3+1",
       "orientation": "Veri-Lindje",
       "shortDescription": "Apartament i qetë dhe funksional me organizim të pastër.",
@@ -152,7 +152,7 @@
     },
     "unit3": {
       "name": "Njësi banimi nr. 3",
-      "status": "Në shitje",
+      "status": "E shitur",
       "type": "Apartament 2+1",
       "orientation": "Jug-Perëndim",
       "shortDescription": "Apartament i gjerë 2+1 me orientim shumë të favorshëm.",
@@ -160,7 +160,7 @@
     },
     "unit4": {
       "name": "Njësi banimi nr. 4",
-      "status": "Në shitje",
+      "status": "E shitur",
       "type": "Apartament 3+1",
       "orientation": "Jug-Lindje",
       "shortDescription": "Apartament premium 3+1 me sipërfaqe të madhe.",

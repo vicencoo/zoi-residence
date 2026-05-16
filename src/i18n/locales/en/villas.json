@@ -31,7 +31,7 @@
   "villas": {
     "villa01": {
       "name": "Villa 01",
-      "status": "Available",
+      "status": "Sold out",
       "category": "Residential Villa",
       "shortDescription": "Elegant villa featuring spacious interiors and a private courtyard.",
       "description": "Villa 01 offers a contemporary residential layout with a private courtyard and thoughtfully designed spaces tailored for modern family living.",
@@ -57,7 +57,7 @@
     },
     "villa03": {
       "name": "Villa 03",
-      "status": "Available",
+      "status": "Sold out",
       "category": "Premium Villa",
       "shortDescription": "Premium villa with expansive interiors and a private courtyard.",
       "description": "Villa 03 blends contemporary architecture with a comfortable and functional layout designed for long-term living.",
@@ -70,7 +70,7 @@
     },
     "villa04": {
       "name": "Villa 04",
-      "status": "Available",
+      "status": "Sold out",
       "category": "Premium Villa",
       "shortDescription": "Premium villa with a privileged position and secluded outdoor spaces.",
       "description": "Villa 04 offers elevated privacy, abundant natural light, and spacious interiors ideal for family living.",
@@ -83,7 +83,7 @@
     },
     "villa05": {
       "name": "Villa 05",
-      "status": "Available",
+      "status": "Sold out",
       "category": "Residential Villa",
       "shortDescription": "Modern villa designed for comfortable family living.",
       "description": "Part of Row T-02, Villa 05 offers thoughtfully organized spaces, a private courtyard, and dedicated parking.",
@@ -96,7 +96,7 @@
     },
     "villa06": {
       "name": "Villa 06",
-      "status": "Available",
+      "status": "Sold out",
       "category": "Residential Villa",
       "shortDescription": "Villa with a private courtyard and a highly functional floor plan.",
       "description": "Villa 06 features a clear spatial organization, generous natural light, and privacy tailored for contemporary family living.",
@@ -135,7 +135,7 @@
     },
     "villa09": {
       "name": "Villa 09",
-      "status": "Exclusive",
+      "status": "Sold out",
       "category": "Signature Villa",
       "shortDescription": "Distinctive villa offering exceptional privacy and a unique setting.",
       "description": "Located within Row T-03, Villa 09 is envisioned as the project’s most exclusive residence, featuring expansive living spaces, a private courtyard, and the potential for a private swimming pool.",

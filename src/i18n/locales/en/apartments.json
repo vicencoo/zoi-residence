@@ -73,7 +73,7 @@
     "unit4": {
       "name": "Residential unit no. 4",
       "slug": "unit-4",
-      "status": "For sale",
+      "status": "Sold out",
       "type": "2+1 Apartment",
       "orientation": "South-West",
       "shortDescription": "Large apartment for families seeking maximum comfort.",
@@ -82,7 +82,7 @@
     "unit5": {
       "name": "Residential unit no. 5",
       "slug": "unit-5",
-      "status": "For sale",
+      "status": "Sold out",
       "type": "3+1 Apartment",
       "orientation": "North-East",
       "shortDescription": "Quiet and functional apartment with a clean layout.",
@@ -172,7 +172,7 @@
     "unit3": {
       "name": "Residential unit no. 3",
       "slug": "unit-3",
-      "status": "For sale",
+      "status": "Sold out",
       "type": "2+1 Apartment",
       "orientation": "South-West",
       "shortDescription": "Spacious 2+1 apartment with very favorable orientation.",
@@ -181,7 +181,7 @@
     "unit4": {
       "name": "Residential unit no. 4",
       "slug": "unit-4",
-      "status": "For sale",
+      "status": "Sold out",
       "type": "3+1 Apartment",
       "orientation": "South-East",
       "shortDescription": "Premium 3+1 apartment with a large surface area.",

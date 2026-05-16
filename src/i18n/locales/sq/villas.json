@@ -31,7 +31,7 @@
   "villas": {
     "villa01": {
       "name": "Vila 01",
-      "status": "Në shitje",
+      "status": "E shitur",
       "category": "Vilë rezidenciale",
       "shortDescription": "Vilë elegante me hapësira të bollshme dhe oborr privat.",
       "description": "Vila 01 ofron një organizim modern të ambienteve të banimit, oborr privat dhe hapësira të përshtatshme për jetesë familjare.",
@@ -57,7 +57,7 @@
     },
     "villa03": {
       "name": "Vila 03",
-      "status": "Në shitje",
+      "status": "E shitur",
       "category": "Vilë premium",
       "shortDescription": "Vilë premium me hapësira të mëdha dhe oborr privat.",
       "description": "Vila 03 kombinon arkitekturën moderne me një planimetri të rehatshme për jetesë afatgjatë.",
@@ -70,7 +70,7 @@
     },
     "villa04": {
       "name": "Vila 04",
-      "status": "Në shitje",
+      "status": "E shitur",
       "category": "Vilë premium",
       "shortDescription": "Vilë me pozicion të favorshëm dhe hapësira private.",
       "description": "Vila 04 ofron privatësi të lartë, ndriçim natyral dhe hapësira të bollshme për familje.",
@@ -83,7 +83,7 @@
     },
     "villa05": {
       "name": "Vila 05",
-      "status": "Në shitje",
+      "status": "E shitur",
       "category": "Vilë rezidenciale",
       "shortDescription": "Vilë moderne për jetesë familjare komode.",
       "description": "Vila 05 është pjesë e rrjeshtit T-02 dhe ofron hapësira të organizuara, oborr privat dhe parkim.",
@@ -96,7 +96,7 @@
     },
     "villa06": {
       "name": "Vila 06",
-      "status": "Në shitje",
+      "status": "E shitur",
       "category": "Vilë rezidenciale",
       "shortDescription": "Vilë me oborr privat dhe planimetri funksionale.",
       "description": "Vila 06 ofron një organizim të qartë të ambienteve, ndriçim natyral dhe privatësi për familje.",
@@ -135,7 +135,7 @@
     },
     "villa09": {
       "name": "Vila 09",
-      "status": "Ekskluzive",
+      "status": "E shitur",
       "category": "Vilë signature",
       "shortDescription": "Vilë e veçantë me privatësi maksimale dhe pozicion unik.",
       "description": "Vila 09 në rrjeshtin T-03 është konceptuar si një pronë më ekskluzive, me hapësira të mëdha, oborr privat dhe potencial për pishinë private.",

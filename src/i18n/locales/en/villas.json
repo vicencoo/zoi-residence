@@ -37,7 +37,7 @@
       "description": "Villa 01 offers a contemporary residential layout with a private courtyard and thoughtfully designed spaces tailored for modern family living.",
       "orientation": "South-East",
       "feature1": "Private courtyard",
-      "feature2": "Parking for 1 vehicle",
+      "feature2": "Parking for 7 vehicles",
       "feature3": "Contemporary façade",
       "feature4": "Natural daylight",
       "feature5": "Family-oriented environment"
@@ -52,7 +52,7 @@
       "feature1": "Landscaped courtyard",
       "feature2": "Open-plan living area",
       "feature3": "Expansive windows",
-      "feature4": "Private parking",
+      "feature4": "Garage parking and outside",
       "feature5": "Premium-quality materials"
     },
     "villa03": {
@@ -66,7 +66,7 @@
       "feature2": "Private courtyard",
       "feature3": "Master suite",
       "feature4": "Outdoor veranda",
-      "feature5": "Private parking"
+      "feature5": "Garage parking and outside"
     },
     "villa04": {
       "name": "Villa 04",
@@ -86,10 +86,10 @@
       "status": "Sold out",
       "category": "Residential Villa",
       "shortDescription": "Modern villa designed for comfortable family living.",
-      "description": "Part of Row T-02, Villa 05 offers thoughtfully organized spaces, a private courtyard, and dedicated parking.",
+      "description": "Part of Row T-02, Villa 05 offers thoughtfully organized spaces, a private courtyard, and 6 parking spaces.",
       "orientation": "East",
       "feature1": "Private courtyard",
-      "feature2": "Private parking",
+      "feature2": "Private parking for 6 vehicles",
       "feature3": "Natural daylight",
       "feature4": "Modern façade",
       "feature5": "Green surroundings"
@@ -102,7 +102,7 @@
       "description": "Villa 06 features a clear spatial organization, generous natural light, and privacy tailored for contemporary family living.",
       "orientation": "South",
       "feature1": "Private courtyard",
-      "feature2": "Parking for 2 vehicles",
+      "feature2": "Parking for 6 vehicles",
       "feature3": "Open-plan living area",
       "feature4": "Large windows",
       "feature5": "Premium-quality materials"
@@ -115,7 +115,7 @@
       "description": "Villa 07 combines premium living standards with the comfort and elegance of a modern family residence.",
       "orientation": "South-East",
       "feature1": "Private courtyard",
-      "feature2": "Parking for 2 vehicles",
+      "feature2": "Parking for 6 vehicles",
       "feature3": "Open-plan living area",
       "feature4": "Large windows",
       "feature5": "Modern architecture"
@@ -131,7 +131,7 @@
       "feature2": "Natural daylight",
       "feature3": "Open-plan living area",
       "feature4": "Private entrance",
-      "feature5": "Parking for 2 vehicles"
+      "feature5": "Parking for 6 vehicles"
     },
     "villa09": {
       "name": "Villa 09",

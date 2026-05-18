@@ -6,6 +6,7 @@ import {
   Layers3,
   Maximize2,
   Trees,
+  Warehouse,
   Waves,
 } from "lucide-react";
 
@@ -22,7 +23,18 @@ export const VIEW_VILLA_DETAILS = (t, villa) => [
   },
   { icon: BedDouble, label: `${t("details.detail3")}`, value: villa.bedrooms },
   { icon: Bath, label: `${t("details.detail4")}`, value: villa.bathrooms },
-  { icon: Car, label: `${t("details.detail5")}`, value: villa.parking },
+  {
+    icon: Warehouse,
+    label: `${t("details.garageParking")}`,
+    value: `${villa.parking.garage} ${t("details.cars")}`,
+  },
+  villa.parking?.outdoor
+    ? {
+        icon: Car,
+        label: `${t("details.outdoorParking")}`,
+        value: `${villa.parking?.outdoor} ${t("details.cars")}`,
+      }
+    : null,
   { icon: Layers3, label: `${t("details.detail6")}`, value: villa.floors },
   { icon: Compass, label: `${t("details.detail7")}`, value: villa.orientation },
   {

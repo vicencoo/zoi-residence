@@ -37,7 +37,7 @@
       "description": "Vila 01 ofron një organizim modern të ambienteve të banimit, oborr privat dhe hapësira të përshtatshme për jetesë familjare.",
       "orientation": "Jug-Lindje",
       "feature1": "Oborr privat",
-      "feature2": "Parkim për 1 makinë",
+      "feature2": "Parkim për 7 makina",
       "feature3": "Fasadë moderne",
       "feature4": "Ndriçim natyral",
       "feature5": "Ambient familjar"
@@ -52,7 +52,7 @@
       "feature1": "Oborr i gjelbëruar",
       "feature2": "Hapësirë dite e hapur",
       "feature3": "Dritare të mëdha",
-      "feature4": "Parkim privat",
+      "feature4": "Parkim ne garazh ose jasht",
       "feature5": "Materiale cilësore"
     },
     "villa03": {
@@ -66,7 +66,7 @@
       "feature2": "Oborr privat",
       "feature3": "Suitë master",
       "feature4": "Verandë",
-      "feature5": "Parkim privat"
+      "feature5": "Parkim ne garazh ose jasht"
     },
     "villa04": {
       "name": "Vila 04",
@@ -86,10 +86,10 @@
       "status": "E shitur",
       "category": "Vilë rezidenciale",
       "shortDescription": "Vilë moderne për jetesë familjare komode.",
-      "description": "Vila 05 është pjesë e rrjeshtit T-02 dhe ofron hapësira të organizuara, oborr privat dhe parkim.",
+      "description": "Vila 05 është pjesë e rrjeshtit T-02 dhe ofron hapësira të organizuara, oborr privat dhe 6 vende parkimi.",
       "orientation": "Lindje",
       "feature1": "Oborr privat",
-      "feature2": "Parkim privat",
+      "feature2": "Parkim për 7 makina",
       "feature3": "Ndriçim natyral",
       "feature4": "Fasadë moderne",
       "feature5": "Ambient i gjelbëruar"
@@ -102,7 +102,7 @@
       "description": "Vila 06 ofron një organizim të qartë të ambienteve, ndriçim natyral dhe privatësi për familje.",
       "orientation": "Jug",
       "feature1": "Oborr privat",
-      "feature2": "Parkim për 2 makina",
+      "feature2": "Parkim për 6 makina",
       "feature3": "Hapësirë dite e hapur",
       "feature4": "Dritare të mëdha",
       "feature5": "Materiale cilësore"
@@ -115,7 +115,7 @@
       "description": "Vila 07 kombinon standardin premium me komoditetin e një shtëpie familjare moderne.",
       "orientation": "Jug-Lindje",
       "feature1": "Oborr privat",
-      "feature2": "Parkim për 2 makina",
+      "feature2": "Parkim për 6 makina",
       "feature3": "Hapësirë dite e hapur",
       "feature4": "Dritare të mëdha",
       "feature5": "Arkitekturë moderne"
@@ -131,7 +131,7 @@
       "feature2": "Ndriçim natyral",
       "feature3": "Hapësirë dite e hapur",
       "feature4": "Hyrje private",
-      "feature5": "Parkim për 2 makina"
+      "feature5": "Parkim për 6 makina"
     },
     "villa09": {
       "name": "Vila 09",

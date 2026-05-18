@@ -113,18 +113,21 @@ export const ViewVilla = () => {
             </h2>
 
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              {details.map((item) => (
-                <div
-                  key={item.label}
-                  className="rounded-[1.7rem] border border-black/10 bg-[#f4efe6] p-5"
-                >
-                  <item.icon className="mb-5 h-6 w-6 text-[#9a7330]" />
-                  <p className="text-sm text-[#62594d]">{item.label}</p>
-                  <p className="mt-2 text-2xl font-semibold text-[#17130d]">
-                    {item.value}
-                  </p>
-                </div>
-              ))}
+              {details.map((item) => {
+                if (!item) return null;
+                return (
+                  <div
+                    key={item?.label}
+                    className="rounded-[1.7rem] border border-black/10 bg-[#f4efe6] p-5"
+                  >
+                    <item.icon className="mb-5 h-6 w-6 text-[#9a7330]" />
+                    <p className="text-sm text-[#62594d]">{item?.label}</p>
+                    <p className="mt-2 text-2xl font-semibold text-[#17130d]">
+                      {item?.value}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </Animate>
 

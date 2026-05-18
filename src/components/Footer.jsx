@@ -91,12 +91,15 @@ export const Footer = () => {
             </h4>
             <div className="flex gap-3">
               {FOOTERCONTACT.map((item) => (
-                <span
+                <a
                   key={item.id}
+                  href={item.path}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200 cursor-pointer"
                 >
                   {item.icon}
-                </span>
+                </a>
               ))}
             </div>
             <p className="mt-6 text-sm leading-6 text-white/42">

@@ -20,9 +20,9 @@ export const CONTACT_OPTIONS = (t) => [
   {
     icon: Mail,
     title: `${t("contactOptions.info.title3")}`,
-    value: "sales@zoivilla.al",
+    value: "klaudio.goci@atoil.al",
     text: `${t("contactOptions.info.text3")}`,
-    href: "mailto:sales@zoivilla.al",
+    href: "klaudio.goci@atoil.al",
     cta: `${t("contactOptions.info.cta3")}`,
   },
 ];

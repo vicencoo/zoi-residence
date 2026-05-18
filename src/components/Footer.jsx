@@ -2,14 +2,22 @@ import { Home, Mail, MapPin, Phone } from "lucide-react";
 import { navItems } from "../constants/navItems";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Instagram } from "@mui/icons-material";
+// import { Instagram } from "@mui/icons-material";
 import { WhatsApp } from "@mui/icons-material";
 import { Email } from "@mui/icons-material";
 
 const FOOTERCONTACT = [
-  { id: 1, icon: <Instagram className="h-4 w-4" /> },
-  { id: 2, icon: <WhatsApp className="h-4 w-4" /> },
-  { id: 3, icon: <Email className="h-4 w-4" /> },
+  // { id: 1, icon: <Instagram className="h-4 w-4" /> },
+  {
+    id: 2,
+    icon: <WhatsApp className="h-4 w-4" />,
+    path: "https://wa.me/355682025455",
+  },
+  {
+    id: 3,
+    icon: <Email className="h-4 w-4" />,
+    path: "mailto:klaudio.goci@atoil.al",
+  },
 ];
 
 export const Footer = () => {
@@ -66,10 +74,10 @@ export const Footer = () => {
                 <Phone className="h-4 w-4" /> +355 68 202 5455
               </a>
               <a
-                href="mailto:sales@auraresidence.al"
+                href="mailto:klaudio.goci@atoil.al"
                 className="inline-flex items-center gap-3 transition hover:text-white"
               >
-                <Mail className="h-4 w-4" /> sales@auraresidence.al
+                <Mail className="h-4 w-4" /> klaudio.goci@atoil.al
               </a>
               <span className="inline-flex items-center gap-3">
                 <MapPin className="h-4 w-4" /> {t("footer.adress")}

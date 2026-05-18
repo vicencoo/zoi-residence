@@ -1,6 +1,6 @@
 const contact = {
   phone: "+355 68 202 5455",
-  email: "sales@example.com",
+  email: "klaudio.goci@atoil.al",
   whatsapp: "+355682025455",
 };
 

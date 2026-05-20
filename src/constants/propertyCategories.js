@@ -4,7 +4,7 @@ export const PROPERTY_CATEGS = (t) => [
     title: `${t("propertyCateg.cardTitle1")}`,
     description: `${t("propertyCateg.cardDescription1")}`,
     details: [
-      "1+1, 2+1 dhe 3+1",
+      "2+1 dhe 3+1",
       `${t("propertyCateg.cardDetails1_1")}`,
       `${t("propertyCateg.cardDetails1_2")}`,
     ],

@@ -1,26 +1,26 @@
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Animate } from '../../components/Animate';
 import { ArrowRight, Home } from 'lucide-react';
 
 export const ApartmentCard = ({ unit, index, selectedStair, t }) => {
-  const navigate = useNavigate();
-
   const isSold =
     unit.status?.toLowerCase() === 'e shitur' ||
     unit.status?.toLowerCase() === 'sold out';
 
   return (
     <Animate
-      as='article'
+      as={Link}
+      to={`/apartments/${selectedStair.slug}/${unit.slug}`}
       preset='fadeUp'
       delay={index * 0.05}
-      onClick={() => navigate(`/apartments/${selectedStair.slug}/${unit.slug}`)}
-      className='group cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-[#f8f1e6] shadow-[0_16px_50px_rgba(55,38,15,0.08)] transition duration-300 hover:-translate-y-2 hover:bg-white'
+      className='group block cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-[#f8f1e6] text-[#17130d] shadow-[0_16px_50px_rgba(55,38,15,0.08)] transition duration-300 hover:-translate-y-2 hover:bg-white'
     >
       <div className='relative h-48 overflow-hidden'>
         <img
           src={unit.image}
           alt={unit.name}
+          loading="lazy"
+          decoding="async"
           className='h-full w-full object-cover transition duration-700 group-hover:scale-110'
         />
         <div className='absolute inset-0 bg-linear-to-t from-black/60 via-black/10 to-transparent' />

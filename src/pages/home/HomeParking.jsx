@@ -39,6 +39,7 @@ export const HomeParking = ({ t }) => {
             </p>
 
             <button
+              type="button"
               onClick={() => navigate("/parking")}
               className="group mt-8 inline-flex items-center gap-3 rounded-full bg-[#d8b56d] px-7 py-4 font-semibold text-[#17130d] transition hover:bg-[#17130d] hover:text-white cursor-pointer"
             >
@@ -50,8 +51,12 @@ export const HomeParking = ({ t }) => {
 
           <div className="relative min-h-90">
             <img
-              src="/images/parkimi.jpg"
+              src="/images/parkimi.webp"
               alt="Planimetria e parkimeve"
+              loading="lazy"
+              decoding="async"
+              width="1200"
+              height="800"
               className="absolute inset-0 h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-linear-to-r from-white/80 via-white/10 to-transparent lg:from-[#f4efe6]/80" />

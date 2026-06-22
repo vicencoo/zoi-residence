@@ -29,10 +29,13 @@ export const ContactOptions = ({ t }) => {
 
         <div className="mt-10 grid gap-4">
           {contactOptions.map((item, index) => (
-            <motion.span
+            <motion.a
               key={item.title}
-              onClick={() => window.open(item.href)}
               href={item.href}
+              target={item.href.startsWith("http") ? "_blank" : undefined}
+              rel={
+                item.href.startsWith("http") ? "noopener noreferrer" : undefined
+              }
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 + index * 0.08 }}
@@ -43,7 +46,7 @@ export const ContactOptions = ({ t }) => {
               </div>
 
               <div>
-                <p className="text-sm uppercase tracking-[0.22em] text-[#62594d]/60">
+                <p className="text-sm uppercase tracking-[0.22em] text-[#62594d]">
                   {item.title}
                 </p>
                 <p className="mt-1 text-lg font-semibold text-[#17130d]">
@@ -58,7 +61,7 @@ export const ContactOptions = ({ t }) => {
                 {item.cta}
                 <ArrowUpRight className="h-4 w-4" />
               </div>
-            </motion.span>
+            </motion.a>
           ))}
         </div>
       </div>

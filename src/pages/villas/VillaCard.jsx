@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   Bath,
@@ -13,25 +13,24 @@ import {
 import { Animate } from "../../components/Animate";
 
 export const VillaCard = ({ villa, index, t }) => {
-  const navigate = useNavigate();
-
   const isSold =
     villa.status?.toLowerCase() === "e shitur" ||
     villa.status?.toLowerCase() === "sold out";
 
   return (
     <Animate
-      as="article"
+      as={Link}
+      to={`/villas/${villa.id}`}
       preset="fadeUp"
       delay={index * 0.05}
-      onClick={() => navigate(`/villas/${villa.id}`)}
-      className="group cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-white/75 shadow-[0_16px_50px_rgba(55,38,15,0.07)] transition duration-300 hover:-translate-y-2 hover:bg-white"
+      className="group block cursor-pointer overflow-hidden rounded-4xl border border-black/10 bg-white/75 text-[#17130d] shadow-[0_16px_50px_rgba(55,38,15,0.07)] transition duration-300 hover:-translate-y-2 hover:bg-white"
     >
       <div className="relative h-52 overflow-hidden">
         <img
           src={villa.images[0]}
           alt={villa.name}
           loading="lazy"
+          decoding="async"
           className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-linear-to-t from-black/70 via-black/10 to-transparent" />

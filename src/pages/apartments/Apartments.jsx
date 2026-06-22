@@ -112,6 +112,7 @@ export const Apartments = () => {
                   </div>
 
                   <button
+                    type="button"
                     onClick={() => navigate("/parking")}
                     className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#d8b56d] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-white cursor-pointer"
                   >

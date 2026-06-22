@@ -54,9 +54,9 @@ export const ParkingHero = ({ t }) => {
           >
             <div className="flex items-center justify-between">
               <div>
-                <p className="text-sm text-white/50">{t("hero.totalText")}</p>
+                <p className="text-sm text-white/75">{t("hero.totalText")}</p>
                 <h2 className="text-5xl font-semibold text-[#d8b56d]">31</h2>
-                <p className="mt-1 text-white/55">{t("hero.parkingsText")}</p>
+                <p className="mt-1 text-white/75">{t("hero.parkingsText")}</p>
               </div>
 
               <span className="grid h-16 w-16 place-items-center rounded-2xl bg-white/10 text-[#d8b56d]">
@@ -66,12 +66,12 @@ export const ParkingHero = ({ t }) => {
 
             <div className="mt-6 grid grid-cols-2 gap-3 border-t border-white/10 pt-6">
               <div className="rounded-2xl bg-white/8 p-4">
-                <p className="text-sm text-white/45">{t("hero.parking")}</p>
+                <p className="text-sm text-white/75">{t("hero.parking")}</p>
                 <strong>12.5 m²</strong>
               </div>
 
               <div className="rounded-2xl bg-white/8 p-4">
-                <p className="text-sm text-white/45">{t("hero.commonText")}</p>
+                <p className="text-sm text-white/75">{t("hero.commonText")}</p>
                 <strong>8.8 m²</strong>
               </div>
             </div>

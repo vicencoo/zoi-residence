@@ -26,16 +26,15 @@ export const Location = ({ t }) => {
             {t("location.description")}
           </p>
 
-          <span
+          <a
             href={mapUrl}
-            onClick={() =>
-              window.open("https://maps.app.goo.gl/AifTTwsTKo78QDoe7")
-            }
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-3 rounded-full border border-black/10 bg-[#f1e6d4] px-6 py-3 font-semibold text-[#17130d] transition hover:bg-[#17130d] hover:text-white cursor-pointer"
           >
             {t("location.openOnMap")}
             <Navigation className="h-5 w-5" />
-          </span>
+          </a>
         </div>
 
         <div className="relative min-h-90 bg-[#d8b56d]/20 lg:min-h-full">

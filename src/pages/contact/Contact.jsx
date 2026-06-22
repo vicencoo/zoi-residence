@@ -29,13 +29,15 @@ export const Contact = () => {
               </h2>
               <p className="mt-5 leading-7 text-white/70">{t("consultText")}</p>
 
-              <span
-                onClick={() => window.open("https://wa.me/355682025455")}
+              <a
+                href="https://wa.me/355682025455"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-8 inline-flex items-center justify-center gap-3 rounded-full bg-[#d8b56d] px-7 py-4 font-semibold text-[#17130d] transition hover:bg-white"
               >
                 {t("reserveWhatsappText")}
                 <MessageCircle className="h-5 w-5" />
-              </span>
+              </a>
             </div>
           </div>
 

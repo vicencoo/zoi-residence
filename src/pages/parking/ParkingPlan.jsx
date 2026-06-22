@@ -9,7 +9,7 @@ export const ParkingPlan = ({ t }) => {
     >
       <div className="relative min-h-107.5 overflow-hidden rounded-4xl bg-[#17130d]">
         <img
-          src="/images/parkimi.jpg"
+          src="/images/parkimi.webp"
           alt="Planimetria e parkimeve"
           loading="eager"
           fetchPriority="high"

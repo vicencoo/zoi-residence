@@ -1,22 +1,20 @@
-import { Home, Mail, MapPin, Phone } from "lucide-react";
+import { Home, Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import { navItems } from "../constants/navItems";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-// import { Instagram } from "@mui/icons-material";
-import { WhatsApp } from "@mui/icons-material";
-import { Email } from "@mui/icons-material";
 
 const FOOTERCONTACT = [
-  // { id: 1, icon: <Instagram className="h-4 w-4" /> },
   {
     id: 2,
-    icon: <WhatsApp className="h-4 w-4" />,
+    icon: <MessageCircle className="h-4 w-4" />,
     path: "https://wa.me/355682025455",
+    label: "Kontakto ne WhatsApp",
   },
   {
     id: 3,
-    icon: <Email className="h-4 w-4" />,
+    icon: <Mail className="h-4 w-4" />,
     path: "mailto:klaudio.goci@atoil.al",
+    label: "Dergo email",
   },
 ];
 
@@ -32,15 +30,15 @@ export const Footer = () => {
                 <Home className="h-5 w-5 text-amber-200" />
               </div>
               <div>
-                <p className="text-xl font-semibold tracking-[0.25em] text-white/45">
+                <p className="text-xl font-semibold tracking-[0.25em] text-white/80">
                   Zoi Villa
                 </p>
-                <p className="text-xs uppercase tracking-[0.42em] text-white/45">
+                <p className="text-xs uppercase tracking-[0.42em] text-white/70">
                   Residence
                 </p>
               </div>
             </div>
-            <p className="mt-6 max-w-sm leading-7 text-white/55">
+            <p className="mt-6 max-w-sm leading-7 text-white/70">
               {t("footer.description")}
             </p>
           </div>
@@ -49,7 +47,7 @@ export const Footer = () => {
             <h4 className="mb-5 text-sm uppercase tracking-[0.28em] text-amber-200">
               {t("footer.navigationLabel")}
             </h4>
-            <div className="grid gap-3 text-white/58">
+            <div className="grid gap-3 text-white/75">
               {navItems.map((item) => (
                 <Link
                   key={item.label}
@@ -66,7 +64,7 @@ export const Footer = () => {
             <h4 className="mb-5 text-sm uppercase tracking-[0.28em] text-amber-200">
               {t("footer.contactLabel")}
             </h4>
-            <div className="grid gap-3 text-white/58">
+            <div className="grid gap-3 text-white/75">
               <a
                 href="tel:+355682025455"
                 className="inline-flex items-center gap-3 transition hover:text-white"
@@ -94,21 +92,22 @@ export const Footer = () => {
                 <a
                   key={item.id}
                   href={item.path}
+                  aria-label={item.label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/65 transition hover:border-amber-200/40 hover:text-amber-200 cursor-pointer"
+                  className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/4 text-white/80 transition hover:border-amber-200/40 hover:text-amber-200 cursor-pointer"
                 >
                   {item.icon}
                 </a>
               ))}
             </div>
-            <p className="mt-6 text-sm leading-6 text-white/42">
+            <p className="mt-6 text-sm leading-6 text-white/70">
               {t("footer.socialText")}
             </p>
           </div>
         </div>
 
-        <div className="flex flex-col justify-between gap-4 border-t border-white/10 px-8 py-6 text-sm text-white/38 md:flex-row md:px-12">
+        <div className="flex flex-col justify-between gap-4 border-t border-white/10 px-8 py-6 text-sm text-white/65 md:flex-row md:px-12">
           <p>{t("footer.footerRights")}</p>
           <p>{t("footer.footerProjected")}</p>
         </div>

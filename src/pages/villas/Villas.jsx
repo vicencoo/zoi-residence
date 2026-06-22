@@ -10,8 +10,6 @@ export const Villas = () => {
   const { animKey, handleRowSelect, selectedRow, villaRows } = useVillas();
   const { t } = useTranslation("villas");
 
-  console.log("selectedRow:", selectedRow);
-
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
       <VillasHero t={t} />

@@ -10,7 +10,7 @@ export const PROPERTY_CATEGS = (t) => [
     ],
     button: `${t("propertyCateg.cardButton1")}`,
     path: "/apartments",
-    image: "/images/apartments.jpg",
+    image: "/images/apartments.webp",
   },
   {
     type: `${t("propertyCateg.cardType2")}`,
@@ -23,6 +23,6 @@ export const PROPERTY_CATEGS = (t) => [
     ],
     button: `${t("propertyCateg.cardButton2")}`,
     path: "/villas",
-    image: "/images/villas.jpg",
+    image: "/images/villas.webp",
   },
 ];

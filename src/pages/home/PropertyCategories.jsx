@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { PROPERTY_CATEGS } from "../../constants/propertyCategories";
@@ -9,7 +9,6 @@ export const PropertyCategories = ({
   isMobile,
   t,
 }) => {
-  const navigate = useNavigate();
   const propertyCategories = PROPERTY_CATEGS(t);
   return (
     <section
@@ -46,6 +45,10 @@ export const PropertyCategories = ({
               <img
                 src={property.image}
                 alt={property.title}
+                loading="lazy"
+                decoding="async"
+                width="1200"
+                height="800"
                 className="h-full w-full object-cover transition duration-700 md:group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent" />
@@ -70,13 +73,13 @@ export const PropertyCategories = ({
                   </div>
                 ))}
               </div>
-              <span
-                onClick={() => navigate(property.path)}
+              <Link
+                to={property.path}
                 className="mt-8 inline-flex cursor-pointer items-center gap-2 rounded-full bg-[#17130d] px-6 py-3 font-semibold text-white transition hover:bg-[#d8b56d] hover:text-[#17130d]"
               >
                 {property.button}
                 <ArrowRight className="h-4 w-4" />
-              </span>
+              </Link>
             </div>
           </motion.article>
         ))}

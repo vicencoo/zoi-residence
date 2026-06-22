@@ -22,7 +22,7 @@ export const CONTACT_OPTIONS = (t) => [
     title: `${t("contactOptions.info.title3")}`,
     value: "klaudio.goci@atoil.al",
     text: `${t("contactOptions.info.text3")}`,
-    href: "klaudio.goci@atoil.al",
+    href: "mailto:klaudio.goci@atoil.al",
     cta: `${t("contactOptions.info.cta3")}`,
   },
 ];

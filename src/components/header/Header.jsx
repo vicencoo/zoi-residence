@@ -1,6 +1,5 @@
 import { ArrowRight, Menu, Phone, X } from "lucide-react";
 
-import { motion } from "framer-motion";
 import { navItems } from "../../constants/navItems";
 import { Link, NavLink } from "react-router-dom";
 import ReactCountryFlag from "react-country-flag";
@@ -15,12 +14,14 @@ export const Header = () => {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-6">
-      <div className="mx-auto max-w-7xl rounded-[1.7rem] border border-white/10 bg-[#080806]/70 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
+      <div className="mx-auto max-w-7xl rounded-[1.7rem] border border-white/10 bg-[#080806]/92 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
             <img
               src="/images/favicons/zoi-villas-logo.webp"
-              alt="ZOI VILLA ICON"
+              alt="Zoi Villa Residence"
+              width="48"
+              height="48"
               className="w-12 h-12 transition group-hover:rotate-6"
             />
 
@@ -29,13 +30,13 @@ export const Header = () => {
                 Zoi Villa
               </p>
 
-              <p className="text-[10px] uppercase tracking-[0.42em] text-white/45">
+              <p className="text-[10px] uppercase tracking-[0.42em] text-white/70">
                 Residence
               </p>
             </div>
           </Link>
 
-          <nav className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/4 p-1 text-sm text-white/68 lg:flex">
+          <nav className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/4 p-1 text-sm text-white/80 lg:flex">
             {navItems.map((item) => (
               <NavLink
                 to={item.path}
@@ -55,6 +56,9 @@ export const Header = () => {
             {/* Language Switcher */}
             <div className="flex items-center gap-2 rounded-full border border-white/10 bg-white/4 p-1">
               <button
+                type="button"
+                aria-label="Ndrysho gjuhen ne shqip"
+                aria-pressed={selectedLocale === "sq"}
                 onClick={() => handleChangeLanguage("sq")}
                 className={`grid h-10 w-10 place-items-center rounded-full transition ${
                   selectedLocale === "sq"
@@ -73,6 +77,9 @@ export const Header = () => {
               </button>
 
               <button
+                type="button"
+                aria-label="Change language to English"
+                aria-pressed={selectedLocale === "en"}
                 onClick={() => handleChangeLanguage("en")}
                 className={`grid h-10 w-10 place-items-center rounded-full transition ${
                   selectedLocale === "en"
@@ -108,6 +115,10 @@ export const Header = () => {
           </div>
 
           <button
+            type="button"
+            aria-label={isOpen ? "Mbyll menune" : "Hap menune"}
+            aria-expanded={isOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setIsOpen((value) => !value)}
             className="grid h-11 w-11 place-items-center rounded-full border border-white/10 bg-white/6 text-white lg:hidden"
           >
@@ -116,15 +127,13 @@ export const Header = () => {
         </div>
 
         {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            className="border-t border-white/10 px-4 pb-4 lg:hidden"
-          >
-            <div className="grid gap-2 pt-4">
+          <div className="border-t border-white/10 px-4 pb-4 lg:hidden">
+            <div id="mobile-navigation" className="grid gap-2 pt-4">
               {/* Mobile Language */}
               <div className="mb-2 flex items-center gap-2">
                 <button
+                  type="button"
+                  aria-pressed={selectedLocale === "sq"}
                   onClick={() => handleChangeLanguage("sq")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
                     selectedLocale === "sq" ? "bg-white/10" : "bg-white/5"
@@ -135,6 +144,8 @@ export const Header = () => {
                 </button>
 
                 <button
+                  type="button"
+                  aria-pressed={selectedLocale === "en"}
                   onClick={() => handleChangeLanguage("en")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
                     selectedLocale === "en" ? "bg-white/10" : "bg-white/5"
@@ -165,7 +176,7 @@ export const Header = () => {
                 {t("header.reserve-btn")}
               </Link>
             </div>
-          </motion.div>
+          </div>
         )}
       </div>
     </header>

@@ -22,7 +22,7 @@ export const APARTMENT_STAIRS = (t) => {
       name: `${t("stair1.name")}`,
       slug: "stair-1",
       totalUnits: 5,
-      image: "/images/apartments.jpg",
+      image: "/images/apartments.webp",
       units: [
         {
           id: 1,
@@ -215,7 +215,7 @@ export const APARTMENT_STAIRS = (t) => {
       name: `${t("stair2.name")}`,
       slug: "stair-2",
       totalUnits: 2,
-      image: "/images/apartments.jpg",
+      image: "/images/apartments.webp",
       units: [
         {
           id: 1,
@@ -299,7 +299,7 @@ export const APARTMENT_STAIRS = (t) => {
       name: `${t("stair3.name")}`,
       slug: "stair-3",
       totalUnits: 3,
-      image: "/images/apartments.jpg",
+      image: "/images/apartments.webp",
       units: [
         {
           id: 1,
@@ -416,7 +416,7 @@ export const APARTMENT_STAIRS = (t) => {
       name: `${t("stair4.name")}`,
       slug: "stair-4",
       totalUnits: 5,
-      image: "/images/apartments.jpg",
+      image: "/images/apartments.webp",
       units: [
         {
           id: 1,

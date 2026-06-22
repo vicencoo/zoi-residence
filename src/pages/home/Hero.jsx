@@ -82,7 +82,7 @@ export const Hero = ({ fadeUp, t }) => {
           transition={{ duration: 7, repeat: Infinity, ease: "easeInOut" }}
           className="relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl transform-3d"
         >
-          <img
+          {/* <img
             src="/images/ZOI_Villa_Residence.webp"
             alt="Rezidencë moderne luksoze"
             width="1440"
@@ -90,6 +90,22 @@ export const Hero = ({ fadeUp, t }) => {
             fetchPriority="high"
             decoding="async"
             className="h-130 w-full rounded-[1.7rem] object-cover"
+          /> */}
+          <img
+            src="/images/ZOI_Villa_Residence-768.webp"
+            srcSet="
+            /images/ZOI_Villa_Residence-480.webp 480w,
+            /images/ZOI_Villa_Residence-768.webp 768w,
+            /images/ZOI_Villa_Residence-1024.webp 1024w,
+            /images/ZOI_Villa_Residence-1440.webp 1440w
+          "
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 775px"
+            alt="Rezidencë moderne luksoze"
+            width="1440"
+            height="960"
+            fetchPriority="high"
+            decoding="async"
+            className="h-[420px] sm:h-[520px] w-full rounded-[1.7rem] object-cover"
           />
           <div className="absolute inset-3 rounded-[1.7rem] bg-linear-to-t from-black/70 via-black/10 to-transparent" />
           <div className="absolute bottom-8 left-8 right-8 rounded-3xl border border-white/15 bg-black/35 p-5 backdrop-blur-xl">

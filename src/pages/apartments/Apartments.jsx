@@ -61,7 +61,6 @@ export const Apartments = () => {
           </aside>
 
           <section className="overflow-hidden rounded-[2.7rem] border border-black/10 bg-white/75 p-5 shadow-[0_30px_110px_rgba(55,38,15,0.12)] backdrop-blur-xl md:p-7">
-            {/* <Animate key={animKey} preset="fadeIn" duration={0.2}> */}
             <div className="relative mb-7 h-85 overflow-hidden rounded-[2.2rem] md:h-105">
               <img
                 src={selectedStair.image}

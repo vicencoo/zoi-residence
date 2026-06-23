@@ -55,6 +55,7 @@ export const HomeParking = ({ t }) => {
               alt="Planimetria e parkimeve"
               loading="lazy"
               decoding="async"
+              fetchPriority="low"
               width="1200"
               height="800"
               className="absolute inset-0 h-full w-full object-cover"

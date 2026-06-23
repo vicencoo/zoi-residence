@@ -4,7 +4,7 @@ export const VILLA_ROWS = (t) => [
     name: "T-01",
     title: `${t("rows.t01.title")}`,
     description: ` ${t("rows.t01.description")}`,
-    image: "/images/villas/t-01-row.jpg",
+    image: "/images/villas/t-01-row.avif",
     totalVillas: 4,
     villas: [
       {
@@ -187,7 +187,7 @@ export const VILLA_ROWS = (t) => [
     name: "T-02",
     title: `${t("rows.t02.title")}`,
     description: `${t("rows.t02.description")}`,
-    image: "/images/villas/t-02-row.jpg",
+    image: "/images/villas/t-02-row.avif",
     totalVillas: 5,
     villas: [
       {
@@ -371,7 +371,7 @@ export const VILLA_ROWS = (t) => [
     name: "T-03",
     title: `${t("rows.t03.title")}`,
     description: `${t("rows.t03.description")}`,
-    image: "/images/villas/t-03-row.jpg",
+    image: "/images/villas/t-03-row.avif",
 
     totalVillas: 1,
     villas: [

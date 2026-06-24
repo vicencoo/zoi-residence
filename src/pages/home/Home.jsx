@@ -8,7 +8,7 @@ import { INVESTMENT_INFO } from "../../constants/investmentInfo";
 import { useNavigate } from "react-router-dom";
 
 export const HomePage = () => {
-  const { active, handleChangeActive, isMobile } = useHome();
+  const { active, handleChangeActive } = useHome();
   const { t } = useTranslation("home");
   const navigate = useNavigate();
   const investmentInfo = INVESTMENT_INFO(t);
@@ -26,11 +26,10 @@ export const HomePage = () => {
       {/* ── Hero ── */}
       <Hero t={t} />
       {/* ── Features ── */}
-      <Features isMobile={isMobile} t={t} />
+      <Features t={t} />
 
       {/* ── Property Categories ── */}
       <PropertyCategories
-        isMobile={isMobile}
         active={active}
         handleChangeActive={handleChangeActive}
         t={t}

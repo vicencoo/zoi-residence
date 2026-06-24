@@ -6,7 +6,6 @@ import { Animate } from "../../components/Animate";
 export const PropertyCategories = ({
   active,
   handleChangeActive,
-  isMobile,
   t,
 }) => {
   const propertyCategories = PROPERTY_CATEGS(t);
@@ -33,7 +32,7 @@ export const PropertyCategories = ({
             as="article"
             key={property.type}
             onMouseEnter={() => handleChangeActive(index)}
-            delay={isMobile ? 0 : index * 100}
+            delay={index * 100}
             className={`group overflow-hidden rounded-[2.2rem] border bg-white/75 shadow-[0_30px_80px_rgba(55,38,15,0.12)] backdrop-blur-xl transition duration-500 transform-3d md:hover:-translate-y-3 md:hover:rotate-x-[5deg] ${
               index === 0 ? "md:hover:-rotate-y-[4deg]" : "md:hover:rotate-y-[4deg]"
             } ${

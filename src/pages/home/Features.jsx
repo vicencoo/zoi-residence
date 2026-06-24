@@ -1,7 +1,7 @@
 import { FEATURES } from "../../constants/features";
 import { Animate } from "../../components/Animate";
 
-export const Features = ({ isMobile, t }) => {
+export const Features = ({ t }) => {
   const features = FEATURES(t);
   return (
     <section
@@ -24,7 +24,7 @@ export const Features = ({ isMobile, t }) => {
         {features.map((item, index) => (
           <Animate
             key={item.title}
-            delay={isMobile ? 0 : index * 80}
+            delay={index * 80}
             className="group rounded-4xl border border-black/10 bg-white/75 p-6 shadow-[0_16px_50px_rgba(55,38,15,0.07)] backdrop-blur-xl transition transform-3d hover:border-[#9a7330]/30 hover:bg-white md:hover:-translate-y-2.5 md:hover:rotate-x-[6deg] md:hover:-rotate-y-[6deg]"
           >
             <div className="mb-8 grid h-14 w-14 place-items-center rounded-2xl bg-[#d8b56d]/15 text-[#9a7330] transition group-hover:scale-110">

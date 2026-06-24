@@ -140,7 +140,6 @@ const presets = {
 
 const shouldReduceMotion = () =>
   typeof window === "undefined" ||
-  window.innerWidth < 768 ||
   window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export const Animate = ({

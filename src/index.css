@@ -81,7 +81,7 @@ body {
   }
 }
 
-@media (max-width: 767px), (prefers-reduced-motion: reduce) {
+@media (max-width: 767px) {
   *,
   ::before,
   ::after {
@@ -98,7 +98,9 @@ body {
   [class*="shadow-["] {
     box-shadow: none !important;
   }
+}
 
+@media (prefers-reduced-motion: reduce) {
   .hero-card-enter,
   .hero-card-float,
   .hero-mini-float,

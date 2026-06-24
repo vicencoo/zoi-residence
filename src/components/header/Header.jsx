@@ -14,7 +14,11 @@ export const Header = () => {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-4 py-4 md:px-6">
-      <div className="mx-auto max-w-7xl rounded-[1.7rem] border border-white/10 bg-[#080806]/92 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl">
+      <div
+        className={`mx-auto max-w-7xl overflow-hidden rounded-[1.7rem] border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.35)] backdrop-blur-2xl ${
+          isOpen ? "bg-[#050503]/98" : "bg-[#080806]/92"
+        } lg:bg-[#080806]/92`}
+      >
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
             <img
@@ -136,7 +140,7 @@ export const Header = () => {
                   aria-pressed={selectedLocale === "sq"}
                   onClick={() => handleChangeLanguage("sq")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
-                    selectedLocale === "sq" ? "bg-white/10" : "bg-white/5"
+                    selectedLocale === "sq" ? "bg-white/16" : "bg-white/8"
                   }`}
                   Link
                 >
@@ -148,7 +152,7 @@ export const Header = () => {
                   aria-pressed={selectedLocale === "en"}
                   onClick={() => handleChangeLanguage("en")}
                   className={`flex-1 rounded-2xl border border-white/10 py-3 ${
-                    selectedLocale === "en" ? "bg-white/10" : "bg-white/5"
+                    selectedLocale === "en" ? "bg-white/16" : "bg-white/8"
                   }`}
                 >
                   🇬🇧 English
@@ -161,7 +165,7 @@ export const Header = () => {
                   to={item.path}
                   onClick={() => setIsOpen(false)}
                   className={({ isActive }) =>
-                    `rounded-2xl px-4 py-4 capitalize ${isActive ? "bg-white/25 text-amber-100" : "bg-white/5 text-white/75"}`
+                    `rounded-2xl px-4 py-4 capitalize ${isActive ? "bg-white/28 text-amber-100" : "bg-white/8 text-white/80"}`
                   }
                 >
                   {t(item.label)}

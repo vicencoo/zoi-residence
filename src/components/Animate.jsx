@@ -138,7 +138,10 @@ const presets = {
   slideRight: ["translate-x-6 opacity-0", "translate-x-0 opacity-100"],
 };
 
-const isMobile = () => typeof window !== "undefined" && window.innerWidth < 768;
+const shouldReduceMotion = () =>
+  typeof window === "undefined" ||
+  window.innerWidth < 768 ||
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 export const Animate = ({
   children,
@@ -149,14 +152,19 @@ export const Animate = ({
   once = true,
   as: Tag = "div",
   className = "",
-
+  style,
   ...props
 }) => {
   const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
+  const reduceMotion = shouldReduceMotion();
+  const [visible, setVisible] = useState(reduceMotion);
   const [hiddenClass, visibleClass] = presets[preset] ?? presets.fadeUp;
 
   useEffect(() => {
+    if (reduceMotion) {
+      return undefined;
+    }
+
     const el = ref.current;
     if (!el) return;
 
@@ -178,9 +186,7 @@ export const Animate = ({
 
     observer.observe(el);
     return () => observer.disconnect();
-  }, [threshold, once]);
-
-  const mobile = isMobile();
+  }, [threshold, once, reduceMotion]);
 
   return (
     <Tag
@@ -189,9 +195,10 @@ export const Animate = ({
         visible ? visibleClass : hiddenClass
       } ${className}`}
       style={{
-        transitionDuration: `${mobile ? 250 : duration}ms`,
-        transitionDelay: visible ? `${mobile ? 0 : delay}ms` : "0ms",
+        transitionDuration: reduceMotion ? "0ms" : `${duration}ms`,
+        transitionDelay: visible && !reduceMotion ? `${delay}ms` : "0ms",
         willChange: "transform, opacity",
+        ...style,
       }}
       {...props}
     >

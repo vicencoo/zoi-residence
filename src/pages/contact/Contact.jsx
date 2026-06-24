@@ -1,8 +1,8 @@
-import { motion } from "framer-motion";
 import { MessageCircle, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { ContactOptions } from "./ContactOptions";
 import { Location } from "./Location";
+import { Animate } from "../../components/Animate";
 
 export const Contact = () => {
   const { t } = useTranslation("contact");
@@ -11,10 +11,10 @@ export const Contact = () => {
       <section className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[1.05fr_0.95fr]">
         <ContactOptions t={t} />
 
-        <motion.aside
-          initial={{ opacity: 0, y: 28 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.12, duration: 0.7, ease: "easeOut" }}
+        <Animate
+          as="aside"
+          delay={120}
+          duration={700}
           className="grid gap-8"
         >
           <div className="relative overflow-hidden rounded-[2.75rem] border border-black/10 bg-[#17130d] p-8 text-white shadow-[0_30px_100px_rgba(55,38,15,0.18)] md:p-10">
@@ -67,7 +67,7 @@ export const Contact = () => {
               </div>
             </div>
           </div>
-        </motion.aside>
+        </Animate>
       </section>
 
       <Location t={t} />

@@ -1,6 +1,6 @@
 import { ArrowLeft, Home } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
+import { Animate } from "../../components/Animate";
 
 export const ApartmentHero = ({ stair, unit, t }) => {
   const navigate = useNavigate();
@@ -19,10 +19,7 @@ export const ApartmentHero = ({ stair, unit, t }) => {
         </button>
 
         <div className="grid gap-10 lg:grid-cols-[1fr_430px] lg:items-end">
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-          >
+          <Animate>
             <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#9a7330]">
               {stair.name} / {unit.type}
             </p>
@@ -34,12 +31,10 @@ export const ApartmentHero = ({ stair, unit, t }) => {
             <p className="mt-6 max-w-2xl text-lg leading-8 text-[#62594d]">
               {unit.shortDescription}
             </p>
-          </motion.div>
+          </Animate>
 
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.08 }}
+          <Animate
+            delay={80}
             className="rounded-4xl border border-black/10 bg-[#17130d] p-6 text-white shadow-[0_30px_100px_rgba(23,19,13,0.22)]"
           >
             <div className="flex items-center justify-between gap-4">
@@ -65,7 +60,7 @@ export const ApartmentHero = ({ stair, unit, t }) => {
                 <p className="mt-1 text-xl font-semibold">{unit.pricePerM2}</p>
               </div>
             </div>
-          </motion.div>
+          </Animate>
         </div>
       </div>
     </section>

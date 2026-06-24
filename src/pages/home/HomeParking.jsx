@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
 import { ArrowRight, Car } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { Animate } from "../../components/Animate";
 
 const PARKING_INFO = (t) => [
   ["31", `${t("parking.cardInfo1")}`],
@@ -13,11 +13,9 @@ export const HomeParking = ({ t }) => {
   const parkingInfo = PARKING_INFO(t);
   return (
     <section className="relative z-10 mx-auto max-w-7xl px-6 py-10">
-      <motion.div
-        initial={{ opacity: 0, y: 28 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.25 }}
-        transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+      <Animate
+        threshold={0.25}
+        duration={550}
         className="overflow-hidden rounded-[2.5rem] border border-[#9a7330]/20 bg-white/75 shadow-[0_35px_100px_rgba(55,38,15,0.12)] backdrop-blur-2xl"
       >
         <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
@@ -77,7 +75,7 @@ export const HomeParking = ({ t }) => {
             </div>
           </div>
         </div>
-      </motion.div>
+      </Animate>
     </section>
   );
 };

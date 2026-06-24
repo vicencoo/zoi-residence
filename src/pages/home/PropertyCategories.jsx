@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { PROPERTY_CATEGS } from "../../constants/propertyCategories";
+import { Animate } from "../../components/Animate";
 
 export const PropertyCategories = ({
   active,
@@ -29,15 +29,14 @@ export const PropertyCategories = ({
 
       <div className="grid gap-7 lg:grid-cols-2">
         {propertyCategories.map((property, index) => (
-          <motion.article
+          <Animate
+            as="article"
             key={property.type}
             onMouseEnter={() => handleChangeActive(index)}
-            initial={isMobile ? false : { opacity: 0, y: 30 }}
-            whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            whileHover={{ y: -14, rotateX: 5, rotateY: index === 0 ? -4 : 4 }}
-            className={`group overflow-hidden rounded-[2.2rem] border bg-white/75 shadow-[0_30px_80px_rgba(55,38,15,0.12)] backdrop-blur-xl transition duration-500 transform-3d ${
+            delay={isMobile ? 0 : index * 100}
+            className={`group overflow-hidden rounded-[2.2rem] border bg-white/75 shadow-[0_30px_80px_rgba(55,38,15,0.12)] backdrop-blur-xl transition duration-500 transform-3d md:hover:-translate-y-3 md:hover:rotate-x-[5deg] ${
+              index === 0 ? "md:hover:-rotate-y-[4deg]" : "md:hover:rotate-y-[4deg]"
+            } ${
               active === index ? "border-[#9a7330]/50" : "border-black/10"
             }`}
           >
@@ -81,7 +80,7 @@ export const PropertyCategories = ({
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-          </motion.article>
+          </Animate>
         ))}
       </div>
     </section>

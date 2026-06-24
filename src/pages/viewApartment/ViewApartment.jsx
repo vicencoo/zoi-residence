@@ -1,5 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import { motion } from "framer-motion";
 import {
   Bath,
   BedDouble,
@@ -14,6 +13,7 @@ import { AparmentImages } from "./ApartmentImages";
 import { ApartmentSidebar } from "./ApartmentSidebar";
 import { ApartmentHero } from "./ApartmentHero";
 import { useTranslation } from "react-i18next";
+import { Animate } from "../../components/Animate";
 
 export const ViewApartment = () => {
   const navigate = useNavigate();
@@ -68,11 +68,9 @@ export const ViewApartment = () => {
                 const Icon = item.icon;
 
                 return (
-                  <motion.div
+                  <Animate
                     key={item.label}
-                    initial={{ opacity: 0, y: 18 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.04 }}
+                    delay={index * 40}
                     className="rounded-[1.8rem] border border-black/10 bg-white/70 p-5 shadow-[0_18px_60px_rgba(55,38,15,0.07)]"
                   >
                     <span className="grid h-12 w-12 place-items-center rounded-2xl bg-[#17130d] text-[#d8b56d]">
@@ -82,7 +80,7 @@ export const ViewApartment = () => {
                     <h3 className="mt-1 text-2xl font-semibold">
                       {item.value}
                     </h3>
-                  </motion.div>
+                  </Animate>
                 );
               })}
             </div>

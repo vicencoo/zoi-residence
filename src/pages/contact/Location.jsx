@@ -1,16 +1,13 @@
-import { motion } from "framer-motion";
 import { Navigation } from "lucide-react";
+import { Animate } from "../../components/Animate";
 
 export const Location = ({ t }) => {
   const mapUrl = "https://maps.app.goo.gl/AifTTwsTKo78QDoe7";
 
   return (
     <section className="mx-auto mt-8 max-w-7xl">
-      <motion.div
-        initial={{ opacity: 0, y: 28 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
+      <Animate
+        duration={700}
         className="grid overflow-hidden rounded-[2.75rem] border border-black/10 bg-white/75 shadow-[0_30px_100px_rgba(55,38,15,0.1)] backdrop-blur-2xl lg:grid-cols-[0.85fr_1.15fr]"
       >
         <div className="p-8 md:p-10">
@@ -47,7 +44,7 @@ export const Location = ({ t }) => {
             allowFullScreen
           />
         </div>
-      </motion.div>
+      </Animate>
     </section>
   );
 };

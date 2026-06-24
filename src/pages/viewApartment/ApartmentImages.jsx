@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { Animate } from "../../components/Animate";
 
 export const AparmentImages = ({
   images,
@@ -8,9 +8,7 @@ export const AparmentImages = ({
   t,
 }) => {
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 26 }}
-      animate={{ opacity: 1, y: 0 }}
+    <Animate
       className="w-full max-w-full overflow-hidden rounded-4xl border border-black/10 bg-white/70 p-3 shadow-[0_30px_110px_rgba(55,38,15,0.12)] backdrop-blur-xl md:rounded-[2.8rem] md:p-4"
     >
       {/* <div className="relative h-[340px] overflow-hidden rounded-[1.6rem] md:h-[520px] md:rounded-[2.2rem]"> */}
@@ -61,6 +59,6 @@ export const AparmentImages = ({
           ))}
         </div>
       </div>
-    </motion.div>
+    </Animate>
   );
 };

@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { Building2 } from "lucide-react";
+import { Animate } from "../../components/Animate";
 
 export const ResidenceHero = ({ t }) => {
   return (
@@ -7,9 +7,7 @@ export const ResidenceHero = ({ t }) => {
       <div className="absolute right-0 top-0 h-105 w-105 rounded-full bg-[#d8b56d]/25 blur-[110px]" />
 
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
-        <motion.div
-          initial={{ opacity: 0, y: 26 }}
-          animate={{ opacity: 1, y: 0 }}
+        <Animate
           className="self-end"
         >
           <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9b7837]">
@@ -23,13 +21,10 @@ export const ResidenceHero = ({ t }) => {
           <p className="mt-7 max-w-xl text-lg leading-8 text-[#5f574b]">
             {t("hero.description")}
           </p>
-        </motion.div>
+        </Animate>
 
-        <motion.div
-          initial={{ opacity: 0, clipPath: "inset(12% 0 12% 0 round 36px)" }}
-          animate={{ opacity: 1, clipPath: "inset(0% 0 0% 0 round 36px)" }}
-          transition={{ duration: 0.9 }}
-          className="relative min-h-155 overflow-hidden rounded-[2.5rem]"
+        <div
+          className="clip-image-enter relative min-h-155 overflow-hidden rounded-[2.5rem]"
         >
           <img
             src="/images/concept.webp"
@@ -46,7 +41,7 @@ export const ResidenceHero = ({ t }) => {
               {t("hero.cardDescription")}
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

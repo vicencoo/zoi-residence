@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
 import { FEATURES } from "../../constants/features";
+import { Animate } from "../../components/Animate";
 
 export const Features = ({ isMobile, t }) => {
   const features = FEATURES(t);
@@ -22,14 +22,10 @@ export const Features = ({ isMobile, t }) => {
 
       <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
         {features.map((item, index) => (
-          <motion.div
+          <Animate
             key={item.title}
-            initial={isMobile ? false : { opacity: 0, y: 28 }}
-            whileInView={isMobile ? undefined : { opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.08 }}
-            whileHover={{ y: -10, rotateX: 6, rotateY: -6 }}
-            className="group rounded-4xl border border-black/10 bg-white/75 p-6 shadow-[0_16px_50px_rgba(55,38,15,0.07)] backdrop-blur-xl transition transform-3d hover:border-[#9a7330]/30 hover:bg-white"
+            delay={isMobile ? 0 : index * 80}
+            className="group rounded-4xl border border-black/10 bg-white/75 p-6 shadow-[0_16px_50px_rgba(55,38,15,0.07)] backdrop-blur-xl transition transform-3d hover:border-[#9a7330]/30 hover:bg-white md:hover:-translate-y-2.5 md:hover:rotate-x-[6deg] md:hover:-rotate-y-[6deg]"
           >
             <div className="mb-8 grid h-14 w-14 place-items-center rounded-2xl bg-[#d8b56d]/15 text-[#9a7330] transition group-hover:scale-110">
               <item.icon className="h-6 w-6" />
@@ -38,7 +34,7 @@ export const Features = ({ isMobile, t }) => {
               {item.title}
             </h3>
             <p className="mt-3 leading-7 text-[#62594d]">{item.text}</p>
-          </motion.div>
+          </Animate>
         ))}
       </div>
     </section>

@@ -18,7 +18,7 @@ export const Header = () => {
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
             <img
-              src="/images/favicons/zoi-villas-logo.webp"
+              src="/images/favicons/zoi-villas-logo-96.webp"
               alt="Zoi Villa Residence"
               width="48"
               height="48"

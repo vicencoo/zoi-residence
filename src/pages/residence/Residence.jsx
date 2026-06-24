@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import { ArrowUpRight, Check } from 'lucide-react';
 import { ResidenceHero } from './ResidenceHero';
 import {
@@ -50,12 +49,10 @@ export const Residence = () => {
 
           <div className='grid gap-4'>
             {principles.map((item, index) => (
-              <motion.div
+              <Animate
                 key={item}
-                initial={{ opacity: 0, x: 24 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.06 }}
+                preset='slideRight'
+                delay={index * 60}
                 className='flex items-center justify-between rounded-[1.7rem] border border-[#15120d]/10 bg-white/65 p-5'
               >
                 <div className='flex items-center gap-4'>
@@ -65,7 +62,7 @@ export const Residence = () => {
                   <p className='font-medium'>{item}</p>
                 </div>
                 <ArrowUpRight className='h-5 w-5 text-[#9b7837]' />
-              </motion.div>
+              </Animate>
             ))}
           </div>
         </div>

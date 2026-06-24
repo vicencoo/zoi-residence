@@ -7,11 +7,6 @@ import { HomeParking } from "./HomeParking";
 import { INVESTMENT_INFO } from "../../constants/investmentInfo";
 import { useNavigate } from "react-router-dom";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 34 },
-  visible: { opacity: 1, y: 0 },
-};
-
 export const HomePage = () => {
   const { active, handleChangeActive, isMobile } = useHome();
   const { t } = useTranslation("home");
@@ -29,7 +24,7 @@ export const HomePage = () => {
       {/* {<Header />} */}
 
       {/* ── Hero ── */}
-      <Hero fadeUp={fadeUp} t={t} />
+      <Hero t={t} />
       {/* ── Features ── */}
       <Features isMobile={isMobile} t={t} />
 

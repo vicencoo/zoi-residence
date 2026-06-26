@@ -28,10 +28,7 @@ export const Hero = ({ t }) => {
           {t("hero.description")}
         </Animate>
 
-        <Animate
-          delay={240}
-          className="mt-9 flex flex-col gap-4 sm:flex-row"
-        >
+        <Animate delay={240} className="mt-9 flex flex-col gap-4 sm:flex-row">
           <a
             href="#residenca"
             className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#17130d] px-7 py-4 font-semibold text-white transition hover:scale-[1.02] hover:bg-[#d8b56d] hover:text-[#17130d]"
@@ -49,10 +46,7 @@ export const Hero = ({ t }) => {
           </a>
         </Animate>
 
-        <Animate
-          delay={360}
-          className="mt-12 grid max-w-2xl grid-cols-3 gap-4"
-        >
+        <Animate delay={360} className="mt-12 grid max-w-2xl grid-cols-3 gap-4">
           {heroInfo.map(([number, label]) => (
             <div
               key={label}
@@ -66,9 +60,7 @@ export const Hero = ({ t }) => {
       </div>
 
       <div className="hero-card-enter relative perspective-[1400px]">
-        <div
-          className="hero-card-float relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl transform-3d"
-        >
+        <div className="hero-card-float relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl transform-3d">
           {/* <img
             src="/images/ZOI_Villa_Residence.webp"
             alt="Rezidencë moderne luksoze"
@@ -112,9 +104,7 @@ export const Hero = ({ t }) => {
           </div>
         </div>
 
-        <div
-          className="hero-mini-float absolute -left-5 top-16 hidden rounded-3xl border border-black/10 bg-white/80 p-4 shadow-[0_20px_60px_rgba(55,38,15,0.12)] backdrop-blur-2xl md:block"
-        >
+        <div className="hero-mini-float absolute -left-5 top-16 hidden rounded-3xl border border-black/10 bg-white/80 p-4 shadow-[0_20px_60px_rgba(55,38,15,0.12)] backdrop-blur-2xl md:block">
           <Waves className="mb-3 h-6 w-6 text-[#9a7330]" />
           <p className="text-sm font-semibold text-[#17130d]">
             {t("hero.miniCardTitle")}

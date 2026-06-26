@@ -3,10 +3,12 @@ import { initReactI18next } from "react-i18next";
 
 import sqCommon from "./locales/sq/common.json";
 import enCommon from "./locales/en/common.json";
+import sqHome from "./locales/sq/home.json";
+import enHome from "./locales/en/home.json";
 
 const namespaceLoaders = {
   sq: {
-    home: () => import("./locales/sq/home.json"),
+    // home: () => import("./locales/sq/home.json"),
     residence: () => import("./locales/sq/residence.json"),
     villas: () => import("./locales/sq/villas.json"),
     viewVilla: () => import("./locales/sq/viewVilla.json"),
@@ -16,7 +18,7 @@ const namespaceLoaders = {
     contact: () => import("./locales/sq/contact.json"),
   },
   en: {
-    home: () => import("./locales/en/home.json"),
+    // home: () => import("./locales/en/home.json"),
     residence: () => import("./locales/en/residence.json"),
     villas: () => import("./locales/en/villas.json"),
     viewVilla: () => import("./locales/en/viewVilla.json"),
@@ -45,25 +47,30 @@ const lazyLocaleBackend = {
 
 const savedLanguage = localStorage.getItem("language") || "sq";
 
-i18n.use(lazyLocaleBackend).use(initReactI18next).init({
-  resources: {
-    sq: {
-      common: sqCommon,
+i18n
+  .use(lazyLocaleBackend)
+  .use(initReactI18next)
+  .init({
+    resources: {
+      sq: {
+        common: sqCommon,
+        home: sqHome,
+      },
+      en: {
+        common: enCommon,
+        home: enHome,
+      },
     },
-    en: {
-      common: enCommon,
+    lng: savedLanguage,
+    fallbackLng: "sq",
+    ns: ["common"],
+    defaultNS: "common",
+    fallbackNS: "common",
+    partialBundledLanguages: true,
+    interpolation: {
+      escapeValue: false,
     },
-  },
-  lng: savedLanguage,
-  fallbackLng: "sq",
-  ns: ["common"],
-  defaultNS: "common",
-  fallbackNS: "common",
-  partialBundledLanguages: true,
-  interpolation: {
-    escapeValue: false,
-  },
-});
+  });
 
 i18n.on("languageChanged", (lng) => {
   localStorage.setItem("language", lng);

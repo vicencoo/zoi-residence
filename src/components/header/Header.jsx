@@ -21,13 +21,13 @@ export const Header = () => {
       >
         <div className="flex items-center justify-between px-4 py-3 md:px-5">
           <Link to={"/"} className="group flex items-center gap-3">
-            <img
+            {/* <img
               src="/images/favicons/zoi-villas-logo-96.webp"
               alt="Zoi Villa Residence"
               width="48"
               height="48"
               className="w-12 h-12 transition group-hover:rotate-6"
-            />
+            /> */}
 
             <div>
               <p className="text-lg font-semibold tracking-[0.24em] text-white">

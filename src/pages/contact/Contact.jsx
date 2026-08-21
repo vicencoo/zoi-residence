@@ -18,8 +18,6 @@ export const Contact = () => {
           className="grid gap-8"
         >
           <div className="relative overflow-hidden rounded-[2.75rem] border border-black/10 bg-[#17130d] p-8 text-white shadow-[0_30px_100px_rgba(55,38,15,0.18)] md:p-10">
-            <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-[#d8b56d]/25 blur-[80px]" />
-
             <div className="relative">
               <p className="mb-4 text-sm uppercase tracking-[0.35em] text-[#d8b56d]">
                 {t("privateVisit")}

@@ -73,6 +73,7 @@ export const Header = () => {
                 <ReactCountryFlag
                   countryCode="AL"
                   svg
+                  cdnUrl="/images/flags/"
                   style={{
                     width: "1.4em",
                     height: "1.4em",
@@ -94,6 +95,7 @@ export const Header = () => {
                 <ReactCountryFlag
                   countryCode="GB"
                   svg
+                  cdnUrl="/images/flags/"
                   style={{
                     width: "1.4em",
                     height: "1.4em",

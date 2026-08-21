@@ -9,9 +9,6 @@ export const ContactOptions = ({ t }) => {
       duration={700}
       className="relative overflow-hidden rounded-[2.75rem] border border-black/10 bg-white/75 p-8 shadow-[0_30px_100px_rgba(55,38,15,0.12)] backdrop-blur-2xl md:p-12"
     >
-      <div className="pointer-events-none absolute -left-24 -top-24 h-80 w-80 rounded-full bg-[#d8b56d]/25 blur-[90px]" />
-      <div className="pointer-events-none absolute -bottom-28 right-0 h-80 w-80 rounded-full bg-[#17130d]/10 blur-[90px]" />
-
       <div className="relative">
         <p className="mb-5 text-sm uppercase tracking-[0.35em] text-[#9a7330]">
           {t("contactOptions.title")}

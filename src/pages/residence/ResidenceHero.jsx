@@ -4,8 +4,6 @@ import { Animate } from "../../components/Animate";
 export const ResidenceHero = ({ t }) => {
   return (
     <section className="relative overflow-hidden px-6 pb-24 pt-36">
-      <div className="absolute right-0 top-0 h-105 w-105 rounded-full bg-[#d8b56d]/25 blur-[110px]" />
-
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.85fr_1.15fr]">
         <Animate
           className="self-end"
@@ -23,9 +21,7 @@ export const ResidenceHero = ({ t }) => {
           </p>
         </Animate>
 
-        <div
-          className="clip-image-enter relative min-h-155 overflow-hidden rounded-[2.5rem]"
-        >
+        <div className="relative min-h-155 overflow-hidden rounded-[2.5rem]">
           <img
             src="/images/concept.webp"
             alt="Zoi Villa Residence"

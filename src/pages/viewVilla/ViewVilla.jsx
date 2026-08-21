@@ -31,9 +31,6 @@ export const ViewVilla = () => {
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d] overflow-x-clip">
       <section className="relative overflow-hidden px-6 pb-16 pt-32">
-        <div className="absolute -right-40 top-20 h-130 w-130 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
-        <div className="absolute -left-40 bottom-0 h-115 w-115 rounded-full bg-[#17130d]/10 blur-[120px]" />
-
         <div className="relative mx-auto max-w-7xl">
           <Link
             to="/villas"

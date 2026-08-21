@@ -25,7 +25,7 @@ export const Features = ({ t }) => {
           <Animate
             key={item.title}
             delay={index * 80}
-            className="group rounded-4xl border border-black/10 bg-white/75 p-6 shadow-[0_16px_50px_rgba(55,38,15,0.07)] backdrop-blur-xl transition transform-3d hover:border-[#9a7330]/30 hover:bg-white md:hover:-translate-y-2.5 md:hover:rotate-x-[6deg] md:hover:-rotate-y-[6deg]"
+            className="group rounded-4xl border border-black/10 bg-white/75 p-6 shadow-[0_16px_50px_rgba(55,38,15,0.07)] backdrop-blur-xl hover:border-[#9a7330]/30 hover:bg-white"
           >
             <div className="mb-8 grid h-14 w-14 place-items-center rounded-2xl bg-[#d8b56d]/15 text-[#9a7330] transition group-hover:scale-110">
               <item.icon className="h-6 w-6" />

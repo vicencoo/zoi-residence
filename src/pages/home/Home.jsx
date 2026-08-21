@@ -15,14 +15,6 @@ export const HomePage = () => {
 
   return (
     <main className="min-h-screen overflow-hidden bg-[#f4efe6] text-[#17130d] selection:bg-[#d8b56d] selection:text-[#17130d]">
-      {/* Background blobs */}
-      <div className="pointer-events-none fixed inset-0 z-0">
-        <div className="absolute left-[-10%] top-[-10%] h-105 w-105 rounded-full bg-[#d6b46d]/25 blur-[120px]" />
-        <div className="absolute bottom-[-12%] right-[-10%] h-130 w-130 rounded-full bg-[#17130d]/10 blur-[140px]" />
-      </div>
-
-      {/* {<Header />} */}
-
       {/* ── Hero ── */}
       <Hero t={t} />
       {/* ── Features ── */}

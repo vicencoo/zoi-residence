@@ -3,9 +3,6 @@ import { Animate } from "../../components/Animate";
 export const VillasHero = ({ t }) => {
   return (
     <section className="relative overflow-hidden px-6 pb-16 pt-36">
-      <div className="absolute -right-40 top-20 h-130 w-130 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
-      <div className="absolute -left-40 bottom-0 h-115 w-115 rounded-full bg-[#17130d]/10 blur-[120px]" />
-
       <div className="relative mx-auto max-w-7xl">
         <Animate
           as="p"

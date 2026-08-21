@@ -6,9 +6,6 @@ export const ApartmentHero = ({ stair, unit, t }) => {
   const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden px-6 pb-16 pt-32">
-      <div className="absolute -right-44 top-20 h-120 w-120 rounded-full bg-[#d8b56d]/25 blur-[130px]" />
-      <div className="absolute -left-40 bottom-0 h-100 w-100 rounded-full bg-black/10 blur-[120px]" />
-
       <div className="relative mx-auto max-w-7xl">
         <button
           onClick={() => navigate("/apartments")}

@@ -6,9 +6,6 @@ export const ParkingHero = ({ t }) => {
   const navigate = useNavigate();
   return (
     <section className="relative overflow-hidden px-6 pb-14 pt-36">
-      <div className="absolute -right-40 top-20 h-120 w-120 rounded-full bg-[#d8b56d]/30 blur-[130px]" />
-      <div className="absolute -left-40 bottom-0 h-105 w-105 rounded-full bg-[#17130d]/10 blur-[120px]" />
-
       <div className="relative mx-auto max-w-7xl">
         <button
           onClick={() => navigate("/apartments")}

@@ -59,8 +59,8 @@ export const Hero = ({ t }) => {
         </Animate>
       </div>
 
-      <div className="hero-card-enter relative perspective-[1400px]">
-        <div className="hero-card-float relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl transform-3d">
+      <div className="relative">
+        <div className="relative rounded-[2.2rem] border border-black/10 bg-white/75 p-3 shadow-[0_45px_120px_rgba(55,38,15,0.18)] backdrop-blur-2xl">
           {/* <img
             src="/images/ZOI_Villa_Residence.webp"
             alt="Rezidencë moderne luksoze"
@@ -104,7 +104,7 @@ export const Hero = ({ t }) => {
           </div>
         </div>
 
-        <div className="hero-mini-float absolute -left-5 top-16 hidden rounded-3xl border border-black/10 bg-white/80 p-4 shadow-[0_20px_60px_rgba(55,38,15,0.12)] backdrop-blur-2xl md:block">
+        <div className="absolute -left-5 top-16 hidden rounded-3xl border border-black/10 bg-white/80 p-4 shadow-[0_20px_60px_rgba(55,38,15,0.12)] backdrop-blur-2xl md:block">
           <Waves className="mb-3 h-6 w-6 text-[#9a7330]" />
           <p className="text-sm font-semibold text-[#17130d]">
             {t("hero.miniCardTitle")}

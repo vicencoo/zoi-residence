@@ -33,9 +33,7 @@ export const PropertyCategories = ({
             key={property.type}
             onMouseEnter={() => handleChangeActive(index)}
             delay={index * 100}
-            className={`group overflow-hidden rounded-[2.2rem] border bg-white/75 shadow-[0_30px_80px_rgba(55,38,15,0.12)] backdrop-blur-xl transition duration-500 transform-3d md:hover:-translate-y-3 md:hover:rotate-x-[5deg] ${
-              index === 0 ? "md:hover:-rotate-y-[4deg]" : "md:hover:rotate-y-[4deg]"
-            } ${
+            className={`group overflow-hidden rounded-[2.2rem] border bg-white/75 shadow-[0_30px_80px_rgba(55,38,15,0.12)] backdrop-blur-xl ${
               active === index ? "border-[#9a7330]/50" : "border-black/10"
             }`}
           >

@@ -5,10 +5,12 @@ import { VillaImages } from "./VillaImages";
 import { useViewVilla } from "./useViewVilla";
 import { useTranslation } from "react-i18next";
 import { VIEW_VILLA_DETAILS } from "../../constants/viewVillaDetails";
+import { Seo } from "../../components/Seo";
+import { getVillaSeo } from "../../seo/seoData";
 
 export const ViewVilla = () => {
   const { activeImage, handleChangeImage, villa } = useViewVilla();
-  const { t } = useTranslation("viewVilla");
+  const { t, i18n } = useTranslation("viewVilla");
 
   if (!villa) {
     return (
@@ -30,6 +32,7 @@ export const ViewVilla = () => {
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d] overflow-x-clip">
+      <Seo {...getVillaSeo(villa, i18n.language)} />
       <section className="relative overflow-hidden px-6 pb-16 pt-32">
         <div className="relative mx-auto max-w-7xl">
           <Link

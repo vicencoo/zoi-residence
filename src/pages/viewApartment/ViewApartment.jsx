@@ -14,11 +14,13 @@ import { ApartmentSidebar } from "./ApartmentSidebar";
 import { ApartmentHero } from "./ApartmentHero";
 import { useTranslation } from "react-i18next";
 import { Animate } from "../../components/Animate";
+import { Seo } from "../../components/Seo";
+import { getApartmentSeo } from "../../seo/seoData";
 
 export const ViewApartment = () => {
   const navigate = useNavigate();
   const { activeImage, apartment, handleChangeImage } = useViewApartment();
-  const { t } = useTranslation("viewApartment");
+  const { t, i18n } = useTranslation("viewApartment");
 
   if (!apartment) {
     return (
@@ -50,6 +52,7 @@ export const ViewApartment = () => {
 
   return (
     <main className="min-h-screen bg-[#f4efe6] text-[#17130d]">
+      <Seo {...getApartmentSeo(stair, unit, i18n.language)} />
       <ApartmentHero stair={stair} unit={unit} t={t} />
 
       <section className="px-6 pb-28">
